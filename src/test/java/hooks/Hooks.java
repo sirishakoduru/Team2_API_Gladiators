@@ -32,6 +32,7 @@ public class Hooks extends BaseClass {
     @Before(value = "@authToken", order = 1)
     public void generateTokenBeforeScenario() throws IOException {
 
+    	BaseClass.init(); 
         if (TokenManager.getToken() == null || TokenManager.getToken().isEmpty()) {
 
         	 LoginRequest login = new LoginRequest();

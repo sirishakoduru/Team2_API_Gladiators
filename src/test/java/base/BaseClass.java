@@ -22,13 +22,13 @@ public class BaseClass {
                 .baseUri(RestAssured.baseURI);
     }
 	
-	public static RequestSpecification RequestWithAuth(String contentType) {
-		return given()
+	public static RequestSpecification createRequest() {
+        return given()
                 .log().all()
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + TokenManager.getToken())
                 .baseUri(RestAssured.baseURI);
-	}
+    }
 	public static TestcaseWrapper getTestData() {
 		
 		return  JsonReader.readAllModules("src/test/resources/TestDataforLMS.json");
