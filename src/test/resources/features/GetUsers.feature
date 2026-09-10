@@ -1,4 +1,4 @@
-Feature: Get all Users,Active users,Emails of All Users with Active Status
+Feature: Get all Users,Active users,Emails of All Users with Active Status,Get All Users with Roles 
 
 Background: Admin sets Authorization 
 Given Admin sets Authorization to Bearer Token
@@ -22,7 +22,8 @@ Scenario Outline: Validate User GET API scenarios
       |Get all user role with valid Endpoint|
       |Get all user role with invalid Endpoint|
       |Get all user role with invalid Method|
-      
-      
+      |Get all users info with valid Endpoint|
+      |Get all users info with invalid Endpoint|
+      |Get all users info with invalid Method|
       
       
