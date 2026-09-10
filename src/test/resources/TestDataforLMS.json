@@ -251,124 +251,76 @@
     }
   ],
   "GetRequest": [
-    {
-      "testcaseName": "Get All Programs",
-      "endpoint": "/allPrograms",
-      "expectedStatusCode": 200
-    },
-    {
-      "testcaseName": "Get All Programs With Users",
-      "endpoint": "/allProgramsWithUsers",
-      "expectedStatusCode": 200
-    },
-	{
-	   "testcaseName": "Logout Successfully",
-	   "method": "GET",
-	   "endpoint": "/logoutlms",
-	   "expectedStatusCode": 200,
-	   "expectedMessage": "Logout successful"
-	 },
 	 {
-	   "testcaseName": "Logout With Invalid Endpoint",
-	   "method": "GET",
-	   "endpoint": "/logoutlmswrong",
-	   "expectedStatusCode": 404
-	 },
-	 {
-	   "testcaseName": "Logout With Invalid Method",
-	   "method": "POST",
-	   "endpoint": "/logoutlms",
-	   "expectedStatusCode": 405
-	 },
-	 {
-	   "testcaseName": "Logout With Invalid Token",
-	   "method": "GET",
-	   "endpoint": "/logoutlms",
-	   "expectedStatusCode": 401
-	 },
-	 {
-	   "testcaseName": "Logout with No Auth",
-	   "method": "GET",
-	   "endpoint": "/logoutlms",
-	   "expectedStatusCode": 401
-	 },
-	 {
-	   "testcaseName": "Logout With Expired Token",
-	   "method": "GET",
-	   "endpoint": "/logoutlms",
-	   "expectedStatusCode": 401
-	 },
-	 {
-	    "testcaseName": "Get All Programs Valid Endpoint",
+	    "testcaseName": "Get all users with valid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/allPrograms",
+	    "endpoint": "/users",
 	    "expectedStatusCode": 200
 	  },
 	  {
-	    "testcaseName": "Get All Programs Invalid Endpoint",
+	    "testcaseName": "Get all users with invalid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/allProgramsss",
+	    "endpoint": "/usersss",
 	    "expectedStatusCode": 404
 	  },
 	  {
-	    "testcaseName": "Get All Programs Invalid Method",
+	    "testcaseName": "Get all users with invalid Method",
 	    "method": "POST",
-	    "endpoint": "/allPrograms",
+	    "endpoint": "/users",
 	    "expectedStatusCode": 405
 	  },
 	  {
-	    "testcaseName": "Get All Programs Without Auth",
+	    "testcaseName": "Get all active users with valid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/allPrograms",
-	    "expectedStatusCode": 401
-	  },
-	  {
-	    "testcaseName": "Get Program By ID Valid",
-	    "method": "GET",
-	    "endpoint": "/programs/{programId}",
+	    "endpoint": "/users/activeUsers",
 	    "expectedStatusCode": 200
 	  },
 	  {
-	    "testcaseName": "Get Program By ID Invalid Program ID",
+	    "testcaseName": "Get all active users with invalid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/programs/999999",
+	    "endpoint": "/users/activeUsersss",
 	    "expectedStatusCode": 404
 	  },
 	  {
-	    "testcaseName": "Get Program By ID Invalid BaseURI",
-	    "method": "GET",
-	    "endpoint": "/programs/{programId}",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get Program By ID Invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/programsss/{programId}",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get Program By ID Without Auth",
-	    "method": "GET",
-	    "endpoint": "/programs/{programId}",
-
-	    "expectedStatusCode": 401
-	  },
-	  {
-	    "testcaseName": "Get All Programs With Users Valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/allProgramsWithUsers",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get All Programs With Users Invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/allProgramswtUsersss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get All Programs With Users Invalid Method",
+	    "testcaseName": "Get all active users with invalid Method",
 	    "method": "POST",
-	    "endpoint": "/allProgramsWithUsers",
+	    "endpoint": "/users/activeUsers",
+	    "expectedStatusCode": 405
+	  },
+	  {
+	    "testcaseName": "Get all active users e-mail id with valid Endpoint",
+	    "method": "GET",
+	    "endpoint": "/fetch-emails",
+	    "expectedStatusCode": 200
+	  },
+	  {
+	    "testcaseName": "Get all active users e-mail id with invalid Endpoint",
+	    "method": "GET",
+	    "endpoint": "/fetch-emailsss",
+	    "expectedStatusCode": 404
+	  },
+	  {
+	    "testcaseName": "Get all active users e-mail id with invalid Method",
+	    "method": "POST",
+	    "endpoint": "/fetch-emails",
+	    "expectedStatusCode": 405
+	  },
+	  {
+	    "testcaseName": "Get all user role with valid Endpoint",
+	    "method": "GET",
+	    "endpoint": "/roles",
+	    "expectedStatusCode": 200
+	  },
+	  {
+	    "testcaseName": "Get all user role with invalid Endpoint",
+	    "method": "GET",
+	    "endpoint": "/roleses",
+	    "expectedStatusCode": 404
+	  },
+	  {
+	    "testcaseName": "Get all user role with invalid Method",
+	    "method": "POST",
+	    "endpoint": "/roles",
 	    "expectedStatusCode": 405
 	  },
 	  {
