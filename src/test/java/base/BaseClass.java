@@ -4,7 +4,9 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
+import pojo.TestcaseWrapper;
 import utilities.ConfigReader;
+import utilities.JsonReader;
 import utilities.TokenManager;
 
 public class BaseClass {
@@ -27,6 +29,11 @@ public class BaseClass {
                 .header("Authorization", "Bearer " + TokenManager.getToken())
                 .baseUri(RestAssured.baseURI);
 	}
+	public static TestcaseWrapper getTestData() {
+		
+		return  JsonReader.readAllModules("src/test/resources/TestDataforLMS.json");
+		 
+		}
 	
 
 }
