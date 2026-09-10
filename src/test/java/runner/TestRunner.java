@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = "src/test/resources/feature",
-		glue = "stepDefinitions",	
+		features = "src/test/resources/features/Login.feature",
+		glue = {"stepDefinitions","hooks"},	
 		plugin = {"pretty", "html:target/cucumber-report.html",
 				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	    		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
