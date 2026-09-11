@@ -60,6 +60,9 @@ public class JsonTestData {
     
     @JsonProperty("BooleanMessage")
     private boolean BooleanMessage;
+    
+    @JsonProperty("userRequest")
+    private UserRequest userRequest;
 
   
     public String getTestcaseName() {
@@ -157,5 +160,14 @@ public class JsonTestData {
 
     public void setAuthType(String authType) {
         this.authType = authType;
+    }
+    
+    
+    public UserRequest getUserRequest() {
+        return userRequest;
+    }
+    
+    public void setUserRequest(UserRequest userRequest) {
+        this.userRequest = userRequest;
     }
 }

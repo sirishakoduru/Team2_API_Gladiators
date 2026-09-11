@@ -195,7 +195,7 @@ public void admin_creates_post_request_with_empty_payload() {
     throw new io.cucumber.java.PendingException();
 }
 
-@Then("Admin receives {int} Bad Request")
+@Then("Admin receives a {int} Bad Request")
 public void admin_receives_bad_request(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
@@ -207,7 +207,7 @@ public void admin_creates_post_request_with_invalid_token() {
     throw new io.cucumber.java.PendingException();
 }
 
-@Then("Admin receives {int} Unauthorized")
+@Then("Admin receives a {int} Unauthorized")
 public void admin_receives_unauthorized(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
@@ -219,13 +219,13 @@ public void admin_creates_post_request_with_valid_request_body() {
     throw new io.cucumber.java.PendingException();
 }
 
-@When("Admin sends a HTTPS request to the invalid endpoint")
+@When("Admin sends  HTTPS request to the invalid endpoint")
 public void admin_sends_a_https_request_to_the_invalid_endpoint() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@Then("Admin receives {int} not found Status with message and boolean success details")
+@Then("Admin receives a {int} not found Status with message and boolean success details")
 public void admin_receives_not_found_status_with_message_and_boolean_success_details(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
@@ -237,7 +237,7 @@ public void admin_creates_post_request_with_invalid_content_type() {
     throw new io.cucumber.java.PendingException();
 }
 
-@Then("Admin receives {int} unsupported media type")
+@Then("Admin receives a {int} unsupported media type")
 public void admin_receives_unsupported_media_type(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
@@ -249,7 +249,7 @@ public void admin_creates_invalid_request_with_valid_request_body() {
     throw new io.cucumber.java.PendingException();
 }
 
-@Then("Admin receives {int} Method Not Allowed")
+@Then("Admin receives a {int} Method Not Allowed")
 public void admin_receives_method_not_allowed(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();

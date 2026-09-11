@@ -71,7 +71,7 @@ Feature: Creating User with Role [Post Operation]
   Scenario Outline: Admin attempts user creation handling specific protocol and structural edge cases
     Given Admin creates <request_type>
     When Admin sends a HTTPS request to the <endpoint_type>
-    Then Admin receives <status_code>
+    Then Admin receives a <status_code>
 
     Examples:
 | condition            | request_type                               | endpoint_type    | status_code                                                    |
