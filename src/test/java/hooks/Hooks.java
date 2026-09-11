@@ -1,26 +1,26 @@
 package hooks;
 
 import java.io.IOException;
+
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import pojo.JsonTestData;
 import pojo.LoginRequest;
 import pojo.LoginResponse;
-import pojo.TestcaseWrapper;
 import base.BaseClass;
 import utilities.ConfigReader;
-import utilities.JsonReader;
 import utilities.TokenManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class Hooks extends BaseClass {
 
     RequestSpecification request;
-    Response response;
+    public static Response response;
 
     private static final Logger log = LoggerFactory.getLogger(Hooks.class);
+    private static final Logger apiLog = LoggerFactory.getLogger("API_RESPONSE_LOG");
     
     public static Scenario scenario;
 
@@ -39,7 +39,7 @@ public class Hooks extends BaseClass {
         	 login.setUserLoginEmailId(ConfigReader.getProperty("userLoginEmailId"));
      		 login.setPassword(ConfigReader.getProperty("password"));
 
-     		 request = requestWithoutAuth();
+     		  RequestSpecification request = requestWithoutAuth();
 
              response = request
                      .body(login)
@@ -50,6 +50,15 @@ public class Hooks extends BaseClass {
              TokenManager.setToken(loginResponse.getToken());
 
              log.info("Token generated successfully: {}", TokenManager.getToken());
+        }
+    }
+
+    @After
+    public void logApiResponse(Scenario scenario) {
+        if (response != null) {
+            apiLog.info("Scenario: {}", scenario.getName());
+            apiLog.info("Status Code: {}", response.getStatusCode());
+            apiLog.info("Response Body:\n{}", response.asPrettyString());
         }
     }
 }

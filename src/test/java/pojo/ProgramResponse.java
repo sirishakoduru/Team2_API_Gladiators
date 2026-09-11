@@ -4,7 +4,7 @@ public class ProgramResponse {
 	
 	private int programId;
 	private String programName;
-	private String programDesciption;
+	private String programDescription;
 	private String programStatus;
 	private String creationTime;
 	private String lastModTime;
@@ -15,8 +15,8 @@ public class ProgramResponse {
 	public String getprogramName() {
 		return programName;
 	}
-	public String getprogramDesciption() {
-		return programDesciption;
+	public String getprogramDescription() {
+		return programDescription;
 	}
 	public String getprogramStatus() {
 		return programStatus;

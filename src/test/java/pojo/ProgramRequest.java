@@ -4,7 +4,7 @@ public class ProgramRequest {
 	
 	
 	private String programName;
-	private String programDesciption;
+	private String programDescription;
 	private String programStatus;
 	
 	
@@ -12,15 +12,19 @@ public class ProgramRequest {
 		return programName;
 	}
 	
-	public String getprogramDesciption() {
-		return programDesciption;
+	public String getprogramDescription() {
+		return programDescription;
 	}
 	public String getprogramStatus() {
 		return programStatus;
 	}
 	
+	public void setProgramName(String programName) {
+		this.programName = programName;
+	}
+	
 	public void setProgramDescription(String programDescription) {
-		this.programDesciption = programDescription;
+		this.programDescription = programDescription;
 	}
 	
 	public void setProgramStatus(String programStatus) {
