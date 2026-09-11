@@ -20,8 +20,8 @@ public class JsonTestData {
     @JsonProperty("contentType")
     public String contentType;
     
-//    @JsonProperty("loginRequest")
-//    public Login loginRequest;
+    @JsonProperty("loginRequest")
+   public LoginRequest loginRequest;
 //    
 //    @JsonProperty("forgotPasswordRequest")
 //    public ForgotPasswordRequest forgotPasswordRequest;
@@ -36,20 +36,9 @@ public class JsonTestData {
     public String authType;
     
     
-//    
-//    public Data getData() {
-//    	return data;
-//    }
-//    public void setData(Data data) {
-//        this.data = data;
-//    }
-    
-//    public String expectedType;
-//    public String expectedEmail;
-//    public String expectedStatus;
-    
-//    @JsonProperty("programRequest")
-//    private ProgramRequest programRequest;
+
+   @JsonProperty("programRequest")
+    private ProgramRequest programRequest;
 //    
 //    @JsonProperty("BatchData")
 //    private BatchDataPojo batchData ;
@@ -120,7 +109,7 @@ public class JsonTestData {
     }
 
     
-//    public Login getLoginRequest() {
+//   public Login getLoginRequest() {
 //        return loginRequest;
 //    }
 //
@@ -141,9 +130,9 @@ public class JsonTestData {
     }
     
     
-//    public ProgramRequest getProgramRequest() {
-//        return programRequest;
-//    }
+   public ProgramRequest getProgramRequest() {
+       return programRequest;
+   }
 //    public BatchDataPojo getBatchData() {
 //        return batchData;
 //    }

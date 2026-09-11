@@ -329,6 +329,77 @@
 	    "endpoint": "/allProgramsWithUsers",
 	    "expectedStatusCode": 401
 	  },
+	  
+	  {
+	  	    "testcaseName": "Get all Programs Valid EndPoint ",
+	  	    "method": "GET",
+	  	    "endpoint": "/allPrograms",
+	  	    "expectedStatusCode": 200
+	   },
+	   {
+	   	    "testcaseName": "Get all Programs Invalid EndPoint ",
+	   	    "method": "GET",
+	   	    "endpoint": "/allPrograms",
+	   	    "expectedStatusCode": 404
+	   	  },
+
+	  {
+		  	    "testcaseName": "Get all Programs Invalid Method",
+	 	  	    "method": "GET",
+		  	    "endpoint": "/allPrograms",
+		  	    "expectedStatusCode": 405
+	  },
+	  
+	  {
+	     	    "testcaseName": "Get Program By ID with Valid ProgramID  ",
+	     	    "method": "GET",
+	     	    "endpoint": "/programs/{programId}",
+	     	    "expectedStatusCode": 200
+	  },
+	  
+	  {
+	       	    "testcaseName": "Get Program By ID with Invalid ProgramID  ",
+	       	    "method": "GET",
+	       	    "endpoint": "/programs/{programId}",
+	       	    "expectedStatusCode": 404
+	    }, 
+		
+		{
+			   "testcaseName": "Get Program By ID with Invalid BaseURI  ",
+		   	    "method": "GET",
+        	    "endpoint": "/programs/{programId}",
+	       	    "expectedStatusCode": 404
+	    }, 
+		
+		{
+			   "testcaseName": "Get Program By ID Invalid EndPoint ",
+		  	    "method": "GET",
+		  	    "endpoint": "/programs/{programId}",
+			    "expectedStatusCode": 404
+	    }, 
+		
+		
+		{
+			   "testcaseName": "Get All Programs with Users Valid EndPoint",
+			    "method": "GET",
+			    "endpoint": "/allProgramsWithUsers",
+			    "expectedStatusCode": 200
+	    }, 
+		{
+			   "testcaseName": "Get All Programs with Users Invalid EndPoint",
+			    "method": "GET",
+			    "endpoint": "/allProgramsWithUsers",
+			    "expectedStatusCode": 404
+	    }, 	
+				
+		{		
+					
+			   "testcaseName": "Get Program By ID Invalid Method",	
+				    "method": "GET",
+				    "endpoint": "/allProgramsWithUsers",
+				    "expectedStatusCode": 405
+			 }, 
+		 
 	  {
       "testcaseName": "Admin retrieves all batches with valid endpoint",
       "endpoint": "/batches",
