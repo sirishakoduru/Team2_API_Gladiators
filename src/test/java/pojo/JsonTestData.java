@@ -2,7 +2,7 @@ package pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import io.restassured.RestAssured;
+
 
 //@JsonIgnoreProperties(ignoreUnknown = true)
 
@@ -14,14 +14,16 @@ public class JsonTestData {
     @JsonProperty("endpoint")
     public String endpoint;
 
-    @JsonProperty("Statusmessage") 
+    @JsonProperty("statusmessage") 
     public String statusmessage;
 
     @JsonProperty("contentType")
     public String contentType;
     
     @JsonProperty("loginRequest")
-   public LoginRequest loginRequest;
+    public LoginRequest loginRequest;
+
+
 //    
 //    @JsonProperty("forgotPasswordRequest")
 //    public ForgotPasswordRequest forgotPasswordRequest;
@@ -35,8 +37,6 @@ public class JsonTestData {
     @JsonProperty("authType")
     public String authType;
     
-    
-
    @JsonProperty("programRequest")
     private ProgramRequest programRequest;
 //    
@@ -44,6 +44,8 @@ public class JsonTestData {
 //    private BatchDataPojo batchData ;
 //    @JsonProperty("expectedType")
     private String expectedType;
+
+
     
     @JsonProperty("expectedEmail")
     private String expectedEmail;
@@ -62,9 +64,24 @@ public class JsonTestData {
     
     @JsonProperty("programId")
     private Integer programId;
-
+    
+    @JsonProperty("programDescription")
+    private String programDescription;
+    
+    @JsonProperty("programName")
+    private String programName;
+    
+    @JsonProperty("programStatus")
+    private String programStatus;
+    
     @JsonProperty("expectedMessage")
     private String expectedMessage;
+    
+    @JsonProperty("BooleanMessage")
+    private boolean BooleanMessage;
+    
+    @JsonProperty("userRequest")
+    private UserRequest userRequest;
 
   
     public String getTestcaseName() {
@@ -108,6 +125,7 @@ public class JsonTestData {
         this.contentType = contentType;
     }
 
+
     
 //   public Login getLoginRequest() {
 //        return loginRequest;
@@ -120,6 +138,7 @@ public class JsonTestData {
     public String getExpectedType() {
         return expectedType;
     }
+
 
     public String getExpectedEmail() {
         return expectedEmail;
@@ -136,7 +155,7 @@ public class JsonTestData {
 //    public BatchDataPojo getBatchData() {
 //        return batchData;
 //    }
-//    
+
     public String getRawBody() {
         return rawBody;
     }
@@ -155,15 +174,45 @@ public class JsonTestData {
     public Integer getProgramId() {
         return programId;
     }
+    public void setProgramId(Integer programId) {
+        this.programId = programId;
+    }
+
+    public String getProgramDescription() {
+        return programDescription;
+    }
+
+    public void setProgramDescription(String programDescription) {
+        this.programDescription = programDescription;
+    }
+
+    public String getProgramName() {
+        return programName;
+    }
+
+    public void setProgramName(String programName) {
+        this.programName = programName;
+    }
+
+    public String getProgramStatus() {
+        return programStatus;
+    }
+
+    public void setProgramStatus(String programStatus) {
+        this.programStatus = programStatus;
+    }
 
     public String getExpectedMessage() {
         return expectedMessage;
     }
+    public boolean getBooleanMessage() {
+        return BooleanMessage;
+    }
 
-	public RestAssured getRequestBody() {
+	//public RestAssured getRequestBody() {
 		// TODO Auto-generated method stub
-		return null;
-	}
+	//	return null;
+	//}
     
     public Integer getexpectedStatusCode() {
         return expectedStatusCode;
@@ -173,21 +222,6 @@ public class JsonTestData {
         this.expectedStatusCode = expectedStatusCode;
     }
     
-//    public ForgotPasswordRequest getForgotPasswordRequest() {
-//        return forgotPasswordRequest;
-//    }
-//
-//    public void setForgotPasswordRequest(ForgotPasswordRequest forgotPasswordRequest) {
-//        this.forgotPasswordRequest = forgotPasswordRequest;
-//    }
-//    
-//    public ResetPasswordRequest getResetPasswordRequest() {
-//        return resetPasswordRequest;
-//    }
-//
-//    public void setResetPasswordRequest(ResetPasswordRequest resetPasswordRequest) {
-//        this.resetPasswordRequest = resetPasswordRequest;
-//    }
 
     public String getAuthType() {
         return authType;
@@ -195,5 +229,14 @@ public class JsonTestData {
 
     public void setAuthType(String authType) {
         this.authType = authType;
+    }
+    
+    
+    public UserRequest getUserRequest() {
+        return userRequest;
+    }
+    
+    public void setUserRequest(UserRequest userRequest) {
+        this.userRequest = userRequest;
     }
 }
