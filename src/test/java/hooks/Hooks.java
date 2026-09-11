@@ -39,7 +39,7 @@ public class Hooks extends BaseClass {
         	 login.setUserLoginEmailId(ConfigReader.getProperty("userLoginEmailId"));
      		 login.setPassword(ConfigReader.getProperty("password"));
 
-     		 request = requestWithoutAuth();
+     		  RequestSpecification request = requestWithoutAuth();
 
              response = request
                      .body(login)

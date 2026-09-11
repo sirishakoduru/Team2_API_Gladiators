@@ -2,7 +2,7 @@ package pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import io.restassured.RestAssured;
+
 
 //@JsonIgnoreProperties(ignoreUnknown = true)
 
@@ -14,7 +14,7 @@ public class JsonTestData {
     @JsonProperty("endpoint")
     public String endpoint;
 
-    @JsonProperty("Statusmessage") 
+    @JsonProperty("statusmessage") 
     public String statusmessage;
 
     @JsonProperty("contentType")
@@ -22,6 +22,8 @@ public class JsonTestData {
     
     @JsonProperty("loginRequest")
     public LoginRequest loginRequest;
+
+
 //    
 //    @JsonProperty("forgotPasswordRequest")
 //    public ForgotPasswordRequest forgotPasswordRequest;
@@ -35,7 +37,15 @@ public class JsonTestData {
     @JsonProperty("authType")
     public String authType;
     
-    
+   @JsonProperty("programRequest")
+    private ProgramRequest programRequest;
+//    
+//    @JsonProperty("BatchData")
+//    private BatchDataPojo batchData ;
+//    @JsonProperty("expectedType")
+    private String expectedType;
+
+
     
     @JsonProperty("expectedEmail")
     private String expectedEmail;
@@ -54,7 +64,16 @@ public class JsonTestData {
     
     @JsonProperty("programId")
     private Integer programId;
-
+    
+    @JsonProperty("programDescription")
+    private String programDescription;
+    
+    @JsonProperty("programName")
+    private String programName;
+    
+    @JsonProperty("programStatus")
+    private String programStatus;
+    
     @JsonProperty("expectedMessage")
     private String expectedMessage;
     
@@ -106,6 +125,21 @@ public class JsonTestData {
         this.contentType = contentType;
     }
 
+
+    
+//   public Login getLoginRequest() {
+//        return loginRequest;
+//    }
+//
+//    public void setLoginRequest(Login loginRequest) {
+//        this.loginRequest = loginRequest;
+//    }
+    
+    public String getExpectedType() {
+        return expectedType;
+    }
+
+
     public String getExpectedEmail() {
         return expectedEmail;
     }
@@ -114,6 +148,14 @@ public class JsonTestData {
         return expectedStatus;
     }
     
+    
+   public ProgramRequest getProgramRequest() {
+       return programRequest;
+   }
+//    public BatchDataPojo getBatchData() {
+//        return batchData;
+//    }
+
     public String getRawBody() {
         return rawBody;
     }
@@ -132,6 +174,33 @@ public class JsonTestData {
     public Integer getProgramId() {
         return programId;
     }
+    public void setProgramId(Integer programId) {
+        this.programId = programId;
+    }
+
+    public String getProgramDescription() {
+        return programDescription;
+    }
+
+    public void setProgramDescription(String programDescription) {
+        this.programDescription = programDescription;
+    }
+
+    public String getProgramName() {
+        return programName;
+    }
+
+    public void setProgramName(String programName) {
+        this.programName = programName;
+    }
+
+    public String getProgramStatus() {
+        return programStatus;
+    }
+
+    public void setProgramStatus(String programStatus) {
+        this.programStatus = programStatus;
+    }
 
     public String getExpectedMessage() {
         return expectedMessage;
@@ -140,10 +209,10 @@ public class JsonTestData {
         return BooleanMessage;
     }
 
-	public RestAssured getRequestBody() {
+	//public RestAssured getRequestBody() {
 		// TODO Auto-generated method stub
-		return null;
-	}
+	//	return null;
+	//}
     
     public Integer getexpectedStatusCode() {
         return expectedStatusCode;
