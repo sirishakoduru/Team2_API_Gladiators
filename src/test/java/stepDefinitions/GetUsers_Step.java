@@ -1,9 +1,11 @@
 package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +21,6 @@ import pojo.TestcaseWrapper;
 import pojo.JsonTestData;
 import utilities.ConfigReader;
 import utilities.JsonReader;
-import utilities.ScenarioContext;
 
 public class GetUsers_Step extends BaseClass {
 	
@@ -108,7 +109,11 @@ public class GetUsers_Step extends BaseClass {
 	@Then("Admin receives {int} OK Status with response body.")
 	public void admin_receives_ok_status_with_response_body(Integer int1) {
 	    
-	    
+		log.info("Response Body:\n{}", response.asPrettyString());
+		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
+		List<Object> usersList = response.jsonPath().getList("");
+		log.info("The list of users size: {}", usersList.size());
+		assertTrue(usersList.size() >= 0);
 	}
 
 	@Then("Admin receives {int} Not Found Status with user inactive message and boolean success details")
@@ -210,6 +215,150 @@ public class GetUsers_Step extends BaseClass {
 		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
 	    
 	}
+	
+//------------------------------------------Get count of all active and inactive users-------------------------------------
+	
+	@Then("Admin receives {int} OK Status with response body for count of users.")
+	public void admin_receives_ok_status_with_response_body_for_count_of_users(Integer int1) {
+	   
+		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
+		String status = response.jsonPath().getString("[0].status");
+		assertEquals(status, "Active");
+		int count = response.jsonPath().getInt("[0].count");
+		assertTrue(count >= 0);
+	}
+	
+	@When("Admin sends a HTTPS request to the invalid role id")
+	public void admin_sends_a_https_request_to_the_invalid_role_id() {
+	   
+		response = request
+                .when()
+                .get(testData.getEndpoint());
+		response.then().log().all();
+	}
+
+	@Then("Admin receives {int} not found Status with RoleID not found message")
+	public void admin_receives_not_found_status_with_role_id_not_found_message(Integer int1) {
+	   
+		log.info("Response Body:\n{}", response.asPrettyString());
+		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
+		
+		String actualMessage = response.jsonPath().getString("message");
+	    assertEquals(actualMessage, testData.getExpectedMessage(), "Message mismatch");
+
+	    Boolean actualSuccess = response.jsonPath().getBoolean("success");
+	    assertEquals(actualSuccess, testData.getBooleanMessage(), "Success message mismatch");
+	}
+	
+//-------------------------------------Gets User by Program Batches-----------------------------------------------
+	
+	@Given("Admin creates GET request for the LMS API with valid batch id")
+	public void admin_creates_get_request_for_the_lms_api_with_valid_batch_id() {
+	    
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+		
+	}
+	
+	@Given("Admin creates GET request for the LMS API with invalid batch id")
+	public void admin_creates_get_request_for_the_lms_api_with_invalid_batch_id() {
+	   
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+	}
+
+	@Then("Admin receives {int} not found Status with batch id not found message")
+	public void admin_receives_not_found_status_with_batch_id_not_found_message(Integer int1) {
+	   
+		log.info("Response Body:\n{}", response.asPrettyString());
+		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
+		
+		String actualMessage = response.jsonPath().getString("message");
+	    assertEquals(actualMessage, testData.getExpectedMessage(), "Message mismatch");
+	}
+	
+//----------------------------------Gets Users for Program-------------------------------------------------------
+	
+	@Given("Admin creates GET request for the LMS API with valid program id")
+	public void admin_creates_get_request_for_the_lms_api_with_valid_program_id() {
+	    
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+	}
+
+	@Given("Admin creates GET request for the LMS API with invalid program id")
+	public void admin_creates_get_request_for_the_lms_api_with_invalid_program_id() {
+	    
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+	}
+
+	@Then("Admin receives {int} not found Status with program id not found message")
+	public void admin_receives_not_found_status_with_program_id_not_found_message(Integer int1) {
+	   
+		log.info("Response Body:\n{}", response.asPrettyString());
+		assertEquals(response.getStatusCode(), testData.getexpectedStatusCode());
+		
+		String actualMessage = response.jsonPath().getString("message");
+	    assertEquals(actualMessage, testData.getExpectedMessage(), "Message mismatch");
+	}
+	
+//------------------------------------Gets Users by RoleI---------------------------------------------------------
+	
+	@When("Admin sends a HTTPS request to the valid endpoint with R01 role id")
+	public void admin_sends_a_https_request_to_the_valid_endpoint_with_r01_role_id() {
+	    
+		response = request
+                .when()
+                .get(testData.getEndpoint());
+		response.then().log().all();
+	}
+
+	@When("Admin sends a HTTPS request to the valid endpoint with R02 role id")
+	public void admin_sends_a_https_request_to_the_valid_endpoint_with_r02_role_id() {
+	   
+		response = request
+                .when()
+                .get(testData.getEndpoint());
+		response.then().log().all();
+	}
+
+	@When("Admin sends a HTTPS request to the valid endpoint with R03 role id")
+	public void admin_sends_a_https_request_to_the_valid_endpoint_with_r03_role_id() {
+	   
+		response = request
+                .when()
+                .get(testData.getEndpoint());
+		response.then().log().all();
+	}
+	
+//-------------------------------------------Get User details by id-----------------------------------------------------
+	
+	@Given("Admin creates GET request with valid user id in endpoint for user details")
+	public void admin_creates_get_request_with_valid_user_id_in_endpoint_for_user_details() {
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+	}
+	
+	@Given("Admin creates GET request for the LMS API with invalid user id")
+	public void admin_creates_get_request_for_the_lms_api_with_invalid_user_id() {
+	    
+		TestcaseWrapper wrapper = getTestData();
+    	testData = JsonReader.getTestDataByScenarioName(
+		        Hooks.scenario.getName(),
+    	        wrapper.getGetRequest());
+	}
+	
 
 
 
