@@ -1,22 +1,24 @@
+@authToken
 Feature: Creating User with Role [Post Operation]
 
    Background: Admin Authorization
     Given Admin sets Authorization to Bearer Token
-
+@authToken @validcase1
   Scenario Outline: Admin creates a specific user role with valid request body and authorization
-    Given Admin creates POST request with valid request body for Role id <role_id>
-    When Admin sends a HTTPS request to the valid endpoint
+    Given Admin creates POST request with valid request body for Role id "<role_id>", Role name "<role_name>", and Role desc "<role_desc>"
+    When Admin sends a HTTPS request to the valid user endpoint
     Then Admin receives 201 Created Status with response body.
-
     Examples:
-| user_type | role_id |
-| admin     | 01      |
-| staff     | 02      |
-| student   | 03      |
+      | role_id | role_name     | role_desc  |
+      | R01     | ROLE_ADMIN    | LMS_Admin  |
+      | R02     | ROLE_STAFF    | LMS_Staff  |
+      | R03     | ROLE_STUDENT  | LMS_USER   |
 
+
+@authToken @validcase2
   Scenario: Admin creates a user with only mandatory field
     Given Admin creates POST request with only mandatory field
-    When Admin sends a HTTPS request to the valid endpoint
+    When Admin sends a HTTPS request to the valid user endpoint
     Then Admin receives 201 Created Status with response body.
 
   Scenario Outline: Admin attempts to create a user with a missing required field
