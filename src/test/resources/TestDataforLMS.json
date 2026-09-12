@@ -231,7 +231,7 @@
 		      "contentType": "application/json",
 		      "programRequest": {
 		        "programDescription": "Test Program",
-		        "programName": "RestAssuredOct",
+		        "programName": "RestAssuredTestOne",
 		        "programStatus": "Active"
 		      }
 		    }

@@ -1,4 +1,4 @@
-@authToken
+@authToken @GetProgram
 Feature: GET Program Module- All Programs, ProgramId, Program by All Users 
 
 Background: 
