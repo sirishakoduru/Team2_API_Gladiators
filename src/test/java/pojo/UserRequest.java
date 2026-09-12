@@ -1,6 +1,11 @@
 package pojo;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+
 public class UserRequest {
 	
     @JsonProperty("userComments")
@@ -28,7 +33,7 @@ public class UserRequest {
     private String userMiddleName;
     
     @JsonProperty("userPhoneNumber")
-    private Long userPhoneNumber;
+    private String userPhoneNumber;
     
     @JsonProperty("userRoleMaps")
     private List<UserRole> userRoleMaps;
@@ -39,6 +44,9 @@ public class UserRequest {
     
     @JsonProperty("userVisaStatus")
     private String userVisaStatus;
+    
+    @JsonProperty("userLogin")
+    private UserLogin userLogin;
     
     // Getters and Setters
     public String getUserComments()
@@ -105,11 +113,11 @@ public class UserRequest {
     {
     this.userMiddleName = userMiddleName;
     }
-    public Long getUserPhoneNumber() 
+    public String getUserPhoneNumber() 
     { 
     	return userPhoneNumber; 
     }
-    public void setUserPhoneNumber(Long userPhoneNumber) 
+    public void setUserPhoneNumber(String userPhoneNumber) 
     { 
     	this.userPhoneNumber = userPhoneNumber;
     }
@@ -137,5 +145,15 @@ public class UserRequest {
     public void setUserVisaStatus(String userVisaStatus) 
     { 
     	this.userVisaStatus = userVisaStatus;
+    }
+    
+	public UserLogin getUserLogin() 
+	{ 
+		return userLogin; 
+	}
+    
+    public void setUserLogin(UserLogin userLogin)
+    { 
+    	this.userLogin = userLogin; 
     }
 }

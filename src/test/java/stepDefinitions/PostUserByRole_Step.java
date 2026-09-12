@@ -1,36 +1,134 @@
 package stepDefinitions;
 
+import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import base.BaseClass;
+import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojo.TestcaseWrapper;
+import pojo.UserRequest;
+import pojo.JsonTestData;
+import utilities.ConfigReader;
+import utilities.JsonReader;
+import utilities.ScenarioContext;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertNotNull;
 
 public class PostUserByRole_Step extends BaseClass {
 	
-	Response response;
-	RequestSpecification request;
-	private static final Logger log = LoggerFactory.getLogger(PostUserByRole_Step.class);
-@Given("Admin creates POST request with valid request body for Role id {int}")
-public void admin_creates_post_request_with_valid_request_body_for_role_id(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	 RequestSpecification request;
+	    Response response;
+	    JsonTestData testData;
+	    private UserRequest userRequest;
+
+	       
+	    private static final Logger log = LoggerFactory.getLogger(PostUserByRole_Step.class);
+	    
+	    @Given("Admin creates POST request with valid request body for Role id {string}, Role name {string}, and Role desc {string}")
+	    public void admin_creates_post_request_with_valid_request_body_for_role(String roleId, String roleName, String roleDesc)
+	    {
+	        if (request == null) 
+	        {
+	            request = createRequest();
+	        }		
+	        
+	        TestcaseWrapper wrapper = getTestData();
+	        
+	        String testCaseName = "";
+	        
+	        switch (roleId) {
+	        
+	            case "R01":
+	                testCaseName = "Admin creates a admin user with valid request body and authorization";
+	                break;
+	                
+	            case "R02":
+	                testCaseName = "Admin creates a staff user with valid request body and authorization";
+	                break;
+	                
+	            case "R03":
+	                testCaseName = "Admin creates a student user with valid request body and authorization";
+	                break;
+	                
+	            default:
+	                testCaseName = Hooks.scenario.getName();
+	                break;
+	        }
+	        
+	        testData = JsonReader.getTestDataByScenarioName(testCaseName, wrapper.getPostRequest());
+	        
+	        userRequest = testData.getUserRequest();
+	        
+	        request.contentType(testData.getContentType()).body(userRequest);
+	        
+	        log.info("Request payload prepared for Role ID: {}, Role Name: {}, Role Desc: {}\n{}", roleId, roleName, roleDesc, userRequest);
+	        
+	    }
+
+
+@When("Admin sends a HTTPS request to the valid user endpoint")
+public void admin_sends_a_https_request_to_the_valid_user_endpoint() {
+	
+    if (request == null) {
+        request = createRequest();
+    }
+    
+    String endpoint = (testData != null && testData.getEndpoint() != null) ? testData.getEndpoint() : "/users/roleStatus";
+    
+    response = request.when().log().all().post(endpoint);
+    
+    Hooks.response = this.response;
 }
 
 @Then("Admin receives {int} Created Status with response body.")
-public void admin_receives_created_status_with_response_body(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+
+	public void admin_receives_created_status_with_response_body(Integer expectedStatusCode) {
+	
+        response.then().log().all()
+            .statusCode(expectedStatusCode)
+            .body("user.userId", notNullValue());
+        
+        String userId = response.jsonPath().getString("user.userId");
+        
+        assertNotNull(userId, "Response body should contain generated userId");
+        
+        assertEquals(response.getStatusCode(), expectedStatusCode.intValue(), "Status code mismatch!");
+        
+        log.info("User created successfully with User ID: {}", userId);
+        
+        ScenarioContext.set("userId", userId);
+        
+        log.info("User ID {} stored in ScenarioContext successfully", userId);
+    }
+
 
 @Given("Admin creates POST request with only mandatory field")
+
 public void admin_creates_post_request_with_only_mandatory_field() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	
+    if (request == null) {
+        request = createRequest();
+    }
+    
+    TestcaseWrapper wrapper = getTestData();
+    
+    testData = JsonReader.getTestDataByScenarioName("Admin creates a user with only mandatory field", wrapper.getPostRequest());
+    
+    userRequest = testData.getUserRequest();
+    
+    request.contentType(testData.getContentType()).body(userRequest);
+    
+    log.info("Request payload prepared for mandatory fields: \n{}", userRequest);
 }
 
 @Given("Admin creates POST request with FirstName field empty")
