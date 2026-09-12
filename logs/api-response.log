@@ -1,0 +1,779 @@
+2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U499",
+        "userFirstName": "TitanAdmin",
+        "userLastName": "Tester",
+        "userMiddleName": "QA",
+        "userPhoneNumber": "+91 9876153210",
+        "userLocation": "USA",
+        "userTimeZone": "EST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+        "userEduUg": "BS",
+        "userEduPg": "MS",
+        "userComments": "Automation Admin User",
+        "userVisaStatus": "H4-EAD",
+        "userLoginEmail": "titanadmin11@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U500",
+        "userFirstName": "TitanStaff",
+        "userLastName": "Tester",
+        "userMiddleName": "Lead",
+        "userPhoneNumber": "+91 9876253212",
+        "userLocation": "USA",
+        "userTimeZone": "CST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+        "userEduUg": "BTech",
+        "userEduPg": "MTech",
+        "userComments": "Automation Staff User",
+        "userVisaStatus": "H1B",
+        "userLoginEmail": "titanstaff22@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R02",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U501",
+        "userFirstName": "TitanStudent",
+        "userLastName": "Tester",
+        "userMiddleName": "Learner",
+        "userPhoneNumber": "+91 9876333213",
+        "userLocation": "India",
+        "userTimeZone": "IST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+        "userEduUg": "BSc",
+        "userEduPg": "MCA",
+        "userComments": "Automation Student User",
+        "userVisaStatus": "Indian-Citizen",
+        "userLoginEmail": "titanstudent33@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R03",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Status Code: 400
+
+2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "message": "Failed to create new User as phone number +91 9876443214 already exists !!",
+    "success": false
+}
+
+2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U502",
+        "userFirstName": "TitanAdmin",
+        "userLastName": "Tester",
+        "userMiddleName": "QA",
+        "userPhoneNumber": "+91 9876153910",
+        "userLocation": "USA",
+        "userTimeZone": "EST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+        "userEduUg": "BS",
+        "userEduPg": "MS",
+        "userComments": "Automation Admin User",
+        "userVisaStatus": "H4-EAD",
+        "userLoginEmail": "titanadmin19@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U503",
+        "userFirstName": "TitanStaff",
+        "userLastName": "Tester",
+        "userMiddleName": "Lead",
+        "userPhoneNumber": "+91 9876259212",
+        "userLocation": "USA",
+        "userTimeZone": "CST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+        "userEduUg": "BTech",
+        "userEduPg": "MTech",
+        "userComments": "Automation Staff User",
+        "userVisaStatus": "H1B",
+        "userLoginEmail": "titanstaff29@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R02",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U504",
+        "userFirstName": "TitanStudent",
+        "userLastName": "Tester",
+        "userMiddleName": "Learner",
+        "userPhoneNumber": "+91 9876335213",
+        "userLocation": "India",
+        "userTimeZone": "IST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+        "userEduUg": "BSc",
+        "userEduPg": "MCA",
+        "userComments": "Automation Student User",
+        "userVisaStatus": "Indian-Citizen",
+        "userLoginEmail": "titanstudent39@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R03",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U505",
+        "userFirstName": "TitanMandatory",
+        "userLastName": "Tester",
+        "userPhoneNumber": "+91 9876473214",
+        "userLocation": "USA",
+        "userTimeZone": "PST",
+        "userLinkedinUrl": null,
+        "userEduUg": null,
+        "userEduPg": null,
+        "userVisaStatus": "US-Citizen",
+        "userLoginEmail": "titanmandatory49@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U506",
+        "userFirstName": "TitanAdmin",
+        "userLastName": "Tester",
+        "userMiddleName": "QA",
+        "userPhoneNumber": "+91 9876157910",
+        "userLocation": "USA",
+        "userTimeZone": "EST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+        "userEduUg": "BS",
+        "userEduPg": "MS",
+        "userComments": "Automation Admin User",
+        "userVisaStatus": "H4-EAD",
+        "userLoginEmail": "titanadmin16@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U507",
+        "userFirstName": "TitanStaff",
+        "userLastName": "Tester",
+        "userMiddleName": "Lead",
+        "userPhoneNumber": "+91 9876279212",
+        "userLocation": "USA",
+        "userTimeZone": "CST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+        "userEduUg": "BTech",
+        "userEduPg": "MTech",
+        "userComments": "Automation Staff User",
+        "userVisaStatus": "H1B",
+        "userLoginEmail": "titanstaff27@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R02",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U508",
+        "userFirstName": "TitanStudent",
+        "userLastName": "Tester",
+        "userMiddleName": "Learner",
+        "userPhoneNumber": "+91 9876337213",
+        "userLocation": "India",
+        "userTimeZone": "IST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+        "userEduUg": "BSc",
+        "userEduPg": "MCA",
+        "userComments": "Automation Student User",
+        "userVisaStatus": "Indian-Citizen",
+        "userLoginEmail": "titanstudent79@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R03",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U509",
+        "userFirstName": "TitanMandatory",
+        "userLastName": "Tester",
+        "userPhoneNumber": "+91 9876473714",
+        "userLocation": "USA",
+        "userTimeZone": "PST",
+        "userLinkedinUrl": null,
+        "userEduUg": null,
+        "userEduPg": null,
+        "userVisaStatus": "US-Citizen",
+        "userLoginEmail": "titanmandatory47@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U510",
+        "userFirstName": "TitanAdmin",
+        "userLastName": "Tester",
+        "userMiddleName": "QA",
+        "userPhoneNumber": "+91 9876156610",
+        "userLocation": "USA",
+        "userTimeZone": "EST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+        "userEduUg": "BS",
+        "userEduPg": "MS",
+        "userComments": "Automation Admin User",
+        "userVisaStatus": "H4-EAD",
+        "userLoginEmail": "titanadmin1666@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U511",
+        "userFirstName": "TitanStaff",
+        "userLastName": "Tester",
+        "userMiddleName": "Lead",
+        "userPhoneNumber": "+91 9876276612",
+        "userLocation": "USA",
+        "userTimeZone": "CST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+        "userEduUg": "BTech",
+        "userEduPg": "MTech",
+        "userComments": "Automation Staff User",
+        "userVisaStatus": "H1B",
+        "userLoginEmail": "titanstaff2766@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R02",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+
+2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U512",
+        "userFirstName": "TitanStudent",
+        "userLastName": "Tester",
+        "userMiddleName": "Learner",
+        "userPhoneNumber": "+91 9876336613",
+        "userLocation": "India",
+        "userTimeZone": "IST",
+        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+        "userEduUg": "BSc",
+        "userEduPg": "MCA",
+        "userComments": "Automation Student User",
+        "userVisaStatus": "Indian-Citizen",
+        "userLoginEmail": "titanstudent7669@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R03",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+
+2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+
+2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Status Code: 201
+
+2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "user": {
+        "userId": "U513",
+        "userFirstName": "TitanMandatory",
+        "userLastName": "Tester",
+        "userPhoneNumber": "+91 9876476614",
+        "userLocation": "USA",
+        "userTimeZone": "PST",
+        "userLinkedinUrl": null,
+        "userEduUg": null,
+        "userEduPg": null,
+        "userVisaStatus": "US-Citizen",
+        "userLoginEmail": "titanmandatory466@gmail.com"
+    },
+    "roles": [
+        {
+            "roleId": "R01",
+            "userRoleStatus": "Active"
+        }
+    ]
+}
+

@@ -402,7 +402,121 @@
         "programName": "RestAssuredTestOne",
         "programStatus": "Active"
       }
-    }
+    },
+	{
+	     "testcaseName": "Admin creates a admin user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Admin User",
+	       "userEduPg": "MS",
+	       "userEduUg": "BS",
+	       "userFirstName": "TitanAdmin",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+	       "userLocation": "USA",
+	       "userMiddleName": "QA",
+	       "userPhoneNumber": "+91 9876156610",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R01",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "EST",
+	       "userVisaStatus": "H4-EAD",
+	       "userLogin": {
+	         "userLoginEmail": "titanadmin1666@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	     "testcaseName": "Admin creates a staff user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Staff User",
+	       "userEduPg": "MTech",
+	       "userEduUg": "BTech",
+	       "userFirstName": "TitanStaff",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+	       "userLocation": "USA",
+	       "userMiddleName": "Lead",
+	       "userPhoneNumber": "+91 9876276612",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R02",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "CST",
+	       "userVisaStatus": "H1B",
+	       "userLogin": {
+	         "userLoginEmail": "titanstaff2766@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	     "testcaseName": "Admin creates a student user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Student User",
+	       "userEduPg": "MCA",
+	       "userEduUg": "BSc",
+	       "userFirstName": "TitanStudent",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+	       "userLocation": "India",
+	       "userMiddleName": "Learner",
+	       "userPhoneNumber": "+91 9876336613",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R03",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "IST",
+	       "userVisaStatus": "Indian-Citizen",
+	       "userLogin": {
+	         "userLoginEmail": "titanstudent7669@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	     "testcaseName": "Admin creates a user with only mandatory field",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userFirstName": "TitanMandatory",
+	       "userLastName": "Tester",
+	       "userLocation": "USA",
+	       "userPhoneNumber": "+91 9876476614",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R01",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "PST",
+	       "userVisaStatus": "US-Citizen",
+	       "userLogin": {
+	         "userLoginEmail": "titanmandatory466@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   }
   ]
-  
 }

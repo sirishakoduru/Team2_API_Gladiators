@@ -1,0 +1,140 @@
+2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@4e48462d
+2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@63124022
+2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@6b25ef1c
+2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@4e48462d
+2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@b8a144e
+2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@13e00016
+2026-09-12 00:47:36 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ
+2026-09-12 00:47:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@4a58e0e9
+2026-09-12 00:47:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@75959b0c
+2026-09-12 00:47:37 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@28e91f6d
+2026-09-12 00:47:38 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@497921d0
+2026-09-12 00:50:28 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw
+2026-09-12 00:50:28 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@af9dd34
+2026-09-12 00:50:29 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@5dd3727c
+2026-09-12 00:50:30 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@93fb44
+2026-09-12 00:50:31 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@76f9e000
+2026-09-12 10:54:39 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw
+2026-09-12 10:54:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@6644bdf5
+2026-09-12 10:54:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@5dce5c03
+2026-09-12 10:54:41 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@1ab9c735
+2026-09-12 10:54:42 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@40a7974
+2026-09-12 12:56:01 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@55c1ced9
+2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@759a678a
+2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@4e4395c
+2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@57c69937
+2026-09-12 13:04:04 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@410fc508
+2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@3514ac7d
+2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@431babe6
+2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@22c29aa8
+2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@76a14c8d
+2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@515ab3f2
+2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@28be7fec
+2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@6c0b51da
+2026-09-12 13:11:33 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ
+2026-09-12 13:11:33 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@13cf5f8a
+2026-09-12 13:11:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@70e5737f
+2026-09-12 13:11:38 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@2ac3d530
+2026-09-12 13:11:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@3ad558bf
+2026-09-12 13:45:36 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw
+2026-09-12 13:45:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@51d88c38
+2026-09-12 13:45:39 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U491
+2026-09-12 13:45:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@42ebece0
+2026-09-12 13:45:40 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U492
+2026-09-12 13:45:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@3f9e8af5
+2026-09-12 13:45:42 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U493
+2026-09-12 13:45:42 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@6ba355e4
+2026-09-12 13:45:44 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U494
+2026-09-12 14:14:48 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM2ODg4LCJleHAiOjE3ODkyNjU2ODh9.QL7-Pp2rOvs-sSTXsvLbONKVn7p-loHEjvtrPNR5an6XBhpIGo2vzxyJndTTuDnkoPbtcV5tZZgHnk6s9EStpw
+2026-09-12 14:14:48 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@615ef20
+2026-09-12 14:14:51 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U499
+2026-09-12 14:14:51 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@35c00c
+2026-09-12 14:14:52 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U500
+2026-09-12 14:14:53 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@2b0494a8
+2026-09-12 14:14:54 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U501
+2026-09-12 14:14:54 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@593f7d2e
+2026-09-12 14:18:17 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM3MDk3LCJleHAiOjE3ODkyNjU4OTd9.TIn8k6yTN3NNcEeb9letUpED2g39cAWEpijHXKIomStS6c4sqd4-gEbh7tymKPUSnD9WskY_ILuqbbrFVwaqqg
+2026-09-12 14:18:17 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
+pojo.UserRequest@4fa8297b
+2026-09-12 14:18:20 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U502
+2026-09-12 14:18:20 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
+pojo.UserRequest@3de383f7
+2026-09-12 14:18:21 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U503
+2026-09-12 14:18:21 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
+pojo.UserRequest@76104df5
+2026-09-12 14:18:23 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U504
+2026-09-12 14:18:23 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@3ad558bf
+2026-09-12 14:18:24 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U505
+2026-09-12 14:33:37 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM4MDE3LCJleHAiOjE3ODkyNjY4MTd9.ESDzvmh9GM5uQgprZ2Ke7Jlc49q98r9PZYd9nOnppPs_ovl_2VDMobJ7ViKp3i39zzTWOY1drTvA3u0G0q0IFQ
+2026-09-12 14:33:37 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
+pojo.UserRequest@584136c1
+2026-09-12 14:33:39 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U506
+2026-09-12 14:33:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
+pojo.UserRequest@33ccead
+2026-09-12 14:33:41 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U507
+2026-09-12 14:33:41 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
+pojo.UserRequest@61246109
+2026-09-12 14:33:43 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U508
+2026-09-12 14:33:43 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@1826475
+2026-09-12 14:33:44 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U509
+2026-09-12 14:40:18 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM4NDE4LCJleHAiOjE3ODkyNjcyMTh9.ryc596pI1zp0N87ruioIZ8jz5_HQgGiP2VrVn4eUPgc8IPOsdHHPWhHY_LHPbJm17B6aFZYI_JAcBTLAy9nsvA
+2026-09-12 14:40:18 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
+pojo.UserRequest@51d88c38
+2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U510
+2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U510 stored in ScenarioContext successfully
+2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
+pojo.UserRequest@7c5d36c3
+2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U511
+2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U511 stored in ScenarioContext successfully
+2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
+pojo.UserRequest@18f13756
+2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U512
+2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U512 stored in ScenarioContext successfully
+2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@59d0fac9
+2026-09-12 14:40:25 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U513
+2026-09-12 14:40:25 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U513 stored in ScenarioContext successfully
