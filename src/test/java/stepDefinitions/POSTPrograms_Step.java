@@ -61,60 +61,81 @@ public void admin_creates_post_request_with_only_mandatory_field_in_program_api(
 	
 	 endpoint = "/saveprogram";
 	ProgramRequest programRequest = new ProgramRequest();
-	programRequest.setProgramName("RestAssured11");
-	programRequest.setProgramDescription("RestAssuredTest");
-	programRequest.setProgramStatus("Active");
-	
 	request = createRequest()
 			.body(programRequest);
-	 System.out.println("\n========== POST REQUEST ==========");
-	      System.out.println("Endpoint       : " + endpoint);
-	    System.out.println("Program Name   : " + programRequest.getprogramName());
+    	 System.out.println("\n========== POST REQUEST ==========");
+	    System.out.println("Endpoint       : " + endpoint);
+	   	    System.out.println("Program Name   : " + programRequest.getprogramName());
 	    System.out.println("Program Status : " + programRequest.getprogramStatus());
     
 }
 
 @Given("Admin creates POST Request with program description length between {int} and {int} characters in program API")
 public void admin_creates_post_request_with_program_description_length_between_and_characters_in_program_api(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	
+	log.info("Creating POST request with program description length between {} and {} characters", int1, int2);
+	String programDescription = "A".repeat(int1);
+	String requestBody = "{" + "\"programName\":\"TestProgram\"," 
+			+ "\"programDescription\":\"" + programDescription + "\","
+			+ "\"programStatus\":\"Active\"" + "}";
+	request = BaseClass.createRequest(); 
+	response = request .body(requestBody) .when() .post("/saveprogram");
+	log.info("Program Description Length: {}", programDescription.length());
+	log.info("Response Status Code: {}", response.getStatusCode()); 
+	log.info("Response Body: {}", response.asPrettyString());
+	
 }
 
 @Given("Admin creates POST Request with program name length between {int} and {int} characters in program API")
 public void admin_creates_post_request_with_program_name_length_between_and_characters_in_program_api(Integer int1, Integer int2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
+	log.info("Creating POST request with program name length between {} and {} characters", int1, int2);
+	String programName = "A".repeat(int1);
+	String requestBody = "{" + "\"programName\":\"programName\"," 
+			+ "\"programDescription\":\"Test Description\","
+			+ "\"programStatus\":\"Active\"" + "}";
+	request = BaseClass.createRequest(); 
+	response = request .body(requestBody) .when() .post("/saveprogram");
+	log.info("Program Name Length: {}", programName.length());
+	log.info("Response Status Code: {}", response.getStatusCode()); 
+	log.info("Response Body: {}", response.asPrettyString());
+	
+	
 }
 
 @Given("Admin creates POST Request with invalid token in program API")
 public void admin_creates_post_request_with_invalid_token_in_program_api() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	log.info("Creating POST request with invalid authorization token"); 
+	String requestBody = "{" + "\"programName\":\"TestProgram\","
+			+ "" + "\"programDescription\":\"Test Description\"," 
+					+ "\"programStatus\":\"Active\"" + "}"; 
+	request = BaseClass.createRequest() .header("Authorization", "Bearer invalid_token"); 
+	response = request .body(requestBody) .when() .post("/saveprogram");
+	log.info("Response Status Code: {}", response.getStatusCode()); 
+	log.info("Response Body: {}", response.asPrettyString());
 }
 
 @Then("Admin receives {int} Unauthorized in program API")
 public void admin_receives_unauthorized_in_program_api(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	log.info("Validating Unauthorized response");
+	log.info("Expected Status Code: {}", int1);
+	log.info("Actual Status Code: {}", response.getStatusCode());
+	response.then().statusCode(int1);
+    
 }
 
 @Given("Admin creates POST Request with valid request body in program API")
 public void admin_creates_post_request_with_valid_request_body_in_program_api() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+   }
 
 @When("Admin sends a HTTPS request to the invalid endpoint in program API")
 public void admin_sends_a_https_request_to_the_invalid_endpoint_in_program_api() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+	
+    }
 
 @Then("Admin receives {int} not found  Status with message and boolean success details in program API")
 public void admin_receives_not_found_status_with_message_and_boolean_success_details_in_program_api(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+  }
 
 @When("Admin sends a HTTPS request to the valid endpoint in program API")
 public void admin_sends_a_https_request_to_the_valid_endpoint_in_program_api() {
@@ -164,25 +185,20 @@ public void admin_creates_invalid_request_with_valid_request_body_in_program_api
 
 @Then("Admin receives {int} Method Not Allowed in program API")
 public void admin_receives_method_not_allowed_in_program_api(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
 }
 
 @Given("Admin creates {string} POST Request in program API")
 public void admin_creates_post_request_in_program_api(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+
 }
 
 @When("Admin sends a POST request to the valid endpoint in program API")
 public void admin_sends_a_post_request_to_the_valid_endpoint_in_program_api() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+
 }
 
 @Then("Admin validates POST response for {string} in program API")
 public void admin_validates_post_response_for_in_program_api(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+  }
 }

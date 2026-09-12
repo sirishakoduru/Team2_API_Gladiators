@@ -389,8 +389,20 @@
 	  "expectedStatusCode": 401
 	}
 	
+  ],
 
+  "PostRequest": [
+    {
+      "testcaseName": "Add New Program",
+      "endpoint": "/saveprogram",
+      "statusmessage": "Created",
+      "contentType": "application/json",
+      "programRequest": {
+        "programDescription": "Test Program",
+        "programName": "RestAssuredTestOne",
+        "programStatus": "Active"
+      }
+    }
   ]
-
   
 }

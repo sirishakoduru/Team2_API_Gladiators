@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import base.BaseClass;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -30,14 +29,31 @@ public void admin_sends_a_get_request_for_in_program_api(String scenarioName) {
 		response = request.when().get("/allPrograms"); 
 		break;
 	case "Get all Programs Invalid EndPoint":
-		response = request.when().get("/allPrograms"); 
+		response = request.when().get("/invalidEndpoint"); 
 		break;
 	case "Get all Programs Invalid Method":
 		response = request.when().get("/allprograms");
 		break;
-		
 	case "Get Program By ID with Valid ProgramID":
-		response= request.when().get("/");
+		response= request.pathParam("programId",1).when().get("/programs/{programId}");
+		break;
+	case "Get Program By ID with Invalid ProgramID":
+		response= request.pathParam("programId",99999).when().get("/programs/{programId}");
+		break;
+	case "Get Program By ID Invalid BaseURI":
+		response= request.when().get("/programs/{programId}");
+		break;
+	case "Get Program By ID Invalid EndPoint ":
+		response= request.when().get("/programs/{programId}");
+		break;
+	case "Get All Programs with Users Valid EndPoint":
+		response= request.when().get("/allProgramsWithUsers");
+		break;
+	case "Get All Programs with Users Invalid EndPoint":
+		response= request.when().get("/invalidProgramsWithUsers");
+		break;
+	case "Get All Programs with Users Invalid Method":
+		response= request.when().get("/allProgramsWithUsers");
 		break;
 	default:	
 	throw new IllegalArgumentException( "Unknown scenario: " + scenarioName);		
@@ -87,8 +103,7 @@ public void admin_validates_get_response_for_get_all_programs_valid_end_point_in
     	response.then().statusCode(404);
     	log.info("Expected Status: 404");
     	log.info("Actual Status:{}", response.getStatusCode());
-    	break;
-    	
+    	break; 	
     case "Get All Programs with Users Valid EndPoint":
     	response.then().statusCode(200);
     	log.info("Expected Status: 200");
