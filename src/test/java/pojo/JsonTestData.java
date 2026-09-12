@@ -3,6 +3,10 @@ package pojo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.restassured.RestAssured;
+//import pojoclass.Login;
+//import pojoclass.Login;
+//import pojoclass.ForgotPasswordRequest;
+//import pojoclass.ResetPasswordRequest;
 
 //@JsonIgnoreProperties(ignoreUnknown = true)
 
@@ -22,15 +26,15 @@ public class JsonTestData {
     
     @JsonProperty("loginRequest")
     public LoginRequest loginRequest;
-//    
-//    @JsonProperty("forgotPasswordRequest")
-//    public ForgotPasswordRequest forgotPasswordRequest;
+
+    @JsonProperty("forgotPasswordRequest")
+    public ForgotPasswordRequest forgotPasswordRequest;
     
     @JsonProperty("method")
     public String  method;
     
-//    @JsonProperty("resetPasswordRequest")
-//    public ResetPasswordRequest resetPasswordRequest;
+    @JsonProperty("resetPasswordRequest")
+    public ResetPasswordRequest resetPasswordRequest;
     
     @JsonProperty("authType")
     public String authType;
@@ -122,7 +126,14 @@ public class JsonTestData {
     public String getbodyType() {
         return bodyType;
     }
+    public LoginRequest getLoginRequest() {
+        return loginRequest;
+    }
 
+    public void setLoginRequest(LoginRequest loginRequest) {
+        this.loginRequest = loginRequest;
+    }
+    
     public void setbodyType(String bodyType) {
         this.bodyType = bodyType;
     }
@@ -158,4 +169,21 @@ public class JsonTestData {
     public void setAuthType(String authType) {
         this.authType = authType;
     }
-}
+
+    public ForgotPasswordRequest getForgotPasswordRequest() {
+        return forgotPasswordRequest;
+    }
+
+    public void setForgotPasswordRequest(ForgotPasswordRequest forgotPasswordRequest) {
+        this.forgotPasswordRequest = forgotPasswordRequest;
+    }
+    
+    public ResetPasswordRequest getResetPasswordRequest() {
+        return resetPasswordRequest;
+    }
+
+    public void setResetPasswordRequest(ResetPasswordRequest resetPasswordRequest) {
+        this.resetPasswordRequest = resetPasswordRequest;
+    }
+
+    }
