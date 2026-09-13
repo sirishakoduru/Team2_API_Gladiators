@@ -81,7 +81,7 @@
 	  {
 	    "testcaseName": "Get all users info with invalid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/users/rolesss",
+	    "endpoint": "/users/rolesESDF",
 	    "expectedStatusCode": 404
 	  },
 	  {
