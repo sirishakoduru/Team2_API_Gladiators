@@ -387,7 +387,33 @@
 	  "method": "GET",
 	  "endpoint": "/users/details/U15",
 	  "expectedStatusCode": 401
-	}
+	},
+	{
+	      "testcaseName": "Get all batches with valid Endpoint",
+	      "method": "GET",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 200
+	    },
+	    {
+	      "testcaseName": "Get batch by valid batch ID",
+	      "method": "GET",
+	      "endpoint": "/batches/batchId/{batchId}",
+	      "expectedStatusCode": 200
+	    },
+	    {
+	      "testcaseName": "Get batch by valid batch Name",
+	      "method": "GET",
+	      "endpoint": "/batches/batchName/{batchName}",
+	      "expectedStatusCode": 200
+	    },
+	    {
+	      "testcaseName": "Get batches by valid program ID",
+	      "method": "GET",
+	      "endpoint": "/batches/program/{programId}",
+	      "expectedStatusCode": 200
+	    }
+	
+	
 	
   ],
 
@@ -399,7 +425,7 @@
       "contentType": "application/json",
       "programRequest": {
         "programDescription": "Test Program",
-        "programName": "RestAssuredTestOne",
+        "programName": "RestAssuredDegie",
         "programStatus": "Active"
       }
     },
@@ -518,5 +544,18 @@
 	       }
 	     }
 	   }
+  ,
+ 
+  {
+    "testcaseName": "Admin creates batch with valid data",
+    "method": "POST",
+    "endpoint": "/batches",
+    "expectedStatusCode": 201,
+    "batchRequest": {
+      "batchDescription": "Valid Description",
+      "batchNoOfClasses": 12,
+      "batchStatus": "ACTIVE"
+    }
+  }
   ]
 }
