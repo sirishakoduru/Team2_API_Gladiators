@@ -45,11 +45,14 @@ public class Hooks extends BaseClass {
                      .body(login)
                      .when()
                      .post(ConfigReader.getProperty("LoginEndpoint"));
-             LoginResponse loginResponse = response.as(LoginResponse.class);
-
-             TokenManager.setToken(loginResponse.getToken());
-
-             log.info("Token generated successfully: {}", TokenManager.getToken());
+             if (response.getStatusCode() == 200) {
+                 LoginResponse loginResponse = response.as(LoginResponse.class);
+                 TokenManager.setToken(loginResponse.getToken());
+                 log.info("Token generated successfully: {}", TokenManager.getToken());
+             } else {
+                 log.error("Login failed: {}", response.asPrettyString());
+                 throw new RuntimeException("Login failed. Cannot continue test execution.");
+             }
         }
     }
 
