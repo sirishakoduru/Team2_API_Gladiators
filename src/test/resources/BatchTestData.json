@@ -1,0 +1,291 @@
+{
+  "BatchTestPrograms": {
+    "positiveProgramName": "SDETPositiveBatchProgram",
+    "negativeProgramName": "SDETNegativeBatchProgram"
+  },
+  "PostRequest": [
+    {
+      "testcaseName": "Admin creates batch with both mandatory and optional fields",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 201,
+      "batchRequest": {
+        "batchDescription": "Valid Description Both Fields",
+        "batchNoOfClasses": 12,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with only mandatory fields",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 201,
+      "batchRequest": {
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with a program name that does not match the associated program id",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 201,
+      "batchRequest": {
+        "programName": "MismatchedProgramName",
+        "batchDescription": "Testing Mismatched Name",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with only optional fields",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Only Optional Description"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch without underscore format in batch name",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDETBatchNameNoUnderscore",
+        "batchDescription": "No Underscore Format",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with hyphen format in batch name",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDET-Batch-Hyphen",
+        "batchDescription": "Hyphen Format",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with characters in the suffix of batch name",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDETBatch_SuffixChars",
+        "batchDescription": "Character Suffix Format",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with special characters in the suffix of batch name",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDETBatch_@#$",
+        "batchDescription": "Special Char Suffix",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with batch name length more than 28 characters in total",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDETBatchThisNameIsExtremelyLongExceedingTwentyEightChars",
+        "batchDescription": "Over Length Batch Name",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with batch name length less than 6 characters in total",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDET",
+        "batchDescription": "Under Length Batch Name",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with duplicate batch name",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchName": "SDETBatch_Existing",
+        "batchDescription": "Duplicate Batch Name Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with batch description less than 4 characters",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "ABC",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with batch description more than 25 characters",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "This description is way too long and exceeds twenty five characters",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with random characters in status field",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Invalid Status Text",
+        "batchNoOfClasses": 10,
+        "batchStatus": "UNKNOWN"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with random numbers in status field",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Invalid Status Numbers",
+        "batchNoOfClasses": 10,
+        "batchStatus": "12345"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with special characters in status field",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Invalid Status Special",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACT@#!"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with non numeric value in number of classes",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Non Numeric Classes",
+        "batchNoOfClasses": "Ten",
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with number of classes length less than 1",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Zero Classes",
+        "batchNoOfClasses": 0,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with number of classes length more than 99",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "batchDescription": "Over Max Classes",
+        "batchNoOfClasses": 100,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with inactive program ID",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 400,
+      "batchRequest": {
+        "programId": 99999,
+        "batchDescription": "Inactive Program Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with program that is not exist in the system",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 404,
+      "batchRequest": {
+        "programId": 0,
+        "batchDescription": "Non Existing Program Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with invalid endpoint",
+      "method": "POST",
+      "endpoint": "/batchesInvalidEndpoint",
+      "expectedStatusCode": 404,
+      "batchRequest": {
+        "batchDescription": "Invalid Endpoint Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with invalid content type",
+      "method": "POST",
+      "endpoint": "/batches",
+      "contentType": "text/plain",
+      "expectedStatusCode": 415,
+      "batchRequest": {
+        "batchDescription": "Invalid Content Type Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates batch with invalid method",
+      "method": "GET",
+      "endpoint": "/batches",
+      "expectedStatusCode": 405,
+      "batchRequest": {
+        "batchDescription": "Invalid Method Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    },
+    {
+      "testcaseName": "Admin creates a batch with without authorization",
+      "method": "POST",
+      "endpoint": "/batches",
+      "expectedStatusCode": 401,
+      "batchRequest": {
+        "batchDescription": "No Auth Test",
+        "batchNoOfClasses": 10,
+        "batchStatus": "ACTIVE"
+      }
+    }
+  ]
+}

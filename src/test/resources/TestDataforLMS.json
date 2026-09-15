@@ -217,258 +217,2163 @@
 	  "testcaseName": "Admin retrieves all users info without Authorization",
 	  "endpoint": "/users/roles",
 	  "expectedStatusCode": 401
-	}
-	
 
-  ],
-
-  "PostRequest":[
-		  
+	},
+	{
+	  "testcaseName": "Admin retrieves count of all active & inactive users without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/byStatus?id=R03",
+	  "expectedStatusCode": 401
+	},
+	{
+	  "testcaseName": "Admin retrieves all users linked to batch id without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/programBatch/2",
+	  "expectedStatusCode": 401
+	},
+	{
+	  "testcaseName": "Admin retrieves all users linked to program id without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/programs/1",
+	  "expectedStatusCode": 401
+	},
+	{
+	  "testcaseName": "Admin retrieves all users with admin role without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/roles/R01",
+	  "expectedStatusCode": 401
+	},
+	{
+	  "testcaseName": "Admin retrieves batch id for user without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/user/U17",
+	  "expectedStatusCode": 401
+	},
+	{
+	  "testcaseName": "Admin retrieves user details without Authorization",
+	  "method": "GET",
+	  "endpoint": "/users/details/U15",
+	  "expectedStatusCode": 401
+	},
+	{
+	      "testcaseName": "Get all batches with valid Endpoint",
+	      "method": "GET",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 200
+	    },
 		{
-		      "testcaseName": "Add New Program",
-		      "endpoint": "/saveprogram",
-		      "statusmessage": "Created",
-		      "contentType": "application/json",
-		      "programRequest": {
-		        "programDescription": "Test Program",
-		        "programName": "RestAssuredTestFour",
-		        "programStatus": "Active"
-		      }
+		      "testcaseName": "Get all batches with invalid Endpoint",
+		      "method": "GET",
+		      "endpoint": "/batchesss",
+		      "expectedStatusCode": 404
 		    },
-			
-			{
-					      "testcaseName": "Invalid Token",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Unauthorized",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "InvalidTokenProgram",
-					        "programStatus": "Active"
-					      }
-					    },					  
-
-					    {
-					      "testcaseName": "Admin creates a program with already existing program name",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "RestAssuredTestOne",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with trailing space in program name",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "TestProgram ",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with only numbers in program name",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "123456",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with invalid status keyword",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "InvalidStatusProgram",
-					        "programStatus": "InvalidStatus"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program without Program name",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with Program name length less than desired length",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test Program",
-					        "programName": "Abc",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with empty payload",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "",
-					        "programName": "",
-					        "programStatus": ""
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with alpha & special char in program description",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "Test@#$%Description",
-					        "programName": "SpecialDescProgram",
-					        "programStatus": "Active"
-					      }
-					    },
-
-					    {
-					      "testcaseName": "Admin creates a program with program description length more than desired length",
-					      "endpoint": "/saveprogram",
-					      "statusmessage": "Bad Request",
-					      "contentType": "application/json",
-					      "programRequest": {
-					        "programDescription": "This description is definitely more than twenty five characters",
-					        "programName": "LongDescriptionProgram",
-					        "programStatus": "Active"
-					      }
-					    },
-						{
-						  "testcaseName": "Admin creates a program with program name length between 4 and 25 characters",
-						  "endpoint": "/saveprogram",
-						  "statusmessage": "Created",
-						  "contentType": "application/json",
-						  "programRequest": {
-						    "programDescription": "Test Program",
-						    "programName": "ValidProgramName",
-						    "programStatus": "Active"
-						  }
-						},
-						{
-						  "testcaseName": "Admin creates a program with program description length between 4 and 25 characters",
-						  "endpoint": "/saveprogram",
-						  "statusmessage": "Created",
-						  "contentType": "application/json",
-						  "programRequest": {
-						    "programDescription": "Test Description",
-						    "programName": "ValidProgram",
-						    "programStatus": "Active"
-						  }
-						}						
-						
-
-					  
-									
+		    {
+		      "testcaseName": "Get all batches with invalid Method",
+		      "method": "PUT",
+		      "endpoint": "/batches",
+		      "expectedStatusCode": 405
+		    },
+	    {
+	      "testcaseName": "Get batch by valid batch ID",
+	      "method": "GET",
+	      "endpoint": "/batches/batchId/{batchId}",
+	      "expectedStatusCode": 200
+	    },
+	    {
+	      "testcaseName": "Get batch by valid batch Name",
+	      "method": "GET",
+	      "endpoint": "/batches/batchName/{batchName}",
+	      "expectedStatusCode": 200
+	    },
+	    {
+	      "testcaseName": "Get batches by valid program ID",
+	      "method": "GET",
+	      "endpoint": "/batches/program/{programId}",
+	      "expectedStatusCode": 200
+	    }
   ],
-  
-  "PutRequest":[
-  	  
-  	{
-  	      "testcaseName": "Admin updates a program with valid program id",
-		  "method": "PUT",
-  	      "endpoint": "/putprogram/{programId}",
-  	      "statusmessage": "Created",
-  	      "contentType": "application/json",
-  	      "programRequest": {
-  	        "programDescription": "Update Test Program",
-  	        "programName": "Updated Program One",
-  	        "programStatus": "Active"
-  	      },
-		  "expectedStatusCode": 200
-  	    },
-		{
-			   "testcaseName": "Admin updates a program with invalid program id",
-			   "method": "PUT",
-			   "endpoint": "/putprogram/999",
-			   "contentType": "application/json",
-			   "programRequest": {
-				"programDescription": "Update Test Program",
-				 "programName": "Updated Program One",
-			     "programStatus": "Active"
-			   },
-			   "expectedStatusCode": 404
-			 },
-			 {
-			    "testcaseName": "Admin updates a program with already existing program name in request body",
-			    "method": "PUT",
-			    "endpoint": "/putprogram/{programId}",
-			    "contentType": "application/json",
-			    "programRequest": {
-			      "programDescription": "Update Test Program",
-			      "programName": "RestAssuredTestOne",
-			      "programStatus": "Active"
-			    },
-			    "expectedStatusCode": 400
-			  },
-			  {
-			     "testcaseName": "Admin updates a program without request body",
-			     "method": "PUT",
-			     "endpoint": "/putprogram/{programId}",
-			     "contentType": "application/json",
-			     "expectedStatusCode": 400
-			   },
-			  {
-			     "testcaseName": "Admin updates a program with invalid method",
+
+  "PostRequest": [
+    {
+      "testcaseName": "Add New Program",
+      "endpoint": "/saveprogram",
+      "statusmessage": "Created",
+      "contentType": "application/json",
+      "programRequest": {
+        "programDescription": "Test Program",
+        "programName": "RestAssuredDegiw",
+        "programStatus": "Active"
+      }
+    },
+	{
+	     "testcaseName": "Admin creates a admin user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Admin User",
+	       "userEduPg": "MS",
+	       "userEduUg": "BS",
+	       "userFirstName": "TitanAdmin",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+	       "userLocation": "USA",
+	       "userMiddleName": "QA",
+	       "userPhoneNumber": "+91 9993456432",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R01",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "EST",
+	       "userVisaStatus": "H4-EAD",
+	       "userLogin": {
+	         "userLoginEmail": "titan934sadmin167@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	     "testcaseName": "Admin creates a staff user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Staff User",
+	       "userEduPg": "MTech",
+	       "userEduUg": "BTech",
+	       "userFirstName": "TitanStaff",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+	       "userLocation": "USA",
+	       "userMiddleName": "Lead",
+	       "userPhoneNumber": "+91 9994344321",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R02",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "CST",
+	       "userVisaStatus": "H1B",
+	       "userLogin": {
+	         "userLoginEmail": "tsit9a4ns34taff2432@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	     "testcaseName": "Admin creates a student user with valid request body and authorization",
+	     "method": "POST",
+	     "endpoint": "/users/roleStatus",
+	     "contentType": "application/json",
+	     "expectedStatusCode": 201,
+	     "userRequest": {
+	       "userComments": "Automation Student User",
+	       "userEduPg": "MCA",
+	       "userEduUg": "BSc",
+	       "userFirstName": "TitanStudent",
+	       "userLastName": "Tester",
+	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+	       "userLocation": "India",
+	       "userMiddleName": "Learner",
+	       "userPhoneNumber": "+91 9993347432",
+	       "userRoleMaps": [
+	         {
+	           "roleId": "R03",
+	           "userRoleStatus": "Active"
+	         }
+	       ],
+	       "userTimeZone": "IST",
+	       "userVisaStatus": "Indian-Citizen",
+	       "userLogin": {
+	         "userLoginEmail": "titan9s45st4udent732@gmail.com",
+	         "loginStatus": "Active"
+	       }
+	     }
+	   },
+	   {
+	   	     "testcaseName": "Admin creates a user with only mandatory field",
+	   	     "method": "POST",
+	   	     "endpoint": "/users/roleStatus",
+	   	     "contentType": "application/json",
+	   	     "expectedStatusCode": 201,
+	   	     "userRequest": {
+	   	       "userFirstName": "TitanMandatory",
+	   	       "userLastName": "Tester",
+	   	       "userLocation": "USA",
+	   	       "userPhoneNumber": "+91 9992344914",
+	   	       "userRoleMaps": [
+	   	         {
+	   	           "roleId": "R01",
+	   	           "userRoleStatus": "Active"
+	   	         }
+	   	       ],
+	   	       "userTimeZone": "PST",
+	   	       "userVisaStatus": "US-Citizen",
+	   	       "userLogin": {
+	   	         "userLoginEmail": "titan796man9dat4ory432@gmail.com",
+	   	         "loginStatus": "Active"
+	   	       }
+	   	     }
+	   	   },
+	   	   {
+	   	     "testcaseName": "Admin creates POST request without auth and with valid request body",
+	   	     "method": "POST",
+	   	     "endpoint": "/users/roleStatus",
+	   	     "contentType": "application/json",
+	   	     "expectedStatusCode": 401,
+	   	     "userRequest": {
+	   	       "userComments": "Automation Admin User No Auth",
+	   	       "userEduPg": "MS",
+	   	       "userEduUg": "BS",
+	   	       "userFirstName": "TitanAdminNoAuth",
+	   	       "userLastName": "Tester",
+	   	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadminnoauth",
+	   	       "userLocation": "USA",
+	   	       "userMiddleName": "QA",
+	   	       "userPhoneNumber": "+91 9976146729",
+	   	       "userRoleMaps": [
+	   	         {
+	   	           "roleId": "R01",
+	   	           "userRoleStatus": "Active"
+	   	         }
+	   	       ],
+	   	       "userTimeZone": "EST",
+	   	       "userVisaStatus": "H4-EAD",
+	   	       "userLogin": {
+	   	         "userLoginEmail": "titansa4dmi6nno6auth@gmail.com",
+	   	         "loginStatus": "Active"
+	   	       }
+	   	     }
+	   	   },		
+		   {
+		         "testcaseName": "Admin creates a user with empty FirstName",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User First Name is cannot be null or empty",
+		           "userFirstName must contain two or more alphabets only"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110001",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyfn101@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty LastName",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User Last Name is cannot be null or empty",
+		           "userLastName must contain one or more alphabets only"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "",
+		           "userPhoneNumber": "+1 9877110002",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyln102@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Location",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User Location must contain two or more alphabets only",
+		           "User Location is cannot be null or empty"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110003",
+		           "userLocation": "",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyloc103@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Time Zone",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "userTimeZone is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110004",
+		           "userLocation": "USA",
+		           "userTimeZone": "",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptytz104@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Visa Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "userVisaStatus is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110005",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyvs105@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Role Id",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Role Id is mandatory",
+		           "Role Id cannot be null or empty"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110006",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyrole106@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Role Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Invalid Status: must be Active or Inactive",
+		           "Role Status is Mandatory"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110007",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": ""
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyrs107@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Login Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "Invalid Status"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110008",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyls108@testdomain.com",
+		             "loginStatus": ""
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty email",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "User email Id is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110009",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Phone Number",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Phone Number is required",
+		           "phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyph110@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+			   {
+			     "testcaseName": "Admin creates a user with duplicate email id",
 			     "method": "POST",
-			     "endpoint": "/putprogram/{programId}",
+			     "endpoint": "/users/roleStatus",
 			     "contentType": "application/json",
-			     "programRequest": {
-		    		"programDescription": "Update Test Program",
-			       "programName": "Updated Program One",
-			       "programStatus": "Active"
-			     },
+			     "expectedStatusCode": 400,
+			     "expectedMessages": [
+			       "already exists",
+			       "email"
+			     ],
+			     "userRequest": {
+			       "userFirstName": "TitanDupEmail",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877199991",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "Team02@gmail.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with duplicate phone number",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": [
+			       "already exists",
+			       "phone number"
+			     ],
+			     "userRequest": {
+			       "userFirstName": "TitanDupPhone",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+91 9877756610",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "dupphoneuser99@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userEduPg",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userEduPg", "invalid", "characters"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userEduPg": "12345!@#",
+			       "userEduUg": "BS",
+			       "userPhoneNumber": "+1 9877330001",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invpg101@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userEduUg",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userEduUg", "invalid", "characters"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userEduPg": "MS",
+			       "userEduUg": "12345!@#",
+			       "userPhoneNumber": "+1 9877330002",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invug102@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid first name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userFirstName must contain two or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "12345",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330003",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invfn103@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid last name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userLastName must contain one or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "12345",
+			       "userPhoneNumber": "+1 9877330004",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invln104@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid middle name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userMiddleName must contain only alphabets", "middle name", "alphabets"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userMiddleName": "12345",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330005",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invmn105@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userLinkedinUrl",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userLinkedinUrl", "invalid", "url"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userLinkedinUrl": "invalid-linkedin-url",
+			       "userPhoneNumber": "+1 9877330006",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invli106@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userLocation",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["User Location must contain two or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330007",
+			       "userLocation": "12",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invloc107@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid email format",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["User email Id is required and should be in proper email format"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330008",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invalidemailformat", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid phone number format",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "12345",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invph109@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid user Role Id",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["Role Id is mandatory", "Invalid Role", "Role"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330010",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R99", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invrid110@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid user Role Status",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["Invalid Status: must be Active or Inactive"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330011",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "InvalidStatus"}],
+			       "userLogin": {"userLoginEmail": "invrs111@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			   			     "testcaseName": "Admin creates a user with invalid user time zone",
+			   			     "method": "POST",
+			   			     "endpoint": "/users/roleStatus",
+			   			     "contentType": "application/json",
+			   			     "expectedStatusCode": 400,
+			   			     "expectedMessages": [
+			   			       "Failed to create user, as 'TimeZone' is invalid",
+			   			       "TimeZone",
+			   			       "time zone",
+			   			       "invalid",
+			   			       "userTimeZone is required"
+			   			     ],
+			   			     "userRequest": {
+			   			       "userFirstName": "Titan",
+			   			       "userLastName": "Tester",
+			   			       "userPhoneNumber": "+1 9877330012",
+			   			       "userLocation": "USA",
+			   			       "userTimeZone": "INVALID_TZ",
+			   			       "userVisaStatus": "US-Citizen",
+			   			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			   			       "userLogin": {"userLoginEmail": "invtz112@gmail.com", "loginStatus": "Active"}
+			   			     }
+			   			   },
+			   		   {
+			   		     "testcaseName": "Admin creates a user with invalid user visa status",
+			   		     "method": "POST",
+			   		     "endpoint": "/users/roleStatus",
+			   		     "contentType": "application/json",
+			   		     "expectedStatusCode": 400,
+			   		     "expectedMessages": [
+			   		       "User email Id is required and should be in proper email format",
+			   		       "userVisaStatus is required",
+			   		       "Invalid Visa Status",
+			   		       "visa status"
+			   		     ],
+			   		     "userRequest": {
+			   		       "userFirstName": "Titan",
+			   		       "userLastName": "Tester",
+			   		       "userPhoneNumber": "+1 9877330013",
+			   		       "userLocation": "USA",
+			   		       "userTimeZone": "EST",
+			   		       "userVisaStatus": "INVALID_VISA",
+			   		       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			   		       "userLogin": {"userLoginEmail": "invvs113@gmail.com", "loginStatus": "Active"}
+			   		     }
+			   		   },
+	{
+    "testcaseName": "Admin creates batch with valid data",
+    "method": "POST",
+    "endpoint": "/batches",
+    "expectedStatusCode": 201,
+    "batchRequest": {
+      "batchDescription": "Valid Description",
+      "batchNoOfClasses": 12,
+      "batchStatus": "ACTIVE"
+    }
+  },
+  {
+        "testcaseName": "Admin creates batch with only optional fields",
+        "method": "POST",
+        "endpoint": "/batches",
+        "expectedStatusCode": 400,
+        "expectedMessage": "Batch Name and Program ID are mandatory",
+        "batchRequest": {
+          "batchDescription": "Only optional fields provided",
+          "batchNoOfClasses": 10,
+          "batchStatus": "ACTIVE"
+        }
+      },
+	  {
+	      "testcaseName": "Admin creates batch without underscore format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDETBATCH205",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with hyphen format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET-206",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_ABC",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_20#",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length more than 28 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_SuperLongBatchNameOver28Chars",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length less than 6 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SD_1",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description less than 4 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_307",
+	        "batchDescription": "Hi",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description more than 25 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_308",
+	        "batchDescription": "This description is definitely too long",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_309",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "xyzabc"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random numbers in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_310",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "12345"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_311",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "@#$%"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length less than 1",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_312",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 0,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length more than 99",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_313",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 999,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+		{
+ "testcaseName": "Login with empty password",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "loginRequest": {
+      "userLoginEmailId": "Team02@gmail.com",
+      "password": ""
+    },
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login with empty email",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "loginRequest": {
+      "userLoginEmailId": "",
+      "password": "Team02@123"
+    },
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login without request body",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login with invalid content type",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "text/plain",
+     "rawBody": "{\"userLoginEmailId\":\"Team02@gmail.com\",\"password\":\"Team02@2026\"}",
+    "expectedStatusCode": 415
+  },
+  {
+      "testcaseName": "Login With Invalid Method",
+      "method": "GET",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 405
+    },
+    {
+      "testcaseName": "Login With Invalid Endpoint",
+      "method": "POST",
+      "endpoint": "/loginnn",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 404
+    },
+    {
+      "testcaseName": "Login With Special Characters Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team@@02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Email Having Spaces",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team 02 @gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Null Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": null,
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Unregistered Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Teamninja@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Special Characters Password",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@@@###"
+      },
+      "expectedStatusCode": 401
+    },
+    {
+      "testcaseName": "Login With Password Having Spaces",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team 02 @ 2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Null Password",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": null
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Invalid Base URL",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 404
+    },
+  {
+      "testcaseName": "Valid Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 201
+    },
+    {
+      "testcaseName": "Invalid Content Type in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "text/plain",
+      "rawBody": "{\"userLoginEmailId\":\"Team02@gmail.com\"}",
+      "expectedStatusCode": 415
+    },
+    {
+      "testcaseName": "Invalid Method in forgot password API",
+      "method": "GET",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 405
+    },
+    {
+      "testcaseName": "Invalid Endpoint in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/conf",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 404
+    },
+    {
+      "testcaseName": "Empty Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": ""
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Invalid Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02ail.com"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Null Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": null
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Unregistered Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Teamninja@gmail.com"
+      },
+      "expectedStatusCode": 400
+    },
+	{
+		"testcaseName": "Add New Program",
+		"endpoint": "/saveprogram",
+		"statusmessage": "Created",
+		"contentType": "application/json",
+		"programRequest": {
+		  "programDescription": "Test Program",
+		  "programName": "RestAssuredTestFour",
+		  "programStatus": "Active"
+		}
+	  },
+	  
+	  {
+					"testcaseName": "Invalid Token",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Unauthorized",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "InvalidTokenProgram",
+					  "programStatus": "Active"
+					}
+				  },					  
+
+				  {
+					"testcaseName": "Admin creates a program with already existing program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "RestAssuredTestOne",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with trailing space in program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "TestProgram ",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with only numbers in program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "123456",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with invalid status keyword",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "InvalidStatusProgram",
+					  "programStatus": "InvalidStatus"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program without Program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with Program name length less than desired length",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "Abc",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with empty payload",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "",
+					  "programName": "",
+					  "programStatus": ""
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with alpha & special char in program description",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test@#$%Description",
+					  "programName": "SpecialDescProgram",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with program description length more than desired length",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "This description is definitely more than twenty five characters",
+					  "programName": "LongDescriptionProgram",
+					  "programStatus": "Active"
+					}
+				  },
+				  {
+					"testcaseName": "Admin creates a program with program name length between 4 and 25 characters",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Created",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "ValidProgramName",
+					  "programStatus": "Active"
+					}
+				  },
+				  {
+					"testcaseName": "Admin creates a program with program description length between 4 and 25 characters",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Created",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Description",
+					  "programName": "ValidProgram",
+					  "programStatus": "Active"
+					}
+				  }						
+				  
+
+				
+							  
+],
+
+
+	    
+			 "DeleteRequest": [
+			   {
+			     "testcaseName": "Admin deletes a user with valid user ID",
+			     "method": "DELETE",
+			     "endpoint": "/users/{userId}",
+			     "expectedStatusCode": 200,
+			     "expectedMessage": "User deleted successfully"
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid user ID",
+			     "method": "DELETE",
+			     "endpoint": "/users/99999999",
+			     "expectedStatusCode": 404,
+			     "expectedMessage": "User not found with Id : 99999999 ",
+			     "BooleanMessage": false
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid endpoint",
+			     "method": "DELETE",
+			     "endpoint": "/usersinvalid/123",
+			     "expectedStatusCode": 404
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid method",
+			     "method": "POST",
+			     "endpoint": "/users/123",
 			     "expectedStatusCode": 405
 			   },
-			   
 			   {
-			      "testcaseName": "Admin updates a program with invalid endpoint",
-				  "method": "PUT",
-			      "endpoint": "/invalidprogram/112",
-			      "contentType": "application/json",
-			      "programRequest": {
-					"programDescription": "Update Test Program",
-				     "programName": "Updated Program One",
-			        "programStatus": "Active"
-			      },
-			      "expectedStatusCode": 404
-			    },
-				
-				{
-				  "testcaseName": "Admin updates a program without Authorization",
-				  "method": "PUT",
-				  "endpoint": "/putprogram/{programId}",
-				  "contentType": "application/json",
-				  "programRequest": {
-				    "programName": "Updated Program One",
-				    "programDescription": "Update Test Program",
-				    "programStatus": "Active"
-				  },
-				  "expectedStatusCode": 401
-				},
-				
+			     "testcaseName": "Admin able to delete a user without Authorization",
+			     "method": "DELETE",
+			     "endpoint": "/users/123",
+			     "expectedStatusCode": 401
+			   }
 			
-				]
-				
+			 ],
+				 
+  
+			
+		"PutRequest":[
+			{
+				"testcaseName": "Admin updates user with valid user id",
+				"method": "PUT",
+				"endpoint": "/users/{userId}",
+				"contentType": "application/json",
+				"expectedStatusCode": 201,
+				"userRequest": {
+					"userComments": "Automation Admin User validating",
+					"userEduPg": "MS",
+					"userEduUg": "Engineering",
+					"userFirstName": "TitanAdminJ",
+					"userId": "{userId}",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156666",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
 				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid user id",
+				"method": "PUT",
+				"endpoint": "/users/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"expectedMessage": "UserID: 1215 Not Found",
+				"BooleanMessage": false,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156660",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with missing mandatory fields",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"expectedMessage": "User First Name is mandatory",
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156697",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with duplicate email",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"BooleanMessage": false,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166H@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156697",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with duplicate phone number",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userEduPg",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "TG45",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userEduUg",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "@#$%",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid first name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI234",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid last name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester123",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid middle name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA234",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userLinkedinUrl",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "inkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userLocation",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "1234",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid email format",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid phone number format",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid user time zone",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "345",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid user visa status",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid endpoint",
+				"method": "PUT",
+				"endpoint": "/usersedfs/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid method",
+				"method": "POST",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 405,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid content type",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "text/plain",
+				"expectedStatusCode": 415,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id without Authorization",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 401,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with valid Endpoint",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 200,
+				"expectedMessage": "UserLoginEmail/Status Updated for User: U1215",
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid user id",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"expectedMessage": "UserID: 1215 Not Found",
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with email field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with login Status field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with Status field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": ""
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid email",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid login Status",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Activing",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid Status",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Actives"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with duplicate email",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanstaff276@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Endpoint",
+				"method": "PUT",
+				"endpoint": "/users/userLoginsed/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Method",
+				"method": "POST",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 405,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Content Type",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "text/plain",
+				"expectedStatusCode": 415,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status without Authorization",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 401,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a program with valid program id",
+			  "method": "PUT",
+				"endpoint": "/putprogram/{programId}",
+				"statusmessage": "Created",
+				"contentType": "application/json",
+				"programRequest": {
+				  "programDescription": "Update Test Program",
+				  "programName": "Updated Program One",
+				  "programStatus": "Active"
+				},
+			  "expectedStatusCode": 200
+			  },
+			{
+				   "testcaseName": "Admin updates a program with invalid program id",
+				   "method": "PUT",
+				   "endpoint": "/putprogram/999",
+				   "contentType": "application/json",
+				   "programRequest": {
+					"programDescription": "Update Test Program",
+					 "programName": "Updated Program One",
+					 "programStatus": "Active"
+				   },
+				   "expectedStatusCode": 404
+				 },
+				 {
+					"testcaseName": "Admin updates a program with already existing program name in request body",
+					"method": "PUT",
+					"endpoint": "/putprogram/{programId}",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Update Test Program",
+					  "programName": "RestAssuredTestOne",
+					  "programStatus": "Active"
+					},
+					"expectedStatusCode": 400
+				  },
+				  {
+					 "testcaseName": "Admin updates a program without request body",
+					 "method": "PUT",
+					 "endpoint": "/putprogram/{programId}",
+					 "contentType": "application/json",
+					 "expectedStatusCode": 400
+				   },
+				  {
+					 "testcaseName": "Admin updates a program with invalid method",
+					 "method": "POST",
+					 "endpoint": "/putprogram/{programId}",
+					 "contentType": "application/json",
+					 "programRequest": {
+						"programDescription": "Update Test Program",
+					   "programName": "Updated Program One",
+					   "programStatus": "Active"
+					 },
+					 "expectedStatusCode": 405
+				   },
+				   
+				   {
+					  "testcaseName": "Admin updates a program with invalid endpoint",
+					  "method": "PUT",
+					  "endpoint": "/invalidprogram/112",
+					  "contentType": "application/json",
+					  "programRequest": {
+						"programDescription": "Update Test Program",
+						 "programName": "Updated Program One",
+						"programStatus": "Active"
+					  },
+					  "expectedStatusCode": 404
+					},
+					
+					{
+					  "testcaseName": "Admin updates a program without Authorization",
+					  "method": "PUT",
+					  "endpoint": "/putprogram/{programId}",
+					  "contentType": "application/json",
+					  "programRequest": {
+						"programName": "Updated Program One",
+						"programDescription": "Update Test Program",
+						"programStatus": "Active"
+					  },
+					  "expectedStatusCode": 401
+					}
+			
+			
+		],
+		"UpdateRoleIDRequest":[
+			{
+			"testcaseName": "Admin updates user role id with valid role id",
+			"method": "PUT",
+			"endpoint": "/users/roleId/{userID}",
+			"contentType": "application/json",
+			"expectedStatusCode": 200,
+				  "userRoleList": [
+				    {
+				      "roleId": "R02",
+				      "userRoleStatus": "Active"
+				    }
+				  ]
+				}
+  
+				]
+			}
+				
+	
