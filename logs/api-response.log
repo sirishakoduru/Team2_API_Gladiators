@@ -1,10 +1,10 @@
-2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:14:44 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:14:44 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:47:36 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:14:44 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg1MjgzLCJleHAiOjE3ODk1MTQwODN9.h-LP-4sPaQ-h3PHd52yknZVPhuRI8jLUZxFMfrZbzkWyG4KjBeesPpjypzNhBHQkkVHLo3oGUxEk-S4u2PypuA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -15,13 +15,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:23:00 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:23:00 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:47:37 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:23:00 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg1Nzc5LCJleHAiOjE3ODk1MTQ1Nzl9.NN3UI3y0ZQbZ-8eDv7OpFXHOkDbSfgxIX5UDmqC-mBRLXUlxsRDtCEyLLg4hBWeVSsk9nNOJ-7sllzHoqGKcOw",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -32,13 +32,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:37:19 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:37:19 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:47:38 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:37:19 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg2NjM5LCJleHAiOjE3ODk1MTU0Mzl9.TOboJT7y6bQSQvhG00XMl48lBwUvdMbeLRSG2ddHhiv6TKgB8xtaba9IzGGY3PVXxENtzA1gNqEuyxDEEibPcg",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -49,13 +49,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:47:39 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg2Njg5LCJleHAiOjE3ODk1MTU0ODl9.zRfp17CVsGOI1i0H5UuVxdSuoZyRVTC1pTiq4DCd_fqbtpwlAJ2ceLFdP_vq7V0UHMDOFhR_Dt0XPRqSloTx1w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -66,13 +66,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:50:29 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:38:11 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg2Njg5LCJleHAiOjE3ODk1MTU0ODl9.zRfp17CVsGOI1i0H5UuVxdSuoZyRVTC1pTiq4DCd_fqbtpwlAJ2ceLFdP_vq7V0UHMDOFhR_Dt0XPRqSloTx1w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -83,13 +83,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:47:38 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:47:38 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:50:30 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:47:38 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg3MjU4LCJleHAiOjE3ODk1MTYwNTh9.QLNMI7_MG7vajoMxl5fS84JtxoNHMU9bIyOst7XtTyIAU8Ra4sogIdHwTCn3HizRzm5eEIjoh6csxYBDU8LiyQ",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -100,13 +100,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 11:47:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 11:47:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:50:31 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 11:47:39 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg3MjU4LCJleHAiOjE3ODk1MTYwNTh9.QLNMI7_MG7vajoMxl5fS84JtxoNHMU9bIyOst7XtTyIAU8Ra4sogIdHwTCn3HizRzm5eEIjoh6csxYBDU8LiyQ",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -117,13 +117,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:12:42 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:12:42 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 00:50:32 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:12:42 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg4NzYxLCJleHAiOjE3ODk1MTc1NjF9.Syzn_QYpVsqbC6T1bEuQekBMNhcQf5y0OI_De5P2vxb4aTR28PA6WU0ybuSRVUdkbCB64Qa06GRXCfAzb4kJUA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -134,13 +134,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:20:34 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:20:34 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 10:54:40 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:20:34 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg5MjMzLCJleHAiOjE3ODk1MTgwMzN9.lTJXT3myZguqNYpiShDqkPvS_6z_4LNnbZBYsgg1u2YXiboFW9-34FYdc086pGyA_lKFW7ZUb_7ErWTfW7_dWA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -151,13 +151,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:20:35 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:20:35 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:20:35 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDg5MjMzLCJleHAiOjE3ODk1MTgwMzN9.lTJXT3myZguqNYpiShDqkPvS_6z_4LNnbZBYsgg1u2YXiboFW9-34FYdc086pGyA_lKFW7ZUb_7ErWTfW7_dWA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -168,13 +168,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 10:54:41 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjA1LCJleHAiOjE3ODk1MTk0MDV9.q4g3bqy-ekgqSdNrOrv--3gRaQsBFkjR1UV0TZ_ovZ-h_FS_BzhPa9Oj_jOPSkUgbFaIS26CT7sJjvZt-Cywhw",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -185,13 +185,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 10:54:43 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:27 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjA1LCJleHAiOjE3ODk1MTk0MDV9.q4g3bqy-ekgqSdNrOrv--3gRaQsBFkjR1UV0TZ_ovZ-h_FS_BzhPa9Oj_jOPSkUgbFaIS26CT7sJjvZt-Cywhw",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -202,13 +202,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:43:29 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:29 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:11:36 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:29 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjA4LCJleHAiOjE3ODk1MTk0MDh9.so6lU1kRk8WvzclugQt1sAMszQFpcjs4CR6PVL_3ZBpl2BC7kBT8pG1wsdkjmX_VL9724sZTnm4uqB1CwGqa5w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -219,13 +219,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:43:30 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:30 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:11:38 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:30 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjA4LCJleHAiOjE3ODk1MTk0MDh9.so6lU1kRk8WvzclugQt1sAMszQFpcjs4CR6PVL_3ZBpl2BC7kBT8pG1wsdkjmX_VL9724sZTnm4uqB1CwGqa5w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -236,13 +236,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:43:57 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:57 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:11:39 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:57 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjM3LCJleHAiOjE3ODk1MTk0Mzd9.1NsadT4p5CXpGsjQXRzyp5oiFPS3h0pLf0uYW4VYQIZnd15gJLREDuDHDRWflpypxegd4GtcUwKLaES8KzGD4w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -253,13 +253,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:43:58 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:43:58 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:11:41 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:43:58 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjM3LCJleHAiOjE3ODk1MTk0Mzd9.1NsadT4p5CXpGsjQXRzyp5oiFPS3h0pLf0uYW4VYQIZnd15gJLREDuDHDRWflpypxegd4GtcUwKLaES8KzGD4w",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -270,13 +270,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:45:39 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjcwLCJleHAiOjE3ODk1MTk0NzB9.p-bZMBEPQVfIdidImVhGgS75SIykXfCxBJmCxgGgei4lWsNS6chX6_LXTJB7_3SydzyX4kkEIQqo4VTP5wPyeA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -287,13 +287,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:45:40 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:44:31 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjcwLCJleHAiOjE3ODk1MTk0NzB9.p-bZMBEPQVfIdidImVhGgS75SIykXfCxBJmCxgGgei4lWsNS6chX6_LXTJB7_3SydzyX4kkEIQqo4VTP5wPyeA",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -304,13 +304,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:44:33 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:44:33 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:45:42 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:44:33 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjczLCJleHAiOjE3ODk1MTk0NzN9.cPKy-VkzM0OjpYvv0sLyq752iOPm8aB2w76xyhBHNsmEQeX8k3u_MPWnC-rRxwfFrQlvNr-G0s2UFA9PaE2i7Q",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -321,13 +321,13 @@
     "passwordExpired": false
 }
 
-2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:44:34 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Status Code: 200
+2026-09-15 12:44:34 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 13:45:44 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:44:34 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwNjczLCJleHAiOjE3ODk1MTk0NzN9.cPKy-VkzM0OjpYvv0sLyq752iOPm8aB2w76xyhBHNsmEQeX8k3u_MPWnC-rRxwfFrQlvNr-G0s2UFA9PaE2i7Q",
     "type": "Bearer",
     "userId": "U17",
     "email": "Team02@gmail.com",
@@ -338,442 +338,1686 @@
     "passwordExpired": false
 }
 
-2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:47:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
 
-2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:47:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:14:51 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:47:08 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U499",
-        "userFirstName": "TitanAdmin",
-        "userLastName": "Tester",
-        "userMiddleName": "QA",
-        "userPhoneNumber": "+91 9876153210",
-        "userLocation": "USA",
-        "userTimeZone": "EST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
-        "userEduUg": "BS",
-        "userEduPg": "MS",
-        "userComments": "Automation Admin User",
-        "userVisaStatus": "H4-EAD",
-        "userLoginEmail": "titanadmin11@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwODI2LCJleHAiOjE3ODk1MTk2MjZ9.2jFzi9Kk8W5CifLLkUZKuMDba73Ag718zGkPl3d2hbBIJNIerT2IrG74pChp5WR0BeATrXZP3o03duhM08Lsiw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:47:09 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
 
-2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:47:09 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:14:52 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:47:09 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U500",
-        "userFirstName": "TitanStaff",
-        "userLastName": "Tester",
-        "userMiddleName": "Lead",
-        "userPhoneNumber": "+91 9876253212",
-        "userLocation": "USA",
-        "userTimeZone": "CST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
-        "userEduUg": "BTech",
-        "userEduPg": "MTech",
-        "userComments": "Automation Staff User",
-        "userVisaStatus": "H1B",
-        "userLoginEmail": "titanstaff22@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkwODI2LCJleHAiOjE3ODk1MTk2MjZ9.2jFzi9Kk8W5CifLLkUZKuMDba73Ag718zGkPl3d2hbBIJNIerT2IrG74pChp5WR0BeATrXZP3o03duhM08Lsiw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R02",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:50:05 INFO  [API_RESPONSE_LOG] - Scenario: Get all batches with valid Endpoint
 
-2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:50:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:14:54 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:50:05 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U501",
-        "userFirstName": "TitanStudent",
-        "userLastName": "Tester",
-        "userMiddleName": "Learner",
-        "userPhoneNumber": "+91 9876333213",
-        "userLocation": "India",
-        "userTimeZone": "IST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
-        "userEduUg": "BSc",
-        "userEduPg": "MCA",
-        "userComments": "Automation Student User",
-        "userVisaStatus": "Indian-Citizen",
-        "userLoginEmail": "titanstudent33@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMDA0LCJleHAiOjE3ODk1MTk4MDR9.BFnWDUr6bVC0yRgI5ZCT7v4fkCpJs_qqopYKw34M7NMn5H-y2YR-lyJYIMZ-NReN4OypYWVo8iRHDuugYhDJHA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R03",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
 
-2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Status Code: 400
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:14:55 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "message": "Failed to create new User as phone number +91 9876443214 already exists !!",
-    "success": false
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMDA0LCJleHAiOjE3ODk1MTk4MDR9.BFnWDUr6bVC0yRgI5ZCT7v4fkCpJs_qqopYKw34M7NMn5H-y2YR-lyJYIMZ-NReN4OypYWVo8iRHDuugYhDJHA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
 
-2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:18:20 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:50:06 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U502",
-        "userFirstName": "TitanAdmin",
-        "userLastName": "Tester",
-        "userMiddleName": "QA",
-        "userPhoneNumber": "+91 9876153910",
-        "userLocation": "USA",
-        "userTimeZone": "EST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
-        "userEduUg": "BS",
-        "userEduPg": "MS",
-        "userComments": "Automation Admin User",
-        "userVisaStatus": "H4-EAD",
-        "userLoginEmail": "titanadmin19@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMDA0LCJleHAiOjE3ODk1MTk4MDR9.BFnWDUr6bVC0yRgI5ZCT7v4fkCpJs_qqopYKw34M7NMn5H-y2YR-lyJYIMZ-NReN4OypYWVo8iRHDuugYhDJHA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Scenario: Get all batches with valid Endpoint
 
-2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:18:21 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U503",
-        "userFirstName": "TitanStaff",
-        "userLastName": "Tester",
-        "userMiddleName": "Lead",
-        "userPhoneNumber": "+91 9876259212",
-        "userLocation": "USA",
-        "userTimeZone": "CST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
-        "userEduUg": "BTech",
-        "userEduPg": "MTech",
-        "userComments": "Automation Staff User",
-        "userVisaStatus": "H1B",
-        "userLoginEmail": "titanstaff29@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMjE0LCJleHAiOjE3ODk1MjAwMTR9.qOBhUUdhfe5hwxyyfC7zgYa5Q2FzPVg-tIKBvKYwPLWOcLN4OZdJVMPBKU670zQ-dvTvn4TONjyVqz7-etn1Qw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R02",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
 
-2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:18:23 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:53:35 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U504",
-        "userFirstName": "TitanStudent",
-        "userLastName": "Tester",
-        "userMiddleName": "Learner",
-        "userPhoneNumber": "+91 9876335213",
-        "userLocation": "India",
-        "userTimeZone": "IST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
-        "userEduUg": "BSc",
-        "userEduPg": "MCA",
-        "userComments": "Automation Student User",
-        "userVisaStatus": "Indian-Citizen",
-        "userLoginEmail": "titanstudent39@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMjE0LCJleHAiOjE3ODk1MjAwMTR9.qOBhUUdhfe5hwxyyfC7zgYa5Q2FzPVg-tIKBvKYwPLWOcLN4OZdJVMPBKU670zQ-dvTvn4TONjyVqz7-etn1Qw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R03",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 12:53:36 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
 
-2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 12:53:36 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:18:24 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 12:53:36 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U505",
-        "userFirstName": "TitanMandatory",
-        "userLastName": "Tester",
-        "userPhoneNumber": "+91 9876473214",
-        "userLocation": "USA",
-        "userTimeZone": "PST",
-        "userLinkedinUrl": null,
-        "userEduUg": null,
-        "userEduPg": null,
-        "userVisaStatus": "US-Citizen",
-        "userLoginEmail": "titanmandatory49@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkxMjE0LCJleHAiOjE3ODk1MjAwMTR9.qOBhUUdhfe5hwxyyfC7zgYa5Q2FzPVg-tIKBvKYwPLWOcLN4OZdJVMPBKU670zQ-dvTvn4TONjyVqz7-etn1Qw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with valid batch ID
 
-2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:33:40 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U506",
-        "userFirstName": "TitanAdmin",
-        "userLastName": "Tester",
-        "userMiddleName": "QA",
-        "userPhoneNumber": "+91 9876157910",
-        "userLocation": "USA",
-        "userTimeZone": "EST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
-        "userEduUg": "BS",
-        "userEduPg": "MS",
-        "userComments": "Automation Admin User",
-        "userVisaStatus": "H4-EAD",
-        "userLoginEmail": "titanadmin16@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkzNjYyLCJleHAiOjE3ODk1MjI0NjJ9.xLGoWgQgeAuYQoRXItl5uZiaP5fpmZw5nRvGrzGM5oB2ebYTHbixBdjk5lAKxD7BwJm2GxwrHA0ROKKFLmwh_A",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with invalid batch ID
 
-2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:33:41 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:34:23 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U507",
-        "userFirstName": "TitanStaff",
-        "userLastName": "Tester",
-        "userMiddleName": "Lead",
-        "userPhoneNumber": "+91 9876279212",
-        "userLocation": "USA",
-        "userTimeZone": "CST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
-        "userEduUg": "BTech",
-        "userEduPg": "MTech",
-        "userComments": "Automation Staff User",
-        "userVisaStatus": "H1B",
-        "userLoginEmail": "titanstaff27@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDkzNjYyLCJleHAiOjE3ODk1MjI0NjJ9.xLGoWgQgeAuYQoRXItl5uZiaP5fpmZw5nRvGrzGM5oB2ebYTHbixBdjk5lAKxD7BwJm2GxwrHA0ROKKFLmwh_A",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R02",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:40:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with valid batch ID
 
-2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:40:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:33:43 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:40:23 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U508",
-        "userFirstName": "TitanStudent",
-        "userLastName": "Tester",
-        "userMiddleName": "Learner",
-        "userPhoneNumber": "+91 9876337213",
-        "userLocation": "India",
-        "userTimeZone": "IST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
-        "userEduUg": "BSc",
-        "userEduPg": "MCA",
-        "userComments": "Automation Student User",
-        "userVisaStatus": "Indian-Citizen",
-        "userLoginEmail": "titanstudent79@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MDIzLCJleHAiOjE3ODk1MjI4MjN9.AnKUOBLkYRXv60eAC9XfsFmRo2khnE_4kZbqX2WxLmhYyM23lYb9_LpX9j9Ms7jh6Nuxh0vxozevuHDQV6LxjA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R03",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 13:40:24 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with invalid batch ID
 
-2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:40:24 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:33:44 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:40:24 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U509",
-        "userFirstName": "TitanMandatory",
-        "userLastName": "Tester",
-        "userPhoneNumber": "+91 9876473714",
-        "userLocation": "USA",
-        "userTimeZone": "PST",
-        "userLinkedinUrl": null,
-        "userEduUg": null,
-        "userEduPg": null,
-        "userVisaStatus": "US-Citizen",
-        "userLoginEmail": "titanmandatory47@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MDIzLCJleHAiOjE3ODk1MjI4MjN9.AnKUOBLkYRXv60eAC9XfsFmRo2khnE_4kZbqX2WxLmhYyM23lYb9_LpX9j9Ms7jh6Nuxh0vxozevuHDQV6LxjA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with valid batch ID
 
-2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:40:20 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U510",
-        "userFirstName": "TitanAdmin",
-        "userLastName": "Tester",
-        "userMiddleName": "QA",
-        "userPhoneNumber": "+91 9876156610",
-        "userLocation": "USA",
-        "userTimeZone": "EST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
-        "userEduUg": "BS",
-        "userEduPg": "MS",
-        "userComments": "Automation Admin User",
-        "userVisaStatus": "H4-EAD",
-        "userLoginEmail": "titanadmin1666@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MjI3LCJleHAiOjE3ODk1MjMwMjd9.haKadGBd95027zvZkxij6k0SfI3ip4AAx6CN-DIS4SeJ8oJtFACtd1RYH42U2BI_Iglb1R1dP1ky9d7570-DMw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with invalid batch ID
 
-2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:40:22 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:43:48 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U511",
-        "userFirstName": "TitanStaff",
-        "userLastName": "Tester",
-        "userMiddleName": "Lead",
-        "userPhoneNumber": "+91 9876276612",
-        "userLocation": "USA",
-        "userTimeZone": "CST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
-        "userEduUg": "BTech",
-        "userEduPg": "MTech",
-        "userComments": "Automation Staff User",
-        "userVisaStatus": "H1B",
-        "userLoginEmail": "titanstaff2766@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MjI3LCJleHAiOjE3ODk1MjMwMjd9.haKadGBd95027zvZkxij6k0SfI3ip4AAx6CN-DIS4SeJ8oJtFACtd1RYH42U2BI_Iglb1R1dP1ky9d7570-DMw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R02",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a specific user role with valid request body and authorization
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with valid batch ID
 
-2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:40:23 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U512",
-        "userFirstName": "TitanStudent",
-        "userLastName": "Tester",
-        "userMiddleName": "Learner",
-        "userPhoneNumber": "+91 9876336613",
-        "userLocation": "India",
-        "userTimeZone": "IST",
-        "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
-        "userEduUg": "BSc",
-        "userEduPg": "MCA",
-        "userComments": "Automation Student User",
-        "userVisaStatus": "Indian-Citizen",
-        "userLoginEmail": "titanstudent7669@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MzIyLCJleHAiOjE3ODk1MjMxMjJ9._ZVaK5xQ2ETIhenMTjJZerUAruQN9qUVZ27ZTkzxqvuiKzGwQlUFwRbAGph453ZRul-Qq7fEQqCzBA9IozJ0KA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R03",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 
-2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates a user with only mandatory field
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with invalid batch ID
 
-2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Status Code: 201
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
 
-2026-09-12 14:40:25 INFO  [API_RESPONSE_LOG] - Response Body:
+2026-09-15 13:45:23 INFO  [API_RESPONSE_LOG] - Response Body:
 {
-    "user": {
-        "userId": "U513",
-        "userFirstName": "TitanMandatory",
-        "userLastName": "Tester",
-        "userPhoneNumber": "+91 9876476614",
-        "userLocation": "USA",
-        "userTimeZone": "PST",
-        "userLinkedinUrl": null,
-        "userEduUg": null,
-        "userEduPg": null,
-        "userVisaStatus": "US-Citizen",
-        "userLoginEmail": "titanmandatory466@gmail.com"
-    },
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0MzIyLCJleHAiOjE3ODk1MjMxMjJ9._ZVaK5xQ2ETIhenMTjJZerUAruQN9qUVZ27ZTkzxqvuiKzGwQlUFwRbAGph453ZRul-Qq7fEQqCzBA9IozJ0KA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
     "roles": [
-        {
-            "roleId": "R01",
-            "userRoleStatus": "Active"
-        }
-    ]
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with valid batch ID
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0NDM5LCJleHAiOjE3ODk1MjMyMzl9.MnlttbgDw1wAqy04g6KDDjGpZ0319fRcga5vjrFVjMEylRnRVu5Dy2MTzTfBmzBXLmUE697RIXOr0GDS2iYV_g",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Scenario: Admin retrieves a batch with invalid batch ID
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:47:21 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0NDM5LCJleHAiOjE3ODk1MjMyMzl9.MnlttbgDw1wAqy04g6KDDjGpZ0319fRcga5vjrFVjMEylRnRVu5Dy2MTzTfBmzBXLmUE697RIXOr0GDS2iYV_g",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:55:18 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:55:18 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:55:18 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0OTE4LCJleHAiOjE3ODk1MjM3MTh9.2Ol0xzfhWJfHwQoGdBP-FyL2geaGjvBIMmEn4iLwqclFcLqBv6nZQgCHU8t7Q6eOrKZLyKCfDJFzopa7__VIQQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0OTgxLCJleHAiOjE3ODk1MjM3ODF9.o3i9zBFKYqYRs5e13ei8c6hiS7mveqQmSbUE2JYgYBRNilXwFgtLy1LcW7FhPADMVmKW3auBakKZSXI2mFirQA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:56:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk0OTgxLCJleHAiOjE3ODk1MjM3ODF9.o3i9zBFKYqYRs5e13ei8c6hiS7mveqQmSbUE2JYgYBRNilXwFgtLy1LcW7FhPADMVmKW3auBakKZSXI2mFirQA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MDUwLCJleHAiOjE3ODk1MjM4NTB9.uV0QB9erYL-M5D9VDnUse37yJxnXya96j9_gVi2sXsIt-kSJdTTdZamuvZ93IsCJwgA9mFm-O-V364PdPKNZxg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:57:32 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MDUwLCJleHAiOjE3ODk1MjM4NTB9.uV0QB9erYL-M5D9VDnUse37yJxnXya96j9_gVi2sXsIt-kSJdTTdZamuvZ93IsCJwgA9mFm-O-V364PdPKNZxg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:04 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 13:59:04 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:04 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 13:59:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MTQyLCJleHAiOjE3ODk1MjM5NDJ9.R0A5lin0izSU7ClAYY09KjEw55iqvv4n2kEIrsyGktTXoNQjGSXX22btx7y6DGV7slPxeJUpzMaPGMdMq8C9ww",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:02:01 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1MzE5LCJleHAiOjE3ODk1MjQxMTl9.mVlZnvcYlNcgdWgsN1vjSxVsXCUBM2sVysD6KAXyzP05yNUzk2vsz7xwf_oVb8Eip3Ga2vvxiOfosCMs3aAqvg",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:04 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 14:05:04 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:04 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:05:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NTAzLCJleHAiOjE3ODk1MjQzMDN9.k4yAaYyRbPwWwNaI1VBgTbErddl-oNe2HDlobr5pDn_8_U_u3CeiwSlC_1hX4hrF3piH3chtriZVd54oW9R1oQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with valid data
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:04 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:05 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:06 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Scenario: Admin creates batch with invalid field parameters
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:08:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NjgyLCJleHAiOjE3ODk1MjQ0ODJ9.NxnKLchrw29TcEdOlUImeZu_zjzvXdPSFcKRg0B85UhwrdkBfTq4-ocnqcqcgYmqmXkTJstzsAKflQdMBJfhCw",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:07 INFO  [API_RESPONSE_LOG] - Scenario: Get all batches with valid Endpoint
+
+2026-09-15 14:09:07 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:07 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzQ2LCJleHAiOjE3ODk1MjQ1NDZ9.ty7ircn_AiAO8oM43LEpmX363aSfRLDjFog3IM-3JB-F3axG60qMBI753lomKHqMY3jWFiIw5i9cxhS98aMiPA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzQ2LCJleHAiOjE3ODk1MjQ1NDZ9.ty7ircn_AiAO8oM43LEpmX363aSfRLDjFog3IM-3JB-F3axG60qMBI753lomKHqMY3jWFiIw5i9cxhS98aMiPA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Scenario: Admin receives error status code for invalid GET request parameters
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:08 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzQ2LCJleHAiOjE3ODk1MjQ1NDZ9.ty7ircn_AiAO8oM43LEpmX363aSfRLDjFog3IM-3JB-F3axG60qMBI753lomKHqMY3jWFiIw5i9cxhS98aMiPA",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:22 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
+}
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Scenario: Validate Program GET API Scenarios
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Status Code: 200
+
+2026-09-15 14:09:23 INFO  [API_RESPONSE_LOG] - Response Body:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDk1NzYxLCJleHAiOjE3ODk1MjQ1NjF9.TK4qb8vyhFVavjLgY8QKtv2XdDR8NNjcAXzDGjW0MmtU6E6Sgy1m-CPVrr7rsOec2gsRGKBe7v11BnOjDmxKSQ",
+    "type": "Bearer",
+    "userId": "U17",
+    "email": "Team02@gmail.com",
+    "roles": [
+        "ROLE_ADMIN"
+    ],
+    "status": "active",
+    "passwordExpired": false
 }
 

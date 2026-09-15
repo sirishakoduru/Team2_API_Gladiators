@@ -239,4 +239,17 @@ public class JsonTestData {
     public void setUserRequest(UserRequest userRequest) {
         this.userRequest = userRequest;
     }
+    
+    //========For Batch=======
+    
+    @JsonProperty("batchRequest")
+    private BatchRequest batchRequest;
+
+    public BatchRequest getBatchRequest() {
+        return batchRequest;
+    }
+
+    public void setBatchRequest(BatchRequest batchRequest) {
+        this.batchRequest = batchRequest;
+    }
 }

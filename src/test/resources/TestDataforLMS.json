@@ -394,27 +394,18 @@
 	      "endpoint": "/batches",
 	      "expectedStatusCode": 200
 	    },
-	    {
-	      "testcaseName": "Get batch by valid batch ID",
-	      "method": "GET",
-	      "endpoint": "/batches/batchId/{batchId}",
-	      "expectedStatusCode": 200
-	    },
-	    {
-	      "testcaseName": "Get batch by valid batch Name",
-	      "method": "GET",
-	      "endpoint": "/batches/batchName/{batchName}",
-	      "expectedStatusCode": 200
-	    },
-	    {
-	      "testcaseName": "Get batches by valid program ID",
-	      "method": "GET",
-	      "endpoint": "/batches/program/{programId}",
-	      "expectedStatusCode": 200
-	    }
-	
-	
-	
+		{
+		      "testcaseName": "Get all batches with invalid Endpoint",
+		      "method": "GET",
+		      "endpoint": "/batchesss",
+		      "expectedStatusCode": 404
+		    },
+		    {
+		      "testcaseName": "Get all batches with invalid Method",
+		      "method": "PUT",
+		      "endpoint": "/batches",
+		      "expectedStatusCode": 405
+		    }
   ],
 
   "PostRequest": [
@@ -425,7 +416,7 @@
       "contentType": "application/json",
       "programRequest": {
         "programDescription": "Test Program",
-        "programName": "RestAssuredDegie",
+        "programName": "RestAssuredDegiw",
         "programStatus": "Active"
       }
     },
@@ -556,6 +547,174 @@
       "batchNoOfClasses": 12,
       "batchStatus": "ACTIVE"
     }
-  }
+  },
+  {
+        "testcaseName": "Admin creates batch with only optional fields",
+        "method": "POST",
+        "endpoint": "/batches",
+        "expectedStatusCode": 400,
+        "expectedMessage": "Batch Name and Program ID are mandatory",
+        "batchRequest": {
+          "batchDescription": "Only optional fields provided",
+          "batchNoOfClasses": 10,
+          "batchStatus": "ACTIVE"
+        }
+      },
+	  {
+	      "testcaseName": "Admin creates batch without underscore format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDETBATCH205",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with hyphen format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET-206",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_ABC",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_20#",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length more than 28 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_SuperLongBatchNameOver28Chars",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length less than 6 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SD_1",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description less than 4 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_307",
+	        "batchDescription": "Hi",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description more than 25 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_308",
+	        "batchDescription": "This description is definitely too long",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_309",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "xyzabc"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random numbers in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_310",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "12345"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_311",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "@#$%"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length less than 1",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_312",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 0,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length more than 99",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_313",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 999,
+	        "batchStatus": "ACTIVE"
+	      }
+	    }
   ]
 }
