@@ -9,12 +9,12 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = "src/test/resources/features",
 	 	glue = {"stepDefinitions","hooks"},	
-	 	tags= "@PostProgram_02",
+	  	tags ="",
 	   	plugin = {"pretty", "html:target/cucumber-report.html",
 				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	    		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 	    		},
-		dryRun = true
+		dryRun = false
 		
 		)
 public class TestRunner extends AbstractTestNGCucumberTests{

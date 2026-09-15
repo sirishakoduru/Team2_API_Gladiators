@@ -231,9 +231,316 @@
 		      "contentType": "application/json",
 		      "programRequest": {
 		        "programDescription": "Test Program",
-		        "programName": "RestAssuredTestOne",
+		        "programName": "RestAssuredTestFour",
 		        "programStatus": "Active"
 		      }
-		    }
-  ]
-}
+		    },
+			
+			{
+					      "testcaseName": "Invalid Token",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Unauthorized",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "InvalidTokenProgram",
+					        "programStatus": "Active"
+					      }
+					    },					  
+
+					    {
+					      "testcaseName": "Admin creates a program with already existing program name",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "RestAssuredTestOne",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with trailing space in program name",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "TestProgram ",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with only numbers in program name",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "123456",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with invalid status keyword",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "InvalidStatusProgram",
+					        "programStatus": "InvalidStatus"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program without Program name",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with Program name length less than desired length",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test Program",
+					        "programName": "Abc",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with empty payload",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "",
+					        "programName": "",
+					        "programStatus": ""
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with alpha & special char in program description",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "Test@#$%Description",
+					        "programName": "SpecialDescProgram",
+					        "programStatus": "Active"
+					      }
+					    },
+
+					    {
+					      "testcaseName": "Admin creates a program with program description length more than desired length",
+					      "endpoint": "/saveprogram",
+					      "statusmessage": "Bad Request",
+					      "contentType": "application/json",
+					      "programRequest": {
+					        "programDescription": "This description is definitely more than twenty five characters",
+					        "programName": "LongDescriptionProgram",
+					        "programStatus": "Active"
+					      }
+					    },
+						{
+						  "testcaseName": "Admin creates a program with program name length between 4 and 25 characters",
+						  "endpoint": "/saveprogram",
+						  "statusmessage": "Created",
+						  "contentType": "application/json",
+						  "programRequest": {
+						    "programDescription": "Test Program",
+						    "programName": "ValidProgramName",
+						    "programStatus": "Active"
+						  }
+						},
+						{
+						  "testcaseName": "Admin creates a program with program description length between 4 and 25 characters",
+						  "endpoint": "/saveprogram",
+						  "statusmessage": "Created",
+						  "contentType": "application/json",
+						  "programRequest": {
+						    "programDescription": "Test Description",
+						    "programName": "ValidProgram",
+						    "programStatus": "Active"
+						  }
+						}						
+						
+
+					  
+									
+  ],
+  
+  "PutRequest":[
+  	  
+  	{
+  	      "testcaseName": "Admin updates a program with valid program id",
+		  "method": "PUT",
+  	      "endpoint": "/putprogram/{programId}",
+  	      "statusmessage": "Created",
+  	      "contentType": "application/json",
+  	      "programRequest": {
+  	        "programDescription": "Update Test Program",
+  	        "programName": "Updated Program One",
+  	        "programStatus": "Active"
+  	      },
+		  "expectedStatusCode": 200
+  	    },
+		{
+			   "testcaseName": "Admin updates a program with invalid program id",
+			   "method": "PUT",
+			   "endpoint": "/putprogram/999",
+			   "contentType": "application/json",
+			   "programRequest": {
+				"programDescription": "Update Test Program",
+				 "programName": "Updated Program One",
+			     "programStatus": "Active"
+			   },
+			   "expectedStatusCode": 404
+			 },
+			 {
+			    "testcaseName": "Admin updates a program with already existing program name in request body",
+			    "method": "PUT",
+			    "endpoint": "/putprogram/{programId}",
+			    "contentType": "application/json",
+			    "programRequest": {
+			      "programDescription": "Update Test Program",
+			      "programName": "RestAssuredTestOne",
+			      "programStatus": "Active"
+			    },
+			    "expectedStatusCode": 400
+			  },
+			  {
+			     "testcaseName": "Admin updates a program without request body",
+			     "method": "PUT",
+			     "endpoint": "/putprogram/{programId}",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400
+			   },
+			  {
+			     "testcaseName": "Admin updates a program with invalid method",
+			     "method": "POST",
+			     "endpoint": "/putprogram/{programId}",
+			     "contentType": "application/json",
+			     "programRequest": {
+		    		"programDescription": "Update Test Program",
+			       "programName": "Updated Program One",
+			       "programStatus": "Active"
+			     },
+			     "expectedStatusCode": 405
+			   },
+			   
+			   {
+			      "testcaseName": "Admin updates a program with invalid endpoint",
+				  "method": "PUT",
+			      "endpoint": "/invalidprogram/112",
+			      "contentType": "application/json",
+			      "programRequest": {
+					"programDescription": "Update Test Program",
+				     "programName": "Updated Program One",
+			        "programStatus": "Active"
+			      },
+			      "expectedStatusCode": 404
+			    },
+				
+				{
+				  "testcaseName": "Admin updates a program without Authorization",
+				  "method": "PUT",
+				  "endpoint": "/putprogram/{programId}",
+				  "contentType": "application/json",
+				  "programRequest": {
+				    "programName": "Updated Program One",
+				    "programDescription": "Update Test Program",
+				    "programStatus": "Active"
+				  },
+				  "expectedStatusCode": 401
+				},
+				
+				
+				{
+				    "testcaseName": "Admin updates a program with valid program Name",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/{programName}",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "Updated Program One",
+				      "programDescription": "Update Test Program",
+				      "programStatus": "Active"
+				    },
+				    "expectedStatusCode": 200
+				  },
+				  {
+				    "testcaseName": "Admin updates a program with invalid program Name",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/999",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "Updated Program One",
+				      "programDescription": "Update Test Program",
+				      "programStatus": "Active"
+				    },
+				    "expectedStatusCode": 404
+				  },
+				  {
+				    "testcaseName": "Admin updates a program missing mandatory fields in request body",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/{programName}",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "",
+				      "programDescription": "Update Test Program",
+				      "programStatus": "Active"
+				    },
+				    "expectedStatusCode": 400
+				  },
+				  {
+				    "testcaseName": "Admin updates a program with invalid status in request body",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/{programName}",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "Updated Program One",
+				      "programDescription": "Update Test Program",
+				      "programStatus": "InvalidStatus"
+				    },
+				    "expectedStatusCode": 400
+				  },
+				  {
+				    "testcaseName": "Admin updates a program with only spl char program Description in request body",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/{programName}",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "Updated Program One",
+				      "programDescription": "@#$%^&*",
+				      "programStatus": "Active"
+				    },
+				    "expectedStatusCode": 400
+				  },
+				  {
+				    "testcaseName": "Admin updates a program with valid status",
+				    "method": "PUT",
+				    "endpoint": "/putprogram/{programName}",
+				    "contentType": "application/json",
+				    "programRequest": {
+				      "programName": "Updated Program One",
+				      "programDescription": "Update Test Program",
+				      "programStatus": "Inactive"
+				    },
+				    "expectedStatusCode": 200
+				  }
+				]
+				
+				}

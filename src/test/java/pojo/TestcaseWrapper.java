@@ -11,10 +11,14 @@ public class TestcaseWrapper {
  
     @JsonProperty("PostRequest")
     private List<JsonTestData> postRequest;
+    
+    @JsonProperty("PutRequest")
+    private List<JsonTestData> putRequest;
 
     public List<JsonTestData> getGetRequest() {
         return getRequest;
     }
+    
 
     public void setGetRequest(List<JsonTestData> getRequest) {
         this.getRequest = getRequest;
@@ -27,4 +31,11 @@ public class TestcaseWrapper {
         this.postRequest = postRequest;
     }
     
+    public List<JsonTestData> getPutRequest() {
+        return putRequest;
+    }
+
+    public void setPutRequest(List<JsonTestData> putRequest) {
+        this.putRequest = putRequest;
+    }
 }

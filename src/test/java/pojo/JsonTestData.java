@@ -42,7 +42,7 @@ public class JsonTestData {
 //    
 //    @JsonProperty("BatchData")
 //    private BatchDataPojo batchData ;
-//    @JsonProperty("expectedType")
+   @JsonProperty("expectedType")
     private String expectedType;
 
 

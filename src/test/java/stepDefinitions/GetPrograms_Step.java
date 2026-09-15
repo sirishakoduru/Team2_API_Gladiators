@@ -6,23 +6,23 @@ import base.BaseClass;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.cucumber.java.en.*;
-public class GETPrograms_Step extends BaseClass {
+public class GetPrograms_Step extends BaseClass {
 	
 	Response response;
 	RequestSpecification request;
-	private static final Logger log = LoggerFactory.getLogger(GETPrograms_Step.class);
-	private String scenarioName;
+	private static final Logger log = LoggerFactory.getLogger(GetPrograms_Step.class);
+	//private String scenarioName;
 
 @Given("Admin creates {string} in program API")
 public void admin_creates_in_program_api(String scenarioName) {
-	this.scenarioName = scenarioName;
+	//this.scenarioName = scenarioName;
 	log.info("Creating request for:{ }",scenarioName);
 	request = BaseClass.createRequest();
 }
 
 @When("Admin sends a GET request for {string} in program API")
 public void admin_sends_a_get_request_for_in_program_api(String scenarioName) {
-	this.scenarioName = scenarioName;
+//	this.scenarioName = scenarioName;
 	log.info("Sending GET request for :{}" , scenarioName);
 	switch(scenarioName.trim()) {
 	case "Get all Programs Valid EndPoint":
@@ -66,7 +66,7 @@ public void admin_sends_a_get_request_for_in_program_api(String scenarioName) {
 
 @Then("Admin validates GET response for{string} in program API")
 public void admin_validates_get_response_for_get_all_programs_valid_end_point_in_program_api(String scenarioName) {
-	this.scenarioName = scenarioName;
+//	this.scenarioName = scenarioName;
     log.info("Validating GET response for Valid EndPoint" ,scenarioName);
     switch(scenarioName.trim()) {
     case "Get all Programs Valid EndPoint":
