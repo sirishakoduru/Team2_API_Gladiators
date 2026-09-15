@@ -418,7 +418,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
 	       "userLocation": "USA",
 	       "userMiddleName": "QA",
-	       "userPhoneNumber": "+91 9874456432",
+	       "userPhoneNumber": "+91 9993456432",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R01",
@@ -428,7 +428,7 @@
 	       "userTimeZone": "EST",
 	       "userVisaStatus": "H4-EAD",
 	       "userLogin": {
-	         "userLoginEmail": "titansadmin167@gmail.com",
+	         "userLoginEmail": "titan934sadmin167@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
@@ -448,7 +448,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
 	       "userLocation": "USA",
 	       "userMiddleName": "Lead",
-	       "userPhoneNumber": "+91 9874774321",
+	       "userPhoneNumber": "+91 9994344321",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R02",
@@ -458,7 +458,7 @@
 	       "userTimeZone": "CST",
 	       "userVisaStatus": "H1B",
 	       "userLogin": {
-	         "userLoginEmail": "tsita4nstaff2432@gmail.com",
+	         "userLoginEmail": "tsit9a4ns34taff2432@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
@@ -478,7 +478,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
 	       "userLocation": "India",
 	       "userMiddleName": "Learner",
-	       "userPhoneNumber": "+91 9876777432",
+	       "userPhoneNumber": "+91 9993347432",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R03",
@@ -488,7 +488,7 @@
 	       "userTimeZone": "IST",
 	       "userVisaStatus": "Indian-Citizen",
 	       "userLogin": {
-	         "userLoginEmail": "titansst4udent732@gmail.com",
+	         "userLoginEmail": "titan9s45st4udent732@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
@@ -503,7 +503,7 @@
 	   	       "userFirstName": "TitanMandatory",
 	   	       "userLastName": "Tester",
 	   	       "userLocation": "USA",
-	   	       "userPhoneNumber": "+91 9432444914",
+	   	       "userPhoneNumber": "+91 9992344914",
 	   	       "userRoleMaps": [
 	   	         {
 	   	           "roleId": "R01",
@@ -513,7 +513,7 @@
 	   	       "userTimeZone": "PST",
 	   	       "userVisaStatus": "US-Citizen",
 	   	       "userLogin": {
-	   	         "userLoginEmail": "titan79mandat4ory432@gmail.com",
+	   	         "userLoginEmail": "titan796man9dat4ory432@gmail.com",
 	   	         "loginStatus": "Active"
 	   	       }
 	   	     }
@@ -533,7 +533,7 @@
 	   	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadminnoauth",
 	   	       "userLocation": "USA",
 	   	       "userMiddleName": "QA",
-	   	       "userPhoneNumber": "+91 9976144329",
+	   	       "userPhoneNumber": "+91 9976146729",
 	   	       "userRoleMaps": [
 	   	         {
 	   	           "roleId": "R01",
@@ -543,7 +543,7 @@
 	   	       "userTimeZone": "EST",
 	   	       "userVisaStatus": "H4-EAD",
 	   	       "userLogin": {
-	   	         "userLoginEmail": "titansa4dminno6auth@gmail.com",
+	   	         "userLoginEmail": "titansa4dmi6nno6auth@gmail.com",
 	   	         "loginStatus": "Active"
 	   	       }
 	   	     }
@@ -1131,5 +1131,40 @@
 			   		       "userLogin": {"userLoginEmail": "invvs113@gmail.com", "loginStatus": "Active"}
 			   		     }
 			   		   }
-		     ]
+		     ],
+			 "DeleteRequest": [
+			   {
+			     "testcaseName": "Admin deletes a user with valid user ID",
+			     "method": "DELETE",
+			     "endpoint": "/users/{userId}",
+			     "expectedStatusCode": 200,
+			     "expectedMessage": "User deleted successfully"
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid user ID",
+			     "method": "DELETE",
+			     "endpoint": "/users/99999999",
+			     "expectedStatusCode": 404,
+			     "expectedMessage": "User not found with Id : 99999999 ",
+			     "BooleanMessage": false
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid endpoint",
+			     "method": "DELETE",
+			     "endpoint": "/usersinvalid/123",
+			     "expectedStatusCode": 404
+			   },
+			   {
+			     "testcaseName": "Admin deletes a user with invalid method",
+			     "method": "POST",
+			     "endpoint": "/users/123",
+			     "expectedStatusCode": 405
+			   },
+			   {
+			     "testcaseName": "Admin able to delete a user without Authorization",
+			     "method": "DELETE",
+			     "endpoint": "/users/123",
+			     "expectedStatusCode": 401
+			   }
+			 ]			 
 		   }

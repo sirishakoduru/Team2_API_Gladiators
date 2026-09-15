@@ -22,7 +22,8 @@ import utilities.ConfigReader;
 import utilities.JsonReader;
 import utilities.ScenarioContext;
 import static org.hamcrest.Matchers.notNullValue;
-import static org.junit.Assert.assertNotNull;
+//import static org.junit.Assert.assertNotNull;
+import static org.testng.Assert.assertNotNull;
 
 public class PostUserByRole_Step extends BaseClass {
 	

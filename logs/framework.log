@@ -1,140 +1,691 @@
-2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@4e48462d
-2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@63124022
-2026-09-12 00:04:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@6b25ef1c
-2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@4e48462d
-2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@b8a144e
-2026-09-12 00:20:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@13e00016
-2026-09-12 00:47:36 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NDU2LCJleHAiOjE3ODkyMTcyNTZ9.WgaAbKSww-GqyVJytCdmQMSbBzpPT1z6Qe4tBXr8HnrOFc1S_dYCIH8CLrL58urNlDA80Yi227VVGg4y18M5WQ
-2026-09-12 00:47:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@4a58e0e9
-2026-09-12 00:47:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@75959b0c
-2026-09-12 00:47:37 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@28e91f6d
-2026-09-12 00:47:38 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@497921d0
-2026-09-12 00:50:28 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MTg4NjI4LCJleHAiOjE3ODkyMTc0Mjh9.HBHflofEinB7ue4HxbwVlnAsTEieDcMGGZwPdRmEcTex7MKfIt5K8ggOsK94hG4AX-A0zSsh9l-L5JUza9e6kw
-2026-09-12 00:50:28 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@af9dd34
-2026-09-12 00:50:29 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@5dd3727c
-2026-09-12 00:50:30 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@93fb44
-2026-09-12 00:50:31 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@76f9e000
-2026-09-12 10:54:39 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjI0ODc4LCJleHAiOjE3ODkyNTM2Nzh9.kcM0qWGk_5sdd2fFzxMnwTLNJx81pPsdQMqUM1BKO9QjAb628n1hmTpe4VE9dIEVOCVn6VcwHe3IuTWWEJncnw
-2026-09-12 10:54:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@6644bdf5
-2026-09-12 10:54:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@5dce5c03
-2026-09-12 10:54:41 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@1ab9c735
-2026-09-12 10:54:42 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@40a7974
-2026-09-12 12:56:01 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@55c1ced9
-2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@759a678a
-2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@4e4395c
-2026-09-12 12:56:02 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@57c69937
-2026-09-12 13:04:04 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@410fc508
-2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@3514ac7d
-2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@431babe6
-2026-09-12 13:04:06 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@22c29aa8
-2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@76a14c8d
-2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@515ab3f2
-2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@28be7fec
-2026-09-12 13:07:32 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@6c0b51da
-2026-09-12 13:11:33 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjMzMDkzLCJleHAiOjE3ODkyNjE4OTN9.dbNy7Zj83DLd_WI-x2OnObzo213AfKP0WVicVJq8cM0yLx8ouccbaMD2wSKPI5d6UMeuDkUayjCI4hvoQeKerQ
-2026-09-12 13:11:33 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@13cf5f8a
-2026-09-12 13:11:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@70e5737f
-2026-09-12 13:11:38 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@2ac3d530
-2026-09-12 13:11:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@3ad558bf
-2026-09-12 13:45:36 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM1MTM2LCJleHAiOjE3ODkyNjM5MzZ9.u_wurDvHKxff9rWejp_YiWbWDAnpjiWDoYSwi6fKiEqfTMTFl72yGzsmw5lckX2A9nzg-N6BckmfUYHeL4xLbw
-2026-09-12 13:45:36 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@51d88c38
-2026-09-12 13:45:39 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U491
-2026-09-12 13:45:39 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@42ebece0
-2026-09-12 13:45:40 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U492
-2026-09-12 13:45:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@3f9e8af5
-2026-09-12 13:45:42 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U493
-2026-09-12 13:45:42 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@6ba355e4
-2026-09-12 13:45:44 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U494
-2026-09-12 14:14:48 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM2ODg4LCJleHAiOjE3ODkyNjU2ODh9.QL7-Pp2rOvs-sSTXsvLbONKVn7p-loHEjvtrPNR5an6XBhpIGo2vzxyJndTTuDnkoPbtcV5tZZgHnk6s9EStpw
-2026-09-12 14:14:48 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@615ef20
-2026-09-12 14:14:51 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U499
-2026-09-12 14:14:51 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@35c00c
-2026-09-12 14:14:52 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U500
-2026-09-12 14:14:53 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@2b0494a8
-2026-09-12 14:14:54 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U501
-2026-09-12 14:14:54 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@593f7d2e
-2026-09-12 14:18:17 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM3MDk3LCJleHAiOjE3ODkyNjU4OTd9.TIn8k6yTN3NNcEeb9letUpED2g39cAWEpijHXKIomStS6c4sqd4-gEbh7tymKPUSnD9WskY_ILuqbbrFVwaqqg
-2026-09-12 14:18:17 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 1: 
-pojo.UserRequest@4fa8297b
-2026-09-12 14:18:20 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U502
-2026-09-12 14:18:20 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 2: 
-pojo.UserRequest@3de383f7
-2026-09-12 14:18:21 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U503
-2026-09-12 14:18:21 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID 3: 
-pojo.UserRequest@76104df5
-2026-09-12 14:18:23 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U504
-2026-09-12 14:18:23 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@3ad558bf
-2026-09-12 14:18:24 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U505
-2026-09-12 14:33:37 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM4MDE3LCJleHAiOjE3ODkyNjY4MTd9.ESDzvmh9GM5uQgprZ2Ke7Jlc49q98r9PZYd9nOnppPs_ovl_2VDMobJ7ViKp3i39zzTWOY1drTvA3u0G0q0IFQ
-2026-09-12 14:33:37 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
-pojo.UserRequest@584136c1
-2026-09-12 14:33:39 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U506
-2026-09-12 14:33:40 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
-pojo.UserRequest@33ccead
-2026-09-12 14:33:41 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U507
-2026-09-12 14:33:41 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
-pojo.UserRequest@61246109
-2026-09-12 14:33:43 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U508
-2026-09-12 14:33:43 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@1826475
-2026-09-12 14:33:44 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U509
-2026-09-12 14:40:18 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5MjM4NDE4LCJleHAiOjE3ODkyNjcyMTh9.ryc596pI1zp0N87ruioIZ8jz5_HQgGiP2VrVn4eUPgc8IPOsdHHPWhHY_LHPbJm17B6aFZYI_JAcBTLAy9nsvA
-2026-09-12 14:40:18 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
-pojo.UserRequest@51d88c38
-2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U510
-2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U510 stored in ScenarioContext successfully
-2026-09-12 14:40:20 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
-pojo.UserRequest@7c5d36c3
-2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U511
-2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U511 stored in ScenarioContext successfully
-2026-09-12 14:40:22 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
-pojo.UserRequest@18f13756
-2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U512
-2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U512 stored in ScenarioContext successfully
-2026-09-12 14:40:23 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
-pojo.UserRequest@59d0fac9
-2026-09-12 14:40:25 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U513
-2026-09-12 14:40:25 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U513 stored in ScenarioContext successfully
+2026-09-15 08:55:26 WARN  [org.testng.internal.Utils] - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2026-09-15 08:57:56 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDc3MDc3LCJleHAiOjE3ODk1MDU4Nzd9.pOjXazHouVt-HB0kB9hbeoDO-PRohN-8prVWvetyb3jzZy09-NeOBfbB1GRwLdQcoVxXLNA5WyZf_OLKa8_nfA
+2026-09-15 08:57:56 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request with invalid User ID: 99999999
+2026-09-15 08:57:56 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/99999999
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid user ID
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for invalid endpoint testing
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to invalid endpoint: /usersinvalid/123
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid endpoint
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Prepared request with invalid HTTP method flag (PATCH)
+2026-09-15 08:57:57 INFO  [stepDefinitions.DeleteUser_Step] - Sending invalid PATCH method to endpoint: /users/123
+2026-09-15 08:57:58 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [405 Method Not Allowed Validation] ----------
+2026-09-15 08:57:58 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid method
+2026-09-15 08:57:58 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:02:59 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDc3MzgxLCJleHAiOjE3ODk1MDYxODF9.h4ogoqMDSPTXyOce753NOq5xtyfjTbx2NwrsnS4ZZy9N3xwSK_yF1kQvaymzl8KOrrMss2OGgFQCd6W3smcZ6Q
+2026-09-15 09:03:00 INFO  [s.DeleteUser_NoAuth_Step] - Request initialized without Authorization header for Delete User.
+2026-09-15 09:03:00 INFO  [s.DeleteUser_NoAuth_Step] - Prepared DELETE request without authorization
+2026-09-15 09:03:00 INFO  [s.DeleteUser_NoAuth_Step] - Sending DELETE request without auth to endpoint: /users/123
+2026-09-15 09:03:01 INFO  [s.DeleteUser_NoAuth_Step] - ---------- Framework Log [Delete User No Auth Validation] ----------
+2026-09-15 09:03:01 INFO  [s.DeleteUser_NoAuth_Step] - Scenario Name: Admin able to delete a user without Authorization
+2026-09-15 09:03:01 INFO  [s.DeleteUser_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:03:01 INFO  [s.DeleteUser_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:06:28 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDc3NTg5LCJleHAiOjE3ODk1MDYzODl9.iDQba8o3pmGXrLoCtNNWNZpboHWYkPArPerBIXkjafo3825qib3unpWoHPc-bv4DtRFgON5UvjpmIidu4X9YUA
+2026-09-15 09:06:28 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:06:30 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for valid User ID: U01
+2026-09-15 09:06:30 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/U01
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [Delete User Success Validation] ----------
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with valid user ID
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 200, Expected Status Code: 200
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request with invalid User ID: 99999999
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/99999999
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid user ID
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for invalid endpoint testing
+2026-09-15 09:06:31 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to invalid endpoint: /usersinvalid/123
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid endpoint
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Prepared request with invalid HTTP method flag (PATCH)
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Sending invalid PATCH method to endpoint: /users/123
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [405 Method Not Allowed Validation] ----------
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid method
+2026-09-15 09:06:32 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Request initialized without Authorization header for Delete User.
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Prepared DELETE request without authorization
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Sending DELETE request without auth to endpoint: /users/123
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - ---------- Framework Log [Delete User No Auth Validation] ----------
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Scenario Name: Admin able to delete a user without Authorization
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:06:32 INFO  [s.DeleteUser_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:09:12 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDc3NzUzLCJleHAiOjE3ODk1MDY1NTN9.b-yZZ630Fc-WqVP_90Hz-RCZyd6WWa2dhmVQau8-m9GXd61TlvA_dBX4VzZM1wXeJHdekOld3uO98FCAY3rpmA
+2026-09-15 09:09:12 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:09:14 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for valid User ID: U01
+2026-09-15 09:09:14 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/U01
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [Delete User Success Validation] ----------
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with valid user ID
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 200, Expected Status Code: 200
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request with invalid User ID: 99999999
+2026-09-15 09:09:15 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/99999999
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid user ID
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for invalid endpoint testing
+2026-09-15 09:09:16 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to invalid endpoint: /usersinvalid/123
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid endpoint
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - Prepared request with invalid HTTP method flag (PATCH)
+2026-09-15 09:09:17 INFO  [stepDefinitions.DeleteUser_Step] - Sending invalid PATCH method to endpoint: /users/123
+2026-09-15 09:09:18 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [405 Method Not Allowed Validation] ----------
+2026-09-15 09:09:18 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid method
+2026-09-15 09:09:18 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:09:18 INFO  [s.DeleteUser_NoAuth_Step] - Request initialized without Authorization header for Delete User.
+2026-09-15 09:09:18 INFO  [s.DeleteUser_NoAuth_Step] - Prepared DELETE request without authorization
+2026-09-15 09:09:18 INFO  [s.DeleteUser_NoAuth_Step] - Sending DELETE request without auth to endpoint: /users/123
+2026-09-15 09:09:19 INFO  [s.DeleteUser_NoAuth_Step] - ---------- Framework Log [Delete User No Auth Validation] ----------
+2026-09-15 09:09:19 INFO  [s.DeleteUser_NoAuth_Step] - Scenario Name: Admin able to delete a user without Authorization
+2026-09-15 09:09:19 INFO  [s.DeleteUser_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:09:19 INFO  [s.DeleteUser_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:09:19 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
+pojo.UserRequest@2dbb8da0
+2026-09-15 09:09:22 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U1565
+2026-09-15 09:09:22 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U1565 stored in ScenarioContext successfully
+2026-09-15 09:09:22 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
+pojo.UserRequest@8e77c5b
+2026-09-15 09:09:24 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U1566
+2026-09-15 09:09:24 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U1566 stored in ScenarioContext successfully
+2026-09-15 09:09:24 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
+pojo.UserRequest@18df26a1
+2026-09-15 09:09:26 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U1567
+2026-09-15 09:09:26 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U1567 stored in ScenarioContext successfully
+2026-09-15 09:09:26 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@2e1e7bc6
+2026-09-15 09:09:29 INFO  [stepDefinitions.PostUserByRole_Step] - User created successfully with User ID: U1568
+2026-09-15 09:09:29 INFO  [stepDefinitions.PostUserByRole_Step] - User ID U1568 stored in ScenarioContext successfully
+2026-09-15 09:09:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty FirstName]:
+pojo.UserRequest@22b10124
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userFirstName": "User First Name is cannot be null or empty"
+}
+2026-09-15 09:09:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty LastName]:
+pojo.UserRequest@29fc83c5
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLastName": "User Last Name is cannot be null or empty"
+}
+2026-09-15 09:09:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Location]:
+pojo.UserRequest@5b3ee43e
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLocation": "User Location must contain two or more alphabets only"
+}
+2026-09-15 09:09:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Time Zone]:
+pojo.UserRequest@48188d23
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Visa Status]:
+pojo.UserRequest@21bd6fd1
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:33 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Role Id]:
+pojo.UserRequest@29d81c22
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:34 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].roleId": "Role Id is mandatory"
+}
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Role Status]:
+pojo.UserRequest@73818435
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].userRoleStatus": "Invalid Status: must be Active or Inactive"
+}
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Login Status]:
+pojo.UserRequest@4c12f54a
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty email]:
+pojo.UserRequest@e2344da
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Phone Number]:
+pojo.UserRequest@29c21acb
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:35 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userPhoneNumber": "phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for duplicate email scenario:
+pojo.UserRequest@1db9c2cf
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with duplicate or unique constraint violations
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create new UserLogin as email already exists!",
+    "success": false
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for duplicate phone number scenario:
+pojo.UserRequest@2a525f88
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with duplicate or unique constraint violations
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create new User as phone number +91 9877756610 already exists !!",
+    "success": false
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userEduPg] scenario:
+pojo.UserRequest@498f5728
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userEduPg": "userEduPgmust begin with alphabet and can contain only alphanumeric characters"
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userEduUg] scenario:
+pojo.UserRequest@1af6d656
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userEduUg": "userEduUg must begin with alphabet and can contain only alphanumeric characters"
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [first name] scenario:
+pojo.UserRequest@614ae4eb
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userFirstName": "userFirstName must contain two or more alphabets only"
+}
+2026-09-15 09:09:36 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [last name] scenario:
+pojo.UserRequest@3b95fce9
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLastName": "userLastName must contain one or more alphabets only"
+}
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [middle name] scenario:
+pojo.UserRequest@1aea759d
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userMiddleName": "userMiddleName must contain one or more alphabets only"
+}
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userLinkedinUrl] scenario:
+pojo.UserRequest@64d1f549
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLinkedinUrl": "userLinkedinUrlmust contain www.linkedin.com"
+}
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userLocation] scenario:
+pojo.UserRequest@164db8f0
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLocation": "User Location must contain two or more alphabets only"
+}
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [email format] scenario:
+pojo.UserRequest@ec70725
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:09:37 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [phone number format] scenario:
+pojo.UserRequest@641ab175
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userPhoneNumber": "phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"
+}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user Role Id] scenario:
+pojo.UserRequest@7a6e0f3c
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'roleId' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user Role Status] scenario:
+pojo.UserRequest@25511895
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].userRoleStatus": "Invalid Status: must be Active or Inactive"
+}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user time zone] scenario:
+pojo.UserRequest@90c01ab
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'TimeZone' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user visa status] scenario:
+pojo.UserRequest@c555e1e
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'Visa Status' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with empty payload: {}
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Empty Payload Validation] ----------
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 400 Bad Request
+2026-09-15 09:09:38 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid Authorization token.
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 401, Expected: 401
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Token Validation] ----------
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with valid body for invalid endpoint scenario.
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 404, Expected: 404
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Endpoint Validation] ----------
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 404 Not Found
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid content type: text/plain
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 415, Expected: 415
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Content Type Validation] ----------
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 415, Expected Status Code: 415
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 415 Unsupported Media Type
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid HTTP method (PATCH).
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Validated Response -> message: 'Request method 'PATCH' is not supported', success: false
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Method Validation] ----------
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:09:39 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 405 Method Not Allowed
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Request initialized without Authorization header.
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Request payload prepared without auth:
+pojo.UserRequest@26361572
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Response Status Code: 401
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Actual: 401, Expected: 401
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - ---------- Framework Log [No Auth Validation] ----------
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:09:39 INFO  [s.PostUserByRole_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:22:17 INFO  [hooks.Hooks] - Token generated successfully: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJUZWFtMDJAZ21haWwuY29tIiwiaWF0IjoxNzg5NDc4NTM4LCJleHAiOjE3ODk1MDczMzh9.deyKAturuRvL23xAxQV9IzqD0vaVEOLG3ZC_VSxQ7qsT2BLuRgKz6p_1SffoBOdRwpdO-5rxsNjaXw3QYWA94A
+2026-09-15 09:22:17 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:22:19 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for valid User ID: U01
+2026-09-15 09:22:19 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/U01
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [Delete User Success Validation] ----------
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with valid user ID
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 200, Expected Status Code: 200
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request with invalid User ID: 99999999
+2026-09-15 09:22:20 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to endpoint: /users/99999999
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid user ID
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - Prepared DELETE request for invalid endpoint testing
+2026-09-15 09:22:21 INFO  [stepDefinitions.DeleteUser_Step] - Sending DELETE request to invalid endpoint: /usersinvalid/123
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [404 Not Found Validation] ----------
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid endpoint
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - Request initialized with Bearer token for Delete User.
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - Prepared request with invalid HTTP method flag (PATCH)
+2026-09-15 09:22:22 INFO  [stepDefinitions.DeleteUser_Step] - Sending invalid PATCH method to endpoint: /users/123
+2026-09-15 09:22:23 INFO  [stepDefinitions.DeleteUser_Step] - ---------- Framework Log [405 Method Not Allowed Validation] ----------
+2026-09-15 09:22:23 INFO  [stepDefinitions.DeleteUser_Step] - Scenario Name: Admin deletes a user with invalid method
+2026-09-15 09:22:23 INFO  [stepDefinitions.DeleteUser_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Request initialized without Authorization header for Delete User.
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Prepared DELETE request without authorization
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Sending DELETE request without auth to endpoint: /users/123
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - ---------- Framework Log [Delete User No Auth Validation] ----------
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Scenario Name: Admin able to delete a user without Authorization
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:22:23 INFO  [s.DeleteUser_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:22:23 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R01, Role Name: ROLE_ADMIN, Role Desc: LMS_Admin
+pojo.UserRequest@3d3a28b5
+2026-09-15 09:22:25 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R02, Role Name: ROLE_STAFF, Role Desc: LMS_Staff
+pojo.UserRequest@306cfb8a
+2026-09-15 09:22:25 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for Role ID: R03, Role Name: ROLE_STUDENT, Role Desc: LMS_USER
+pojo.UserRequest@220cda54
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Request payload prepared for mandatory fields: 
+pojo.UserRequest@8dcacf1
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty FirstName]:
+pojo.UserRequest@4c0bfe9e
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userFirstName": "userFirstName must contain two or more alphabets only"
+}
+2026-09-15 09:22:26 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty LastName]:
+pojo.UserRequest@14e83c9d
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLastName": "User Last Name is cannot be null or empty"
+}
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Location]:
+pojo.UserRequest@531bec12
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLocation": "User Location must contain two or more alphabets only"
+}
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Time Zone]:
+pojo.UserRequest@1c382179
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:27 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Visa Status]:
+pojo.UserRequest@7e28f150
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Role Id]:
+pojo.UserRequest@7488c183
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].roleId": "Role Id is mandatory"
+}
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Role Status]:
+pojo.UserRequest@278150a1
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].userRoleStatus": "Role Status is Mandatory"
+}
+2026-09-15 09:22:28 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Login Status]:
+pojo.UserRequest@77ad2767
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty email]:
+pojo.UserRequest@5eae392d
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared hardcoded request for testcase [Admin creates a user with empty Phone Number]:
+pojo.UserRequest@55d87b73
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with a missing required field
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userPhoneNumber": "Phone Number is required"
+}
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for duplicate email scenario:
+pojo.UserRequest@22c4354d
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with duplicate or unique constraint violations
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create new UserLogin as email already exists!",
+    "success": false
+}
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for duplicate phone number scenario:
+pojo.UserRequest@6c537267
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with duplicate or unique constraint violations
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create new User as phone number +91 9877756610 already exists !!",
+    "success": false
+}
+2026-09-15 09:22:29 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userEduPg] scenario:
+pojo.UserRequest@7b364f47
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userEduPg": "userEduPgmust begin with alphabet and can contain only alphanumeric characters"
+}
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userEduUg] scenario:
+pojo.UserRequest@13cae908
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userEduUg": "userEduUg must begin with alphabet and can contain only alphanumeric characters"
+}
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [first name] scenario:
+pojo.UserRequest@7b43f95c
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userFirstName": "userFirstName must contain two or more alphabets only"
+}
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [last name] scenario:
+pojo.UserRequest@7054c068
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLastName": "userLastName must contain one or more alphabets only"
+}
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [middle name] scenario:
+pojo.UserRequest@531b1778
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userMiddleName": "userMiddleName must contain one or more alphabets only"
+}
+2026-09-15 09:22:30 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userLinkedinUrl] scenario:
+pojo.UserRequest@42095996
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLinkedinUrl": "userLinkedinUrlmust contain www.linkedin.com"
+}
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [userLocation] scenario:
+pojo.UserRequest@7f839ec5
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userLocation": "User Location must contain two or more alphabets only"
+}
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [email format] scenario:
+pojo.UserRequest@5923210
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "User email Id is required and should be in proper email format",
+    "success": false
+}
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [phone number format] scenario:
+pojo.UserRequest@4c4be9d8
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userPhoneNumber": "phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"
+}
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user Role Id] scenario:
+pojo.UserRequest@7f3a92fd
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'roleId' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user Role Status] scenario:
+pojo.UserRequest@38d895e8
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:31 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "userRoleMaps[0].userRoleStatus": "Invalid Status: must be Active or Inactive"
+}
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user time zone] scenario:
+pojo.UserRequest@3d0f4ac4
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'TimeZone' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request for invalid [user visa status] scenario:
+pojo.UserRequest@1c15a6aa
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Bad Request Validation] ----------
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts to create a user with invalid field values or formats
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: {
+    "message": "Failed to create user, as 'Visa Status' is invalid !! ",
+    "success": false
+}
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with empty payload: {}
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 400, Expected: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Empty Payload Validation] ----------
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 400, Expected Status Code: 400
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 400 Bad Request
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid Authorization token.
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 401, Expected: 401
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Token Validation] ----------
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with valid body for invalid endpoint scenario.
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 404, Expected: 404
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Endpoint Validation] ----------
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 404, Expected Status Code: 404
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 404 Not Found
+2026-09-15 09:22:32 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid content type: text/plain
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual: 415, Expected: 415
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Content Type Validation] ----------
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 415, Expected Status Code: 415
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 415 Unsupported Media Type
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Prepared request with invalid HTTP method (PATCH).
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Actual Status Code: 405, Expected Status Code: 405
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Validated Response -> message: 'Request method 'PATCH' is not supported', success: false
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - ---------- Framework Log [Invalid Method Validation] ----------
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Scenario Name: Admin attempts user creation handling specific protocol and structural edge cases
+2026-09-15 09:22:33 INFO  [stepDefinitions.PostUserByRole_Step] - Response Status Line: HTTP/1.1 405 Method Not Allowed
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Request initialized without Authorization header.
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Request payload prepared without auth:
+pojo.UserRequest@11c40a65
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Response Status Code: 401
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Actual: 401, Expected: 401
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - ---------- Framework Log [No Auth Validation] ----------
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Actual Status Code: 401, Expected Status Code: 401
+2026-09-15 09:22:33 INFO  [s.PostUserByRole_NoAuth_Step] - Response Status Line: HTTP/1.1 401 Unauthorized
