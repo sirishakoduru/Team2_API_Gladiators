@@ -412,9 +412,6 @@
 	      "endpoint": "/batches/program/{programId}",
 	      "expectedStatusCode": 200
 	    }
-	
-	
-	
   ],
 
   "PostRequest": [
@@ -556,6 +553,231 @@
       "batchNoOfClasses": 12,
       "batchStatus": "ACTIVE"
     }
-  }
+  },
+  {
+    "testcaseName": "Login with empty password",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "loginRequest": {
+      "userLoginEmailId": "Team02@gmail.com",
+      "password": ""
+    },
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login with empty email",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "loginRequest": {
+      "userLoginEmailId": "",
+      "password": "Team02@123"
+    },
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login without request body",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "application/json",
+    "expectedStatusCode": 400
+  },
+  {
+    "testcaseName": "Login with invalid content type",
+    "method": "POST",
+    "endpoint": "/login",
+    "contentType": "text/plain",
+     "rawBody": "{\"userLoginEmailId\":\"Team02@gmail.com\",\"password\":\"Team02@2026\"}",
+    "expectedStatusCode": 415
+  },
+  {
+      "testcaseName": "Login With Invalid Method",
+      "method": "GET",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 405
+    },
+    {
+      "testcaseName": "Login With Invalid Endpoint",
+      "method": "POST",
+      "endpoint": "/loginnn",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 404
+    },
+    {
+      "testcaseName": "Login With Special Characters Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team@@02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Email Having Spaces",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team 02 @gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Null Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": null,
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Unregistered Email",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Teamninja@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Special Characters Password",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@@@###"
+      },
+      "expectedStatusCode": 401
+    },
+    {
+      "testcaseName": "Login With Password Having Spaces",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team 02 @ 2026"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Null Password",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": null
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Login With Invalid Base URL",
+      "method": "POST",
+      "endpoint": "/login",
+      "contentType": "application/json",
+      "loginRequest": {
+        "userLoginEmailId": "Team02@gmail.com",
+        "password": "Team02@2026"
+      },
+      "expectedStatusCode": 404
+    },
+  {
+      "testcaseName": "Valid Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 201
+    },
+    {
+      "testcaseName": "Invalid Content Type in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "text/plain",
+      "rawBody": "{\"userLoginEmailId\":\"Team02@gmail.com\"}",
+      "expectedStatusCode": 415
+    },
+    {
+      "testcaseName": "Invalid Method in forgot password API",
+      "method": "GET",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 405
+    },
+    {
+      "testcaseName": "Invalid Endpoint in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/conf",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02@gmail.com"
+      },
+      "expectedStatusCode": 404
+    },
+    {
+      "testcaseName": "Empty Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": ""
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Invalid Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Team02ail.com"
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Null Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": null
+      },
+      "expectedStatusCode": 400
+    },
+    {
+      "testcaseName": "Unregistered Email in forgot password API",
+      "method": "POST",
+      "endpoint": "/login/forgotpassword/confirmEmail",
+      "contentType": "application/json",
+      "forgotPasswordRequest": {
+        "userLoginEmailId": "Teamninja@gmail.com"
+      },
+      "expectedStatusCode": 400
+    }
   ]
 }
