@@ -10,18 +10,15 @@ import utilities.JsonReader;
 import utilities.TokenManager;
 
 public class BaseClass {
-	
+
 	public static void init() throws IOException {
 		RestAssured.baseURI = ConfigReader.getProperty("BaseURL");
 	}
-	
+
 	public static RequestSpecification requestWithoutAuth() {
-        return given()
-                .log().all()
-                .header("Content-Type", "application/json")
-                .baseUri(RestAssured.baseURI);
-    }
-	
+		return given().log().all().header("Content-Type", "application/json").baseUri(RestAssured.baseURI);
+	}
+
 	public static RequestSpecification createRequest() {
         return given()
                 .log().all()
