@@ -31,6 +31,7 @@ Given Admin sets Authorization to Bearer Token
   @PostProgram_05
  Scenario: Admin creates a program with invalid token
  Given Admin creates POST Request with invalid token in program API
+ When Admin sends a HTTPS request to the valid endpoint in program API
  Then Admin receives 401 Unauthorized in program API
   
  @PostProgram_06

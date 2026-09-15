@@ -117,240 +117,107 @@
 	    "expectedStatusCode": 405
 	  },
 	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=all",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R01 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R01",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R02 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R02",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R03 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R03",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users with invalid role id",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R05",
-	    "expectedStatusCode": 404,
-		"expectedMessage": "RoleID R05 not found",
-		"BooleanMessage": false
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/usersssss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/byStatus?id=R03",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/2",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch with invalid batch id",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/999",
-	    "expectedStatusCode": 404,
-		"expectedMessage": "batchid 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/EWS",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/v2/users",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/v2/usersedfgr",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for invalid Method",
-	    "method": "POST",
-	    "endpoint": "/v2/users",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/programBatch/2",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programs/1",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program with invalid program id",
-	    "method": "GET",
-	    "endpoint": "/users/programs/999",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "programId 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programs/HGT",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/programs/9",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with admin role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R01",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with staff role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R02",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with student role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R03",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users info with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/usersEREDS/roles",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "programId 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users info with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/roles/R01",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/user/{userId}",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid user id",
-	    "method": "GET",
-	    "endpoint": "/users/user/15",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "userId 15 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/useredcs/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/user/U17",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with valid user ID",
-	    "method": "GET",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid user ID",
-	    "method": "GET",
-	    "endpoint": "/users/details/999999999999",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "User not found with Id : 999999999999 ",
-	  	"BooleanMessage": false
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid baseURI",
-	    "method": "GET",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/detailsERFVB/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 405
-	  },
-	  {
 	    "testcaseName": "Admin retrieves all users without Authorization",
 	    "method": "GET",
 	    "endpoint": "/users",
 	    "expectedStatusCode": 401
 	  },
+	  
+	  {
+	  	    "testcaseName": "Get all Programs Valid EndPoint ",
+	  	    "method": "GET",
+	  	    "endpoint": "/allPrograms",
+	  	    "expectedStatusCode": 200
+	   },
+	   {
+	   	    "testcaseName": "Get all Programs Invalid EndPoint ",
+	   	    "method": "GET",
+	   	    "endpoint": "/allPrograms",
+	   	    "expectedStatusCode": 404
+	   	  },
+
+	  {
+		  	    "testcaseName": "Get all Programs Invalid Method",
+	 	  	    "method": "GET",
+		  	    "endpoint": "/allPrograms",
+		  	    "expectedStatusCode": 405
+	  },
+	  
+	  {
+	     	    "testcaseName": "Get Program By ID with Valid ProgramID  ",
+	     	    "method": "GET",
+	     	    "endpoint": "/programs/{programId}",
+	     	    "expectedStatusCode": 200
+	  },
+	  
+	  {
+	       	    "testcaseName": "Get Program By ID with Invalid ProgramID  ",
+	       	    "method": "GET",
+	       	    "endpoint": "/programs/{programId}",
+	       	    "expectedStatusCode": 404
+	    }, 
+		
+		{
+			   "testcaseName": "Get Program By ID with Invalid BaseURI  ",
+		   	    "method": "GET",
+        	    "endpoint": "/programs/{programId}",
+	       	    "expectedStatusCode": 404
+	    }, 
+		
+		{
+			   "testcaseName": "Get Program By ID Invalid EndPoint ",
+		  	    "method": "GET",
+		  	    "endpoint": "/programs/{programId}",
+			    "expectedStatusCode": 404
+	    }, 
+		
+		
+		{
+			   "testcaseName": "Get All Programs with Users Valid EndPoint",
+			    "method": "GET",
+			    "endpoint": "/allProgramsWithUsers",
+			    "expectedStatusCode": 200
+	    }, 
+		{
+			   "testcaseName": "Get All Programs with Users Invalid EndPoint",
+			    "method": "GET",
+			    "endpoint": "/allProgramsWithUsers",
+			    "expectedStatusCode": 404
+	    }, 	
+				
+		{		
+					
+			   "testcaseName": "Get Program By ID Invalid Method",	
+				    "method": "GET",
+				    "endpoint": "/allProgramsWithUsers",
+				    "expectedStatusCode": 405
+			 }, 
+		 
 	  {
       "testcaseName": "Admin retrieves all active users without Authorization",
-	  "method": "GET",
       "endpoint": " /users/activeUsers",
       "expectedStatusCode": 401
 	},
 	{
       "testcaseName": "Admin retrieves all active users e-mail id without Authorization",
-	  "method": "GET",
       "endpoint": "/fetch-emails",
       "expectedStatusCode": 401
 	},
 	{
       "testcaseName": "Admin retrieves all user role without Authorization",
-	  "method": "GET",
       "endpoint": "/roles",
       "expectedStatusCode": 401
 	},
 	{
       "testcaseName": "Admin retrieves user info without Authorization",
-	  "method": "GET",
       "endpoint": "/users/34",
       "expectedStatusCode": 401
 	},
 	{
 	  "testcaseName": "Admin retrieves all users info without Authorization",
-	  "method": "GET",
 	  "endpoint": "/users/roles",
 	  "expectedStatusCode": 401
+
 	},
 	{
 	  "testcaseName": "Admin retrieves count of all active & inactive users without Authorization",
@@ -394,6 +261,18 @@
 	      "endpoint": "/batches",
 	      "expectedStatusCode": 200
 	    },
+		{
+		      "testcaseName": "Get all batches with invalid Endpoint",
+		      "method": "GET",
+		      "endpoint": "/batchesss",
+		      "expectedStatusCode": 404
+		    },
+		    {
+		      "testcaseName": "Get all batches with invalid Method",
+		      "method": "PUT",
+		      "endpoint": "/batches",
+		      "expectedStatusCode": 405
+		    },
 	    {
 	      "testcaseName": "Get batch by valid batch ID",
 	      "method": "GET",
@@ -422,7 +301,7 @@
       "contentType": "application/json",
       "programRequest": {
         "programDescription": "Test Program",
-        "programName": "RestAssuredDegie",
+        "programName": "RestAssuredDegiw",
         "programStatus": "Active"
       }
     },
@@ -1166,7 +1045,175 @@
     }
   },
   {
-    "testcaseName": "Login with empty password",
+        "testcaseName": "Admin creates batch with only optional fields",
+        "method": "POST",
+        "endpoint": "/batches",
+        "expectedStatusCode": 400,
+        "expectedMessage": "Batch Name and Program ID are mandatory",
+        "batchRequest": {
+          "batchDescription": "Only optional fields provided",
+          "batchNoOfClasses": 10,
+          "batchStatus": "ACTIVE"
+        }
+      },
+	  {
+	      "testcaseName": "Admin creates batch without underscore format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDETBATCH205",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with hyphen format in batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET-206",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_ABC",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in the suffix of batch name",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_20#",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length more than 28 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_SuperLongBatchNameOver28Chars",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch name length less than 6 characters in total",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SD_1",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description less than 4 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_307",
+	        "batchDescription": "Hi",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with batch description more than 25 characters",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_308",
+	        "batchDescription": "This description is definitely too long",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_309",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "xyzabc"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with random numbers in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_310",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "12345"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with special characters in status field",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_311",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 12,
+	        "batchStatus": "@#$%"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length less than 1",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_312",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 0,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+	    {
+	      "testcaseName": "Admin creates batch with number of classes length more than 99",
+	      "method": "POST",
+	      "endpoint": "/batches",
+	      "expectedStatusCode": 400,
+	      "batchRequest": {
+	        "batchName": "SDET_313",
+	        "batchDescription": "Valid Description",
+	        "batchNoOfClasses": 999,
+	        "batchStatus": "ACTIVE"
+	      }
+	    },
+		{
+ "testcaseName": "Login with empty password",
     "method": "POST",
     "endpoint": "/login",
     "contentType": "application/json",
@@ -1389,8 +1436,167 @@
         "userLoginEmailId": "Teamninja@gmail.com"
       },
       "expectedStatusCode": 400
-    }
-		     ],
+    },
+	{
+		"testcaseName": "Add New Program",
+		"endpoint": "/saveprogram",
+		"statusmessage": "Created",
+		"contentType": "application/json",
+		"programRequest": {
+		  "programDescription": "Test Program",
+		  "programName": "RestAssuredTestFour",
+		  "programStatus": "Active"
+		}
+	  },
+	  
+	  {
+					"testcaseName": "Invalid Token",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Unauthorized",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "InvalidTokenProgram",
+					  "programStatus": "Active"
+					}
+				  },					  
+
+				  {
+					"testcaseName": "Admin creates a program with already existing program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "RestAssuredTestOne",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with trailing space in program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "TestProgram ",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with only numbers in program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "123456",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with invalid status keyword",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "InvalidStatusProgram",
+					  "programStatus": "InvalidStatus"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program without Program name",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with Program name length less than desired length",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "Abc",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with empty payload",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "",
+					  "programName": "",
+					  "programStatus": ""
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with alpha & special char in program description",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test@#$%Description",
+					  "programName": "SpecialDescProgram",
+					  "programStatus": "Active"
+					}
+				  },
+
+				  {
+					"testcaseName": "Admin creates a program with program description length more than desired length",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Bad Request",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "This description is definitely more than twenty five characters",
+					  "programName": "LongDescriptionProgram",
+					  "programStatus": "Active"
+					}
+				  },
+				  {
+					"testcaseName": "Admin creates a program with program name length between 4 and 25 characters",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Created",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Program",
+					  "programName": "ValidProgramName",
+					  "programStatus": "Active"
+					}
+				  },
+				  {
+					"testcaseName": "Admin creates a program with program description length between 4 and 25 characters",
+					"endpoint": "/saveprogram",
+					"statusmessage": "Created",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Test Description",
+					  "programName": "ValidProgram",
+					  "programStatus": "Active"
+					}
+				  }						
+				  
+
+				
+							  
+],
+
+
 	    
 			 "DeleteRequest": [
 			   {
@@ -1426,9 +1632,11 @@
 			     "endpoint": "/users/123",
 			     "expectedStatusCode": 401
 			   }
-			 ],			 
+			
+			 ],
+				 
   
-	
+			
 		"PutRequest":[
 			{
 				"testcaseName": "Admin updates user with valid user id",
@@ -2064,7 +2272,89 @@
 					"status": "Active"
 
 				}
-			}
+			},
+			{
+				"testcaseName": "Admin updates a program with valid program id",
+			  "method": "PUT",
+				"endpoint": "/putprogram/{programId}",
+				"statusmessage": "Created",
+				"contentType": "application/json",
+				"programRequest": {
+				  "programDescription": "Update Test Program",
+				  "programName": "Updated Program One",
+				  "programStatus": "Active"
+				},
+			  "expectedStatusCode": 200
+			  },
+			{
+				   "testcaseName": "Admin updates a program with invalid program id",
+				   "method": "PUT",
+				   "endpoint": "/putprogram/999",
+				   "contentType": "application/json",
+				   "programRequest": {
+					"programDescription": "Update Test Program",
+					 "programName": "Updated Program One",
+					 "programStatus": "Active"
+				   },
+				   "expectedStatusCode": 404
+				 },
+				 {
+					"testcaseName": "Admin updates a program with already existing program name in request body",
+					"method": "PUT",
+					"endpoint": "/putprogram/{programId}",
+					"contentType": "application/json",
+					"programRequest": {
+					  "programDescription": "Update Test Program",
+					  "programName": "RestAssuredTestOne",
+					  "programStatus": "Active"
+					},
+					"expectedStatusCode": 400
+				  },
+				  {
+					 "testcaseName": "Admin updates a program without request body",
+					 "method": "PUT",
+					 "endpoint": "/putprogram/{programId}",
+					 "contentType": "application/json",
+					 "expectedStatusCode": 400
+				   },
+				  {
+					 "testcaseName": "Admin updates a program with invalid method",
+					 "method": "POST",
+					 "endpoint": "/putprogram/{programId}",
+					 "contentType": "application/json",
+					 "programRequest": {
+						"programDescription": "Update Test Program",
+					   "programName": "Updated Program One",
+					   "programStatus": "Active"
+					 },
+					 "expectedStatusCode": 405
+				   },
+				   
+				   {
+					  "testcaseName": "Admin updates a program with invalid endpoint",
+					  "method": "PUT",
+					  "endpoint": "/invalidprogram/112",
+					  "contentType": "application/json",
+					  "programRequest": {
+						"programDescription": "Update Test Program",
+						 "programName": "Updated Program One",
+						"programStatus": "Active"
+					  },
+					  "expectedStatusCode": 404
+					},
+					
+					{
+					  "testcaseName": "Admin updates a program without Authorization",
+					  "method": "PUT",
+					  "endpoint": "/putprogram/{programId}",
+					  "contentType": "application/json",
+					  "programRequest": {
+						"programName": "Updated Program One",
+						"programDescription": "Update Test Program",
+						"programStatus": "Active"
+					  },
+					  "expectedStatusCode": 401
+					}
 			
 			
 		],
@@ -2081,150 +2371,9 @@
 				      "userRoleStatus": "Active"
 				    }
 				  ]
-				},
-		{
-		"testcaseName": "Admin updates user role status with valid role status",
-		"method": "PUT",
-		"endpoint": "/users/roleId/{userID}",
-		"contentType": "application/json",
-		"expectedStatusCode": 200,
-			  "userRoleList": [
-			    {
-			      "roleId": "R02",
-			      "userRoleStatus": "Active"
-			    }
-			  ]
-			},
-			{
-			"testcaseName": "Admin updates user role id with invalid role id",
-			"method": "PUT",
-			"endpoint": "/users/roleId/U1316",
-			"contentType": "application/json",
-			"expectedStatusCode": 400,
-			"expectedMessage": "Failed to assign new User Role, as 'roleId' is invalid !!  U1316",
-			"BooleanMessage": false,
-				  "userRoleList": [
-				    {
-				      "roleId": "02",
-				      "userRoleStatus": "Active"
-				    }
-				  ]
-				},
-			{
-			"testcaseName": "Admin updates user role status with invalid role status",
-			"method": "PUT",
-			"endpoint": "/users/roleId/U1316",
-			"contentType": "application/json",
-			"expectedStatusCode": 400,
-				  "userRoleList": [
-				    {
-				      "roleId": "02",
-				      "userRoleStatus": "Activating"
-				    }
-				  ]
-				},
-				{
-				"testcaseName": "Admin update same Role id for the user",
-				"method": "PUT",
-				"endpoint": "/users/roleId/U1316",
-				"contentType": "application/json",
-				"expectedStatusCode": 404,
-					  "userRoleList": [
-					    {
-					      "roleId": "R01",
-					      "userRoleStatus": "Active"
-					    }
-					  ]
-					},
-					{
-					"testcaseName": "Admin updates user role id with invalid user id",
-					"method": "PUT",
-					"endpoint": "/users/roleId/1316",
-					"contentType": "application/json",
-					"expectedStatusCode": 404,
-						  "userRoleList": [
-						    {
-						      "roleId": "R01",
-						      "userRoleStatus": "Active"
-						    }
-						  ]
-						},
-					{
-					"testcaseName": "Admin updates user role id with invalid Endpoint",
-					"method": "PUT",
-					"endpoint": "/users/roleIdse/U1316",
-					"contentType": "application/json",
-					"expectedStatusCode": 404,
-						  "userRoleList": [
-						    {
-						      "roleId": "R01",
-						      "userRoleStatus": "Active"
-						    }
-						  ]
-						},
-					{
-					"testcaseName": "Admin updates user role id with invalid Method",
-					"method": "GET",
-					"endpoint": "/users/roleId/1316",
-					"contentType": "application/json",
-					"expectedStatusCode": 405,
-						  "userRoleList": [
-						    {
-						      "roleId": "R01",
-						      "userRoleStatus": "Active"
-						    }
-						  ]
-						},
-					{
-					"testcaseName": "Admin updates user role id with invalid Content Type",
-					"method": "GET",
-					"endpoint": "/users/roleId/1316",
-					"contentType": "text/plain",
-					"expectedStatusCode": 415,
-						  "userRoleList": [
-						    {
-						      "roleId": "R01",
-						      "userRoleStatus": "Active"
-						    }
-						  ]
-						},
-						{
-						"testcaseName": "Admin updates user role id without Authorization",
-						"method": "PUT",
-						"endpoint": "/users/roleId/1316",
-						"contentType": "application/json",
-						"expectedStatusCode": 401,
-							  "userRoleList": [
-							    {
-							      "roleId": "R01",
-							      "userRoleStatus": "Active"
-							    }
-							  ]
-							}
-
-			
-		],
-	"programBatchRequest":[
-		{
-			"testcaseName": "Admin updates user role program batch status",
-			"method": "PUT",
-			"endpoint": "/users/roleProgramBatchStatus/U1316",
-			"contentType": "application/json",
-			"expectedStatusCode": 200,
-
-			"programBatchRequest": {
-			"userId": "U1316",
-			"programId": 1,
-			"roleId": "R01",
-			"userRoleProgramBatches": [
-				{
-				"batchId": 2,
-				"userRoleProgramBatchStatus": "Inactive"
 				}
-			]
+  
+				]
 			}
-		}
-		
-	]
-}
-
+				
+	
