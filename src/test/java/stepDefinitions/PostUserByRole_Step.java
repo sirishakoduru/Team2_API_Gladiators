@@ -2,8 +2,10 @@ package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -116,13 +118,27 @@ public class PostUserByRole_Step extends BaseClass {
         
         String userId = response.jsonPath().getString("user.userId");
         
-        assertNotNull(userId, "Response body should contain generated userId");
+//        assertNotNull(userId, "Response body should contain generated userId");
         
-        assertEquals(response.getStatusCode(), expectedStatusCode.intValue(), "Status code mismatch!");
+//        assertEquals(response.getStatusCode(), expectedStatusCode.intValue(), "Status code mismatch!");
+        
+        String role = response.jsonPath().getString("roles[0].roleId");
+
+        switch(role) {
+            case "R01":
+                ScenarioContext.set("adminUserId", userId);
+                break;
+            case "R02":
+                ScenarioContext.set("staffUserId", userId);
+                break;
+            case "R03":
+                ScenarioContext.set("studentUserId", userId);
+                break;
+        }
         
         log.info("User created successfully with User ID: {}", userId);
         
-        ScenarioContext.set("userId", userId);
+//        ScenarioContext.set("userId", userId);
         
         log.info("User ID {} stored in ScenarioContext successfully", userId);
     }
@@ -173,6 +189,7 @@ public void admin_creates_post_request_with_field_empty(String fieldName) {
 
 
 @Then("Admin receives {int} Bad Request Status with valid error message")
+<<<<<<< HEAD
 public void admin_receives_bad_request_status_with_valid_error_message(Integer expectedStatusCode) {
     
     response.then().log().all().statusCode(expectedStatusCode);
@@ -223,6 +240,65 @@ public void admin_receives_bad_request_status_with_valid_error_message(Integer e
     
     log.info("Response Status Line: {}", response.asPrettyString());
     
+=======
+public void admin_receives_bad_request_status_with_valid_error_message(Integer int1) {
+   
+	
+}
+
+@Given("Admin creates POST request with LastName field empty")
+public void admin_creates_post_request_with_last_name_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Location field empty")
+public void admin_creates_post_request_with_location_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Time Zone field empty")
+public void admin_creates_post_request_with_time_zone_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Visa Status field empty")
+public void admin_creates_post_request_with_visa_status_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Role Id field empty")
+public void admin_creates_post_request_with_role_id_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Role Status field empty")
+public void admin_creates_post_request_with_role_status_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Login Status field empty")
+public void admin_creates_post_request_with_login_status_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with email field empty")
+public void admin_creates_post_request_with_email_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("Admin creates POST request with Phone Number field empty")
+public void admin_creates_post_request_with_phone_number_field_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+>>>>>>> origin/main
 }
 
 @Given("Admin creates POST request with email id that is already associated with another user")

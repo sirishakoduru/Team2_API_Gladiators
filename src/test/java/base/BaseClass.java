@@ -29,11 +29,20 @@ public class BaseClass {
                 .header("Authorization", "Bearer " + TokenManager.getToken())
                 .baseUri(RestAssured.baseURI);
     }
+	
+
+	public RequestSpecification createInvalidBaseRequest() throws IOException  {
+	    return given()
+	    		.log().all()
+	            .header("Content-Type", "application/json")
+	            .baseUri(ConfigReader.getProperty("InvalidBaseURL"));
+	}
+	
+	
 	public static TestcaseWrapper getTestData() {
 		
 		return  JsonReader.readAllModules("src/test/resources/TestDataforLMS.json");
 		 
 		}
 	
-
 }
