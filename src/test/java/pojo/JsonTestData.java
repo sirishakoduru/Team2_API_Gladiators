@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 
@@ -39,14 +41,10 @@ public class JsonTestData {
     
    @JsonProperty("programRequest")
     private ProgramRequest programRequest;
-//    
-//    @JsonProperty("BatchData")
-//    private BatchDataPojo batchData ;
-//    @JsonProperty("expectedType")
+
+    @JsonProperty("expectedType")
     private String expectedType;
 
-
-    
     @JsonProperty("expectedEmail")
     private String expectedEmail;
     
@@ -82,8 +80,29 @@ public class JsonTestData {
     
     @JsonProperty("userRequest")
     private UserRequest userRequest;
+    
+    @JsonProperty("userId")
+    private String userId;
+    
+    @JsonProperty("userRoleList")
+    private List<UserRoleRequest> userRoleList;
+    
+    @JsonProperty("loginStatus")
+    private String loginStatus;
+    
+    @JsonProperty("status")
+    private String status;
+    
+    @JsonProperty("roleId")
+    private String roleId;
+    
+    @JsonProperty("batchId")
+    private String batchId;
+    
+    @JsonProperty("programBatchRequest")
+    private UserRoleProgramBatchStatusRequest programBatchRequest;
 
-  
+
     public String getTestcaseName() {
         return testcaseName;
     }
@@ -125,16 +144,6 @@ public class JsonTestData {
         this.contentType = contentType;
     }
 
-
-    
-//   public Login getLoginRequest() {
-//        return loginRequest;
-//    }
-//
-//    public void setLoginRequest(Login loginRequest) {
-//        this.loginRequest = loginRequest;
-//    }
-    
     public String getExpectedType() {
         return expectedType;
     }
@@ -152,9 +161,6 @@ public class JsonTestData {
    public ProgramRequest getProgramRequest() {
        return programRequest;
    }
-//    public BatchDataPojo getBatchData() {
-//        return batchData;
-//    }
 
     public String getRawBody() {
         return rawBody;
@@ -209,11 +215,6 @@ public class JsonTestData {
         return BooleanMessage;
     }
 
-	//public RestAssured getRequestBody() {
-		// TODO Auto-generated method stub
-	//	return null;
-	//}
-    
     public Integer getexpectedStatusCode() {
         return expectedStatusCode;
     }
@@ -222,7 +223,6 @@ public class JsonTestData {
         this.expectedStatusCode = expectedStatusCode;
     }
     
-
     public String getAuthType() {
         return authType;
     }
@@ -238,5 +238,55 @@ public class JsonTestData {
     
     public void setUserRequest(UserRequest userRequest) {
         this.userRequest = userRequest;
+    }
+    
+    public String getuserId() {
+        return userId;
+    }
+
+    public void setuserId(String userId) {
+        this.userId = userId;
+    }
+    public List<UserRoleRequest> getUserRoleList() {
+        return userRoleList;
+    }
+
+    public void setUserRoleList(List<UserRoleRequest> userRoleList) {
+        this.userRoleList = userRoleList;
+    }
+    public String getLoginStatus() {
+        return loginStatus;
+    }
+
+    public void setLoginStatus(String loginStatus) {
+        this.loginStatus = loginStatus;
+    }
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
+    }
+    public String getBatchId() {
+        return batchId;
+    }
+
+    public void setbatchId(String batchId) {
+        this.batchId = batchId;
+    }
+    public UserRoleProgramBatchStatusRequest getProgramBatchRequest() {
+        return programBatchRequest;
+    }
+
+    public void setProgramBatchRequest(UserRoleProgramBatchStatusRequest programBatchRequest) {
+        this.programBatchRequest = programBatchRequest;
     }
 }

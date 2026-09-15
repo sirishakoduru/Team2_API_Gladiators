@@ -1,522 +1,1324 @@
 {
-  "GetRequest": [
-	 {
-	    "testcaseName": "Get all users with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all users with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/usersss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all users with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Get all active users with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/activeUsers",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all active users with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/activeUsersss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all active users with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/activeUsers",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Get all active users e-mail id with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/fetch-emails",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all active users e-mail id with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/fetch-emailsss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all active users e-mail id with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/fetch-emails",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Get all user role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/roles",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all user role with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/roleses",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all user role with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/roles",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Get all users info with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all users info with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/rolesESDF",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all users info with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/roles",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user info with invalid user ID",
-	    "method": "GET",
-	    "endpoint": "/users/45678",
-	    "expectedStatusCode": 404,
-		"expectedMessage": "User not found with Id : 45678 ",
-		"BooleanMessage": false
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user info with invalid baseURI",
-	    "method": "GET",
-	    "endpoint": "/users/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user info with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user info with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/U15",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=all",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R01 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R01",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R02 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R02",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users for R03 role with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R03",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of active & inactive users with invalid role id",
-	    "method": "GET",
-	    "endpoint": "/users/byStatus?id=R05",
-	    "expectedStatusCode": 404,
-		"expectedMessage": "RoleID R05 not found",
-		"BooleanMessage": false
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/usersssss",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves count of all active & inactive users with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/byStatus?id=R03",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/2",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch with invalid batch id",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/999",
-	    "expectedStatusCode": 404,
-		"expectedMessage": "batchid 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programBatch/EWS",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/v2/users",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/v2/usersedfgr",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Get all user info with filters for invalid Method",
-	    "method": "POST",
-	    "endpoint": "/v2/users",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to batch id with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/programBatch/2",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programs/1",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program with invalid program id",
-	    "method": "GET",
-	    "endpoint": "/users/programs/999",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "programId 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/programs/HGT",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users linked to program id with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/programs/9",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with admin role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R01",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with staff role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R02",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users with student role valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/roles/R03",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users info with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/usersEREDS/roles",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "programId 999 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users info with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/roles/R01",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with valid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/user/{userId}",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid user id",
-	    "method": "GET",
-	    "endpoint": "/users/user/15",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "userId 15 not found"
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/useredcs/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves batch id for user with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/user/U17",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with valid user ID",
-	    "method": "GET",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 200
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid user ID",
-	    "method": "GET",
-	    "endpoint": "/users/details/999999999999",
-	    "expectedStatusCode": 404,
-	  	"expectedMessage": "User not found with Id : 999999999999 ",
-	  	"BooleanMessage": false
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid baseURI",
-	    "method": "GET",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid Endpoint",
-	    "method": "GET",
-	    "endpoint": "/users/detailsERFVB/U15",
-	    "expectedStatusCode": 404
-	  },
-	  {
-	    "testcaseName": "Admin retrieves user details with invalid Method",
-	    "method": "POST",
-	    "endpoint": "/users/details/U15",
-	    "expectedStatusCode": 405
-	  },
-	  {
-	    "testcaseName": "Admin retrieves all users without Authorization",
-	    "method": "GET",
-	    "endpoint": "/users",
-	    "expectedStatusCode": 401
-	  },
-	  {
-      "testcaseName": "Admin retrieves all active users without Authorization",
-	  "method": "GET",
-      "endpoint": " /users/activeUsers",
-      "expectedStatusCode": 401
-	},
-	{
-      "testcaseName": "Admin retrieves all active users e-mail id without Authorization",
-	  "method": "GET",
-      "endpoint": "/fetch-emails",
-      "expectedStatusCode": 401
-	},
-	{
-      "testcaseName": "Admin retrieves all user role without Authorization",
-	  "method": "GET",
-      "endpoint": "/roles",
-      "expectedStatusCode": 401
-	},
-	{
-      "testcaseName": "Admin retrieves user info without Authorization",
-	  "method": "GET",
-      "endpoint": "/users/34",
-      "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves all users info without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/roles",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves count of all active & inactive users without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/byStatus?id=R03",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves all users linked to batch id without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/programBatch/2",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves all users linked to program id without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/programs/1",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves all users with admin role without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/roles/R01",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves batch id for user without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/user/U17",
-	  "expectedStatusCode": 401
-	},
-	{
-	  "testcaseName": "Admin retrieves user details without Authorization",
-	  "method": "GET",
-	  "endpoint": "/users/details/U15",
-	  "expectedStatusCode": 401
-	}
-	
-  ],
+	"GetRequest": [
+		{
+			"testcaseName": "Get all users with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all users with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/usersss",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all users with invalid Method",
+			"method": "POST",
+			"endpoint": "/users",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Get all active users with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/activeUsers",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all active users with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/activeUsersss",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all active users with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/activeUsers",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Get all active users e-mail id with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/fetch-emails",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all active users e-mail id with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/fetch-emailsss",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all active users e-mail id with invalid Method",
+			"method": "POST",
+			"endpoint": "/fetch-emails",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Get all user role with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/roles",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all user role with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/roleses",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all user role with invalid Method",
+			"method": "POST",
+			"endpoint": "/roles",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Get all users info with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/roles",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all users info with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/rolesESDF",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all users info with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/roles",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves active user info with valid user Id",
+			"method": "GET",
+			"endpoint": "/users/U860",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves user info with invalid user ID",
+			"method": "GET",
+			"endpoint": "/users/45678",
+			"expectedStatusCode": 404,
+			"expectedMessage": "User not found with Id : 45678 ",
+			"BooleanMessage": false
+		},
+		{
+			"testcaseName": "Admin retrieves user info with invalid baseURI",
+			"method": "GET",
+			"endpoint": "/users/U15",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves user info with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves user info with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/U15",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves count of all active & inactive users with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=all",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves count of active & inactive users for R01 role with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=R01",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves count of active & inactive users for R02 role with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=R02",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves count of active & inactive users for R03 role with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=R03",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves count of active & inactive users with invalid role id",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=R05",
+			"expectedStatusCode": 404,
+			"expectedMessage": "RoleID R05 not found",
+			"BooleanMessage": false
+		},
+		{
+			"testcaseName": "Admin retrieves count of all active & inactive users with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/usersssss",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves count of all active & inactive users with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/byStatus?id=R03",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to batch id with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/programBatch/2",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to batch with invalid batch id",
+			"method": "GET",
+			"endpoint": "/users/programBatch/999",
+			"expectedStatusCode": 404,
+			"expectedMessage": "batchid 999 not found"
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to batch id with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/programBatch/EWS",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all user info with filters for valid Endpoint",
+			"method": "GET",
+			"endpoint": "/v2/users",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Get all user info with filters for invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/v2/usersedfgr",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Get all user info with filters for invalid Method",
+			"method": "POST",
+			"endpoint": "/v2/users",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to batch id with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/programBatch/2",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to program id with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/programs/1",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to program with invalid program id",
+			"method": "GET",
+			"endpoint": "/users/programs/999",
+			"expectedStatusCode": 404,
+			"expectedMessage": "programId 999 not found"
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to program id with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/programs/HGT",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to program id with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/programs/9",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves all users with admin role valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/roles/R01",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves all users with staff role valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/roles/R02",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves all users with student role valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/roles/R03",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves all users info with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/usersEREDS/roles",
+			"expectedStatusCode": 404,
+			"expectedMessage": "programId 999 not found"
+		},
+		{
+			"testcaseName": "Admin retrieves all users info with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/roles/R01",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves batch id for user with valid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/user/{userId}",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves batch id for user with invalid user id",
+			"method": "GET",
+			"endpoint": "/users/user/15",
+			"expectedStatusCode": 404,
+			"expectedMessage": "userId 15 not found"
+		},
+		{
+			"testcaseName": "Admin retrieves batch id for user with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/useredcs/U15",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves batch id for user with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/user/U17",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves user details with valid user ID",
+			"method": "GET",
+			"endpoint": "/users/details/U15",
+			"expectedStatusCode": 200
+		},
+		{
+			"testcaseName": "Admin retrieves user details with invalid user ID",
+			"method": "GET",
+			"endpoint": "/users/details/999999999999",
+			"expectedStatusCode": 404,
+			"expectedMessage": "User not found with Id : 999999999999 ",
+			"BooleanMessage": false
+		},
+		{
+			"testcaseName": "Admin retrieves user details with invalid baseURI",
+			"method": "GET",
+			"endpoint": "/users/details/U15",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves user details with invalid Endpoint",
+			"method": "GET",
+			"endpoint": "/users/detailsERFVB/U15",
+			"expectedStatusCode": 404
+		},
+		{
+			"testcaseName": "Admin retrieves user details with invalid Method",
+			"method": "POST",
+			"endpoint": "/users/details/U15",
+			"expectedStatusCode": 405
+		},
+		{
+			"testcaseName": "Admin retrieves all users without Authorization",
+			"method": "GET",
+			"endpoint": "/users",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all active users without Authorization",
+			"method": "GET",
+			"endpoint": " /users/activeUsers",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all active users e-mail id without Authorization",
+			"method": "GET",
+			"endpoint": "/fetch-emails",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all user role without Authorization",
+			"method": "GET",
+			"endpoint": "/roles",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves user info without Authorization",
+			"method": "GET",
+			"endpoint": "/users/34",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all users info without Authorization",
+			"method": "GET",
+			"endpoint": "/users/roles",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves count of all active & inactive users without Authorization",
+			"method": "GET",
+			"endpoint": "/users/byStatus?id=R03",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to batch id without Authorization",
+			"method": "GET",
+			"endpoint": "/users/programBatch/2",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all users linked to program id without Authorization",
+			"method": "GET",
+			"endpoint": "/users/programs/1",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves all users with admin role without Authorization",
+			"method": "GET",
+			"endpoint": "/users/roles/R01",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves batch id for user without Authorization",
+			"method": "GET",
+			"endpoint": "/users/user/U17",
+			"expectedStatusCode": 401
+		},
+		{
+			"testcaseName": "Admin retrieves user details without Authorization",
+			"method": "GET",
+			"endpoint": "/users/details/U15",
+			"expectedStatusCode": 401
+		}
+	],
+	"PostRequest": [
+		{
+			"testcaseName": "Add New Program",
+			"endpoint": "/saveprogram",
+			"statusmessage": "Created",
+			"contentType": "application/json",
+			"programRequest": {
+				"programDescription": "Test Program",
+				"programName": "RestAssuredTestOne",
+				"programStatus": "Active"
+			}
+		},
+		{
+			"testcaseName": "Admin creates a admin user with valid request body and authorization",
+			"method": "POST",
+			"endpoint": "/users/roleStatus",
+			"contentType": "application/json",
+			"expectedStatusCode": 201,
+			"userRequest": {
+				"userComments": "Automation Admin User",
+				"userEduPg": "MS",
+				"userEduUg": "BS",
+				"userFirstName": "TitanAdminP",
+				"userLastName": "Tester",
+				"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+				"userLocation": "USA",
+				"userMiddleName": "QA",
+				"userPhoneNumber": "+91 9876156786",
+				"userRoleMaps": [
+					{
+						"roleId": "R01",
+						"userRoleStatus": "Active"
+					}
+				],
+				"userTimeZone": "EST",
+				"userVisaStatus": "H4-EAD",
+				"userLogin": {
+					"userLoginEmail": "titanadmin166P@gmail.com",
+					"loginStatus": "Active"
+				}
+			}
+		},
+		{
+			"testcaseName": "Admin creates a staff user with valid request body and authorization",
+			"method": "POST",
+			"endpoint": "/users/roleStatus",
+			"contentType": "application/json",
+			"expectedStatusCode": 201,
+			"userRequest": {
+				"userComments": "Automation Staff User",
+				"userEduPg": "MTech",
+				"userEduUg": "BTech",
+				"userFirstName": "TitanAStaff",
+				"userLastName": "Tester",
+				"userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
+				"userLocation": "USA",
+				"userMiddleName": "Lead",
+				"userPhoneNumber": "+91 9876276691",
+				"userRoleMaps": [
+					{
+						"roleId": "R02",
+						"userRoleStatus": "Active"
+					}
+				],
+				"userTimeZone": "CST",
+				"userVisaStatus": "H1B",
+				"userLogin": {
+					"userLoginEmail": "titanstaff276@gmail.com",
+					"loginStatus": "Active"
+				}
+			}
+		},
+		{
+			"testcaseName": "Admin creates a student user with valid request body and authorization",
+			"method": "POST",
+			"endpoint": "/users/roleStatus",
+			"contentType": "application/json",
+			"expectedStatusCode": 201,
+			"userRequest": {
+				"userComments": "Automation Student User",
+				"userEduPg": "MCA",
+				"userEduUg": "BSc",
+				"userFirstName": "TitanAStudent",
+				"userLastName": "Tester",
+				"userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
+				"userLocation": "India",
+				"userMiddleName": "Learner",
+				"userPhoneNumber": "+91 9876336692",
+				"userRoleMaps": [
+					{
+						"roleId": "R03",
+						"userRoleStatus": "Active"
+					}
+				],
+				"userTimeZone": "IST",
+				"userVisaStatus": "Indian-Citizen",
+				"userLogin": {
+					"userLoginEmail": "titanstudent766@gmail.com",
+					"loginStatus": "Active"
+				}
+			}
+		},
+		{
+			"testcaseName": "Admin creates a user with only mandatory field",
+			"method": "POST",
+			"endpoint": "/users/roleStatus",
+			"contentType": "application/json",
+			"expectedStatusCode": 201,
+			"userRequest": {
+				"userFirstName": "TitanMandatory",
+				"userLastName": "Tester",
+				"userLocation": "USA",
+				"userPhoneNumber": "+91 9876476614",
+				"userRoleMaps": [
+					{
+						"roleId": "R01",
+						"userRoleStatus": "Active"
+					}
+				],
+				"userTimeZone": "PST",
+				"userVisaStatus": "US-Citizen",
+				"userLogin": {
+					"userLoginEmail": "titanmandatory466@gmail.com",
+					"loginStatus": "Active"
+				}
+			}
+		}
+		
+	],
+		"PutRequest":[
+			{
+				"testcaseName": "Admin updates user with valid user id",
+				"method": "PUT",
+				"endpoint": "/users/{userId}",
+				"contentType": "application/json",
+				"expectedStatusCode": 201,
+				"userRequest": {
+					"userComments": "Automation Admin User validating",
+					"userEduPg": "MS",
+					"userEduUg": "Engineering",
+					"userFirstName": "TitanAdminJ",
+					"userId": "{userId}",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156666",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
 
-  "PostRequest": [
-    {
-      "testcaseName": "Add New Program",
-      "endpoint": "/saveprogram",
-      "statusmessage": "Created",
-      "contentType": "application/json",
-      "programRequest": {
-        "programDescription": "Test Program",
-        "programName": "RestAssuredTestOne",
-        "programStatus": "Active"
-      }
-    },
-	{
-	     "testcaseName": "Admin creates a admin user with valid request body and authorization",
-	     "method": "POST",
-	     "endpoint": "/users/roleStatus",
-	     "contentType": "application/json",
-	     "expectedStatusCode": 201,
-	     "userRequest": {
-	       "userComments": "Automation Admin User",
-	       "userEduPg": "MS",
-	       "userEduUg": "BS",
-	       "userFirstName": "TitanAdmin",
-	       "userLastName": "Tester",
-	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
-	       "userLocation": "USA",
-	       "userMiddleName": "QA",
-	       "userPhoneNumber": "+91 9876156610",
-	       "userRoleMaps": [
-	         {
-	           "roleId": "R01",
-	           "userRoleStatus": "Active"
-	         }
-	       ],
-	       "userTimeZone": "EST",
-	       "userVisaStatus": "H4-EAD",
-	       "userLogin": {
-	         "userLoginEmail": "titanadmin1666@gmail.com",
-	         "loginStatus": "Active"
-	       }
-	     }
-	   },
-	   {
-	     "testcaseName": "Admin creates a staff user with valid request body and authorization",
-	     "method": "POST",
-	     "endpoint": "/users/roleStatus",
-	     "contentType": "application/json",
-	     "expectedStatusCode": 201,
-	     "userRequest": {
-	       "userComments": "Automation Staff User",
-	       "userEduPg": "MTech",
-	       "userEduUg": "BTech",
-	       "userFirstName": "TitanStaff",
-	       "userLastName": "Tester",
-	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
-	       "userLocation": "USA",
-	       "userMiddleName": "Lead",
-	       "userPhoneNumber": "+91 9876276612",
-	       "userRoleMaps": [
-	         {
-	           "roleId": "R02",
-	           "userRoleStatus": "Active"
-	         }
-	       ],
-	       "userTimeZone": "CST",
-	       "userVisaStatus": "H1B",
-	       "userLogin": {
-	         "userLoginEmail": "titanstaff2766@gmail.com",
-	         "loginStatus": "Active"
-	       }
-	     }
-	   },
-	   {
-	     "testcaseName": "Admin creates a student user with valid request body and authorization",
-	     "method": "POST",
-	     "endpoint": "/users/roleStatus",
-	     "contentType": "application/json",
-	     "expectedStatusCode": 201,
-	     "userRequest": {
-	       "userComments": "Automation Student User",
-	       "userEduPg": "MCA",
-	       "userEduUg": "BSc",
-	       "userFirstName": "TitanStudent",
-	       "userLastName": "Tester",
-	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
-	       "userLocation": "India",
-	       "userMiddleName": "Learner",
-	       "userPhoneNumber": "+91 9876336613",
-	       "userRoleMaps": [
-	         {
-	           "roleId": "R03",
-	           "userRoleStatus": "Active"
-	         }
-	       ],
-	       "userTimeZone": "IST",
-	       "userVisaStatus": "Indian-Citizen",
-	       "userLogin": {
-	         "userLoginEmail": "titanstudent7669@gmail.com",
-	         "loginStatus": "Active"
-	       }
-	     }
-	   },
-	   {
-	     "testcaseName": "Admin creates a user with only mandatory field",
-	     "method": "POST",
-	     "endpoint": "/users/roleStatus",
-	     "contentType": "application/json",
-	     "expectedStatusCode": 201,
-	     "userRequest": {
-	       "userFirstName": "TitanMandatory",
-	       "userLastName": "Tester",
-	       "userLocation": "USA",
-	       "userPhoneNumber": "+91 9876476614",
-	       "userRoleMaps": [
-	         {
-	           "roleId": "R01",
-	           "userRoleStatus": "Active"
-	         }
-	       ],
-	       "userTimeZone": "PST",
-	       "userVisaStatus": "US-Citizen",
-	       "userLogin": {
-	         "userLoginEmail": "titanmandatory466@gmail.com",
-	         "loginStatus": "Active"
-	       }
-	     }
-	   }
-  ]
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid user id",
+				"method": "PUT",
+				"endpoint": "/users/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"expectedMessage": "UserID: 1215 Not Found",
+				"BooleanMessage": false,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156660",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with missing mandatory fields",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"expectedMessage": "User First Name is mandatory",
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156697",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with duplicate email",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"BooleanMessage": false,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166H@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156697",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with duplicate phone number",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "MS",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userEduPg",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "TG45",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userEduUg",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "@#$%",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid first name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI234",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid last name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester123",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid middle name",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA234",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userLinkedinUrl",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "inkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid userLocation",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "1234",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid email format",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid phone number format",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "9876156696",
+					"userTimeZone": "CST",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid user time zone",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "345",
+					"userVisaStatus": "H1B"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user by user id with invalid user visa status",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid endpoint",
+				"method": "PUT",
+				"endpoint": "/usersedfs/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid method",
+				"method": "POST",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 405,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id with invalid content type",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "text/plain",
+				"expectedStatusCode": 415,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates a user by user id without Authorization",
+				"method": "PUT",
+				"endpoint": "/users/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 401,
+				"userRequest": {
+					"userComments": "Automation Admin User",
+					"userEduPg": "Ms",
+					"userEduUg": "BS",
+					"userFirstName": "TitanAdminI",
+					"userId": "U1215",
+					"userLastName": "Tester",
+					"userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
+					"userLocation": "USA",
+					"userLoginEmail":"titanadmin166I@gmail.com",
+					"userMiddleName": "QA",
+					"userPhoneNumber": "+91 9876156617",
+					"userTimeZone": "EST",
+					"userVisaStatus": "H4-EAD"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with valid Endpoint",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 200,
+				"expectedMessage": "UserLoginEmail/Status Updated for User: U1215",
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid user id",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"expectedMessage": "UserID: 1215 Not Found",
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with email field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with login Status field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with Status field empty",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": ""
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid email",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid login Status",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Activing",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with invalid Status",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Actives"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user with duplicate email",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 400,
+				"userRequest": {
+					"userLoginEmail": "titanstaff276@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Endpoint",
+				"method": "PUT",
+				"endpoint": "/users/userLoginsed/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Method",
+				"method": "POST",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 405,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status with invalid Content Type",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "text/plain",
+				"expectedStatusCode": 415,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			},
+			{
+				"testcaseName": "Admin updates user login status without Authorization",
+				"method": "PUT",
+				"endpoint": "/users/userLogin/U1215",
+				"contentType": "application/json",
+				"expectedStatusCode": 401,
+				"userRequest": {
+					"userLoginEmail": "titanadmin2026@gmail.com",
+					"loginStatus": "Active",
+					"status": "Active"
+
+				}
+			}
+			
+			
+		],
+		"UpdateRoleIDRequest":[
+			{
+			"testcaseName": "Admin updates user role id with valid role id",
+			"method": "PUT",
+			"endpoint": "/users/roleId/{userID}",
+			"contentType": "application/json",
+			"expectedStatusCode": 200,
+				  "userRoleList": [
+				    {
+				      "roleId": "R02",
+				      "userRoleStatus": "Active"
+				    }
+				  ]
+				},
+		{
+		"testcaseName": "Admin updates user role status with valid role status",
+		"method": "PUT",
+		"endpoint": "/users/roleId/{userID}",
+		"contentType": "application/json",
+		"expectedStatusCode": 200,
+			  "userRoleList": [
+			    {
+			      "roleId": "R02",
+			      "userRoleStatus": "Active"
+			    }
+			  ]
+			},
+			{
+			"testcaseName": "Admin updates user role id with invalid role id",
+			"method": "PUT",
+			"endpoint": "/users/roleId/U1316",
+			"contentType": "application/json",
+			"expectedStatusCode": 400,
+			"expectedMessage": "Failed to assign new User Role, as 'roleId' is invalid !!  U1316",
+			"BooleanMessage": false,
+				  "userRoleList": [
+				    {
+				      "roleId": "02",
+				      "userRoleStatus": "Active"
+				    }
+				  ]
+				},
+			{
+			"testcaseName": "Admin updates user role status with invalid role status",
+			"method": "PUT",
+			"endpoint": "/users/roleId/U1316",
+			"contentType": "application/json",
+			"expectedStatusCode": 400,
+				  "userRoleList": [
+				    {
+				      "roleId": "02",
+				      "userRoleStatus": "Activating"
+				    }
+				  ]
+				},
+				{
+				"testcaseName": "Admin update same Role id for the user",
+				"method": "PUT",
+				"endpoint": "/users/roleId/U1316",
+				"contentType": "application/json",
+				"expectedStatusCode": 404,
+					  "userRoleList": [
+					    {
+					      "roleId": "R01",
+					      "userRoleStatus": "Active"
+					    }
+					  ]
+					},
+					{
+					"testcaseName": "Admin updates user role id with invalid user id",
+					"method": "PUT",
+					"endpoint": "/users/roleId/1316",
+					"contentType": "application/json",
+					"expectedStatusCode": 404,
+						  "userRoleList": [
+						    {
+						      "roleId": "R01",
+						      "userRoleStatus": "Active"
+						    }
+						  ]
+						},
+					{
+					"testcaseName": "Admin updates user role id with invalid Endpoint",
+					"method": "PUT",
+					"endpoint": "/users/roleIdse/U1316",
+					"contentType": "application/json",
+					"expectedStatusCode": 404,
+						  "userRoleList": [
+						    {
+						      "roleId": "R01",
+						      "userRoleStatus": "Active"
+						    }
+						  ]
+						},
+					{
+					"testcaseName": "Admin updates user role id with invalid Method",
+					"method": "GET",
+					"endpoint": "/users/roleId/1316",
+					"contentType": "application/json",
+					"expectedStatusCode": 405,
+						  "userRoleList": [
+						    {
+						      "roleId": "R01",
+						      "userRoleStatus": "Active"
+						    }
+						  ]
+						},
+					{
+					"testcaseName": "Admin updates user role id with invalid Content Type",
+					"method": "GET",
+					"endpoint": "/users/roleId/1316",
+					"contentType": "text/plain",
+					"expectedStatusCode": 415,
+						  "userRoleList": [
+						    {
+						      "roleId": "R01",
+						      "userRoleStatus": "Active"
+						    }
+						  ]
+						},
+						{
+						"testcaseName": "Admin updates user role id without Authorization",
+						"method": "PUT",
+						"endpoint": "/users/roleId/1316",
+						"contentType": "application/json",
+						"expectedStatusCode": 401,
+							  "userRoleList": [
+							    {
+							      "roleId": "R01",
+							      "userRoleStatus": "Active"
+							    }
+							  ]
+							}
+
+			
+		],
+		"programBatchRequest":[
+			{
+			  "testcaseName": "Admin updates user role program batch status",
+			  "method": "PUT",
+			  "endpoint": "/users/roleProgramBatchStatus/U1316",
+			  "contentType": "application/json",
+			  "expectedStatusCode": 200,
+
+			  "programBatchRequest": {
+				"userId": "U1316",
+			    "programId": 1,
+			    "roleId": "R01",
+			    "userRoleProgramBatches": [
+			      {
+			        "batchId": 2,
+			        "userRoleProgramBatchStatus": "Inactive"
+			      }
+			    ]
+			  }
+			}
+		
+	]
 }

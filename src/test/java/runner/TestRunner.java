@@ -6,9 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-	    features = "src/test/resources/features",
+		features = {"src/test/resources/features"
+			  },
 	    glue = {"stepDefinitions", "hooks"},
-	    tags = "@validcase1 or @validcase2 or @PostProgram_02",
+	    tags = "@validcase1 or @validRole",
 	    plugin = {"pretty", "html:target/cucumber-report.html",
 	              "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	              "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"

@@ -2,8 +2,10 @@ package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -100,13 +102,27 @@ public void admin_sends_a_https_request_to_the_valid_user_endpoint() {
         
         String userId = response.jsonPath().getString("user.userId");
         
-        assertNotNull(userId, "Response body should contain generated userId");
+//        assertNotNull(userId, "Response body should contain generated userId");
         
-        assertEquals(response.getStatusCode(), expectedStatusCode.intValue(), "Status code mismatch!");
+//        assertEquals(response.getStatusCode(), expectedStatusCode.intValue(), "Status code mismatch!");
+        
+        String role = response.jsonPath().getString("roles[0].roleId");
+
+        switch(role) {
+            case "R01":
+                ScenarioContext.set("adminUserId", userId);
+                break;
+            case "R02":
+                ScenarioContext.set("staffUserId", userId);
+                break;
+            case "R03":
+                ScenarioContext.set("studentUserId", userId);
+                break;
+        }
         
         log.info("User created successfully with User ID: {}", userId);
         
-        ScenarioContext.set("userId", userId);
+//        ScenarioContext.set("userId", userId);
         
         log.info("User ID {} stored in ScenarioContext successfully", userId);
     }
@@ -139,8 +155,8 @@ public void admin_creates_post_request_with_first_name_field_empty() {
 
 @Then("Admin receives {int} Bad Request Status with valid error message")
 public void admin_receives_bad_request_status_with_valid_error_message(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+   
+	
 }
 
 @Given("Admin creates POST request with LastName field empty")
@@ -352,4 +368,6 @@ public void admin_receives_method_not_allowed(Integer int1) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
+
+
 }

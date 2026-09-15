@@ -11,6 +11,15 @@ public class TestcaseWrapper {
  
     @JsonProperty("PostRequest")
     private List<JsonTestData> postRequest;
+    
+    @JsonProperty("PutRequest")
+    private List<JsonTestData> putRequest;
+    
+    @JsonProperty("UpdateRoleIDRequest")
+    private List<JsonTestData> updateRoleIDRequest;
+    
+    @JsonProperty("programBatchRequest")
+    private List<JsonTestData> programBatchRequest;
 
     public List<JsonTestData> getGetRequest() {
         return getRequest;
@@ -25,6 +34,25 @@ public class TestcaseWrapper {
     }
     public void setPostRequest(List<JsonTestData> postRequest) {
         this.postRequest = postRequest;
+    }
+    public List<JsonTestData> getPutRequest() {
+        return putRequest;
+    }
+    public void setPutRequest(List<JsonTestData> putRequest) {
+        this.putRequest = putRequest;
+    }
+    public List<JsonTestData> getUpdateRoleIDRequest() {
+        return updateRoleIDRequest;
+    }
+    public void setUpdateRoleIDRequest(List<JsonTestData> UpdateRoleIDRequest) {
+        this.updateRoleIDRequest = UpdateRoleIDRequest;
+    }
+
+	public List<JsonTestData> getProgramBatchRequest() {
+		return programBatchRequest;
+	}
+	public void setProgramBatchRequest(List<JsonTestData> programBatchRequest) {
+        this.programBatchRequest = programBatchRequest;
     }
     
 }

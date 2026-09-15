@@ -38,7 +38,6 @@ public class UserRequest {
     @JsonProperty("userRoleMaps")
     private List<UserRole> userRoleMaps;
     
-    
     @JsonProperty("userTimeZone")
     private String userTimeZone;
     
@@ -47,6 +46,30 @@ public class UserRequest {
     
     @JsonProperty("userLogin")
     private UserLogin userLogin;
+    
+    @JsonProperty("userId")
+    private String userId;
+    
+    @JsonProperty("userLoginEmail")
+    private String userLoginEmail;
+    
+    @JsonProperty("loginStatus")
+    private String loginStatus;
+    
+    @JsonProperty("status")
+    private String status;
+    
+    @JsonProperty("programId")
+    private int programId;
+    
+    @JsonProperty("roleId")
+    private String roleId;
+    
+    @JsonProperty("batchId")
+    private int batchId;
+    
+    @JsonProperty("userRoleProgramBatchStatus")
+    private String userRoleProgramBatchStatus;
     
     // Getters and Setters
     public String getUserComments()
@@ -155,5 +178,61 @@ public class UserRequest {
     public void setUserLogin(UserLogin userLogin)
     { 
     	this.userLogin = userLogin; 
+    }
+    public String getuserId() {
+        return userId;
+    }
+
+    public void setuserId(String userId) {
+        this.userId = userId;
+    }
+    public String getuserLoginEmail() {
+        return userLoginEmail;
+    }
+
+    public void setuserLoginEmail(String userLoginEmail) {
+        this.userLoginEmail = userLoginEmail;
+    }
+    public String getLoginStatus() {
+        return loginStatus;
+    }
+
+    public void setLoginStatus(String loginStatus) {
+        this.loginStatus = loginStatus;
+    }
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    public int getProgramId() {
+        return programId;
+    }
+
+    public void setProgramId(int programId) {
+        this.programId = programId;
+    }
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
+    }
+    public int getBatchId() {
+        return batchId;
+    }
+
+    public void setBatchId(int batchId) {
+        this.batchId = batchId;
+    }
+    public String getUserRoleProgramBatchStatus() {
+        return userRoleProgramBatchStatus;
+    }
+
+    public void setUserRoleProgramBatchStatus(String userRoleProgramBatchStatus) {
+        this.userRoleProgramBatchStatus = userRoleProgramBatchStatus;
     }
 }
