@@ -22,9 +22,6 @@ public class JsonTestData {
 	@JsonProperty("loginRequest")
 	public LoginRequest loginRequest;
 
-	@JsonProperty("batchRequest")
-	public BatchRequest batchRequest;
-
 	@JsonProperty("forgotPasswordRequest")
 	public ForgotPasswordRequest forgotPasswordRequest;
 
@@ -178,10 +175,6 @@ public class JsonTestData {
 		this.loginRequest = loginRequest;
 	}
 
-	public BatchRequest getBatchRequest() {
-		return batchRequest;
-	}
-
 	public void setbodyType(String bodyType) {
 		this.bodyType = bodyType;
 	}
@@ -265,17 +258,10 @@ public class JsonTestData {
 	public void setResetPasswordRequest(ResetPasswordRequest resetPasswordRequest) {
 		this.resetPasswordRequest = resetPasswordRequest;
 	}
-
-    public java.util.List<String> getExpectedMessages() {
-        return expectedMessages;
-    }
     public void setExpectedMessages(java.util.List<String> expectedMessages) {
         this.expectedMessages = expectedMessages;
     }
-    public String getuserId() {
-        return userId;
-    }
-
+ 
     public void setuserId(String userId) {
         this.userId = userId;
     }
@@ -333,59 +319,14 @@ public class JsonTestData {
 
     public void setBatchRequest(BatchRequest batchRequest) {
         this.batchRequest = batchRequest;
+    }
     public java.util.List<String> getExpectedMessages() {
         return expectedMessages;
     }
-    public void setExpectedMessages(java.util.List<String> expectedMessages) {
-        this.expectedMessages = expectedMessages;
+
     public String getuserId() {
         return userId;
     }
 
-    public void setuserId(String userId) {
-        this.userId = userId;
-    }
-    public List<UserRoleRequest> getUserRoleList() {
-        return userRoleList;
-    }
-
-    public void setUserRoleList(List<UserRoleRequest> userRoleList) {
-        this.userRoleList = userRoleList;
-    }
-    public String getLoginStatus() {
-        return loginStatus;
-    }
-
-    public void setLoginStatus(String loginStatus) {
-        this.loginStatus = loginStatus;
-    }
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-    public String getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(String roleId) {
-        this.roleId = roleId;
-    }
-    public String getBatchId() {
-        return batchId;
-    }
-
-    public void setbatchId(String batchId) {
-        this.batchId = batchId;
-    }
-    public UserRoleProgramBatchStatusRequest getProgramBatchRequest() {
-        return programBatchRequest;
-    }
-
-    public void setProgramBatchRequest(UserRoleProgramBatchStatusRequest programBatchRequest) {
-        this.programBatchRequest = programBatchRequest;
-    }
 }
 
