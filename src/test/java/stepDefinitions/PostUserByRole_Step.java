@@ -189,7 +189,6 @@ public void admin_creates_post_request_with_field_empty(String fieldName) {
 
 
 @Then("Admin receives {int} Bad Request Status with valid error message")
-<<<<<<< HEAD
 public void admin_receives_bad_request_status_with_valid_error_message(Integer expectedStatusCode) {
     
     response.then().log().all().statusCode(expectedStatusCode);
@@ -239,11 +238,6 @@ public void admin_receives_bad_request_status_with_valid_error_message(Integer e
     log.info("Actual Status Code: {}, Expected Status Code: {}", response.getStatusCode(), expectedStatusCode);
     
     log.info("Response Status Line: {}", response.asPrettyString());
-    
-=======
-public void admin_receives_bad_request_status_with_valid_error_message(Integer int1) {
-   
-	
 }
 
 @Given("Admin creates POST request with LastName field empty")
@@ -298,7 +292,6 @@ public void admin_creates_post_request_with_email_field_empty() {
 public void admin_creates_post_request_with_phone_number_field_empty() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
->>>>>>> origin/main
 }
 
 @Given("Admin creates POST request with email id that is already associated with another user")

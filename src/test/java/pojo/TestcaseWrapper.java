@@ -30,19 +30,8 @@ public class TestcaseWrapper {
     public void setGetRequest(List<JsonTestData> getRequest) {
         this.getRequest = getRequest;
     }
-    
-    @JsonProperty("PostRequest")
-    private List<JsonTestData> postRequest;
-
-    
     @JsonProperty("Tests")
     private List<JsonTestData> tests;
-   
-    @JsonProperty("DeleteRequest")
-    private List<JsonTestData> deleteRequest;
-    
-    @JsonProperty("PutRequest")
-    private List<JsonTestData> putRequest;
 
     @JsonProperty("ResetPasswordRequest")
     private List<JsonTestData> resetPasswordRequest;
@@ -64,6 +53,7 @@ public class TestcaseWrapper {
 
     public void setDeleteRequest(List<JsonTestData> deleteRequest) {
         this.deleteRequest = deleteRequest;
+    }
     public List<JsonTestData> getPutRequest() {
         return putRequest;
     }
@@ -82,20 +72,6 @@ public class TestcaseWrapper {
 	}
 	public void setProgramBatchRequest(List<JsonTestData> programBatchRequest) {
         this.programBatchRequest = programBatchRequest;
-    }
-    
-    public List<JsonTestData> getDeleteRequest() {
-        return deleteRequest;
-    }
-    public void setDeleteRequest(List<JsonTestData> deleteRequest) {
-        this.deleteRequest = deleteRequest;
-    }
-    public List<JsonTestData> getPutRequest() {
-        return putRequest;
-    }
-
-    public void setPutRequest(List<JsonTestData> putRequest) {
-        this.putRequest = putRequest;
     }
     
     public List<JsonTestData> getResetPasswordRequest() {
