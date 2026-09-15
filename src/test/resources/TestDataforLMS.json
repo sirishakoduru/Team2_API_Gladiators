@@ -81,7 +81,7 @@
 	  {
 	    "testcaseName": "Get all users info with invalid Endpoint",
 	    "method": "GET",
-	    "endpoint": "/users/rolesESDF",
+	    "endpoint": "/users/rolesss",
 	    "expectedStatusCode": 404
 	  },
 	  {
@@ -418,7 +418,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadmin",
 	       "userLocation": "USA",
 	       "userMiddleName": "QA",
-	       "userPhoneNumber": "+91 9876156610",
+	       "userPhoneNumber": "+91 9874456432",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R01",
@@ -428,7 +428,7 @@
 	       "userTimeZone": "EST",
 	       "userVisaStatus": "H4-EAD",
 	       "userLogin": {
-	         "userLoginEmail": "titanadmin1666@gmail.com",
+	         "userLoginEmail": "titansadmin167@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
@@ -448,7 +448,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstaff",
 	       "userLocation": "USA",
 	       "userMiddleName": "Lead",
-	       "userPhoneNumber": "+91 9876276612",
+	       "userPhoneNumber": "+91 9874774321",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R02",
@@ -458,7 +458,7 @@
 	       "userTimeZone": "CST",
 	       "userVisaStatus": "H1B",
 	       "userLogin": {
-	         "userLoginEmail": "titanstaff2766@gmail.com",
+	         "userLoginEmail": "tsita4nstaff2432@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
@@ -478,7 +478,7 @@
 	       "userLinkedinUrl": "https://www.linkedin.com/in/titanstudent",
 	       "userLocation": "India",
 	       "userMiddleName": "Learner",
-	       "userPhoneNumber": "+91 9876336613",
+	       "userPhoneNumber": "+91 9876777432",
 	       "userRoleMaps": [
 	         {
 	           "roleId": "R03",
@@ -488,35 +488,648 @@
 	       "userTimeZone": "IST",
 	       "userVisaStatus": "Indian-Citizen",
 	       "userLogin": {
-	         "userLoginEmail": "titanstudent7669@gmail.com",
+	         "userLoginEmail": "titansst4udent732@gmail.com",
 	         "loginStatus": "Active"
 	       }
 	     }
 	   },
-	   {
-	     "testcaseName": "Admin creates a user with only mandatory field",
-	     "method": "POST",
-	     "endpoint": "/users/roleStatus",
-	     "contentType": "application/json",
-	     "expectedStatusCode": 201,
-	     "userRequest": {
-	       "userFirstName": "TitanMandatory",
-	       "userLastName": "Tester",
-	       "userLocation": "USA",
-	       "userPhoneNumber": "+91 9876476614",
-	       "userRoleMaps": [
-	         {
-	           "roleId": "R01",
-	           "userRoleStatus": "Active"
-	         }
-	       ],
-	       "userTimeZone": "PST",
-	       "userVisaStatus": "US-Citizen",
-	       "userLogin": {
-	         "userLoginEmail": "titanmandatory466@gmail.com",
-	         "loginStatus": "Active"
-	       }
-	     }
-	   }
-  ]
-}
+	    {
+	   	     "testcaseName": "Admin creates a user with only mandatory field",
+	   	     "method": "POST",
+	   	     "endpoint": "/users/roleStatus",
+	   	     "contentType": "application/json",
+	   	     "expectedStatusCode": 201,
+	   	     "userRequest": {
+	   	       "userFirstName": "TitanMandatory",
+	   	       "userLastName": "Tester",
+	   	       "userLocation": "USA",
+	   	       "userPhoneNumber": "+91 9432444914",
+	   	       "userRoleMaps": [
+	   	         {
+	   	           "roleId": "R01",
+	   	           "userRoleStatus": "Active"
+	   	         }
+	   	       ],
+	   	       "userTimeZone": "PST",
+	   	       "userVisaStatus": "US-Citizen",
+	   	       "userLogin": {
+	   	         "userLoginEmail": "titan79mandat4ory432@gmail.com",
+	   	         "loginStatus": "Active"
+	   	       }
+	   	     }
+	   	   },
+	   	   {
+	   	     "testcaseName": "Admin creates POST request without auth and with valid request body",
+	   	     "method": "POST",
+	   	     "endpoint": "/users/roleStatus",
+	   	     "contentType": "application/json",
+	   	     "expectedStatusCode": 401,
+	   	     "userRequest": {
+	   	       "userComments": "Automation Admin User No Auth",
+	   	       "userEduPg": "MS",
+	   	       "userEduUg": "BS",
+	   	       "userFirstName": "TitanAdminNoAuth",
+	   	       "userLastName": "Tester",
+	   	       "userLinkedinUrl": "https://www.linkedin.com/in/titanadminnoauth",
+	   	       "userLocation": "USA",
+	   	       "userMiddleName": "QA",
+	   	       "userPhoneNumber": "+91 9976144329",
+	   	       "userRoleMaps": [
+	   	         {
+	   	           "roleId": "R01",
+	   	           "userRoleStatus": "Active"
+	   	         }
+	   	       ],
+	   	       "userTimeZone": "EST",
+	   	       "userVisaStatus": "H4-EAD",
+	   	       "userLogin": {
+	   	         "userLoginEmail": "titansa4dminno6auth@gmail.com",
+	   	         "loginStatus": "Active"
+	   	       }
+	   	     }
+	   	   },		
+		   {
+		         "testcaseName": "Admin creates a user with empty FirstName",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User First Name is cannot be null or empty",
+		           "userFirstName must contain two or more alphabets only"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110001",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyfn101@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty LastName",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User Last Name is cannot be null or empty",
+		           "userLastName must contain one or more alphabets only"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "",
+		           "userPhoneNumber": "+1 9877110002",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyln102@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Location",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User Location must contain two or more alphabets only",
+		           "User Location is cannot be null or empty"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110003",
+		           "userLocation": "",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyloc103@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Time Zone",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "userTimeZone is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110004",
+		           "userLocation": "USA",
+		           "userTimeZone": "",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptytz104@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Visa Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "userVisaStatus is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110005",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyvs105@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Role Id",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Role Id is mandatory",
+		           "Role Id cannot be null or empty"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110006",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyrole106@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Role Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Invalid Status: must be Active or Inactive",
+		           "Role Status is Mandatory"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110007",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": ""
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyrs107@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Login Status",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "Invalid Status"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110008",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyls108@testdomain.com",
+		             "loginStatus": ""
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty email",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "User email Id is required and should be in proper email format",
+		           "User email Id is required"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "+1 9877110009",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+		       {
+		         "testcaseName": "Admin creates a user with empty Phone Number",
+		         "method": "POST",
+		         "endpoint": "/users/roleStatus",
+		         "contentType": "application/json",
+		         "expectedStatusCode": 400,
+		         "expectedMessages": [
+		           "Phone Number is required",
+		           "phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"
+		         ],
+		         "userRequest": {
+		           "userFirstName": "Titan",
+		           "userLastName": "Tester",
+		           "userPhoneNumber": "",
+		           "userLocation": "USA",
+		           "userTimeZone": "EST",
+		           "userVisaStatus": "US-Citizen",
+		           "userRoleMaps": [
+		             {
+		               "roleId": "R01",
+		               "userRoleStatus": "Active"
+		             }
+		           ],
+		           "userLogin": {
+		             "userLoginEmail": "emptyph110@testdomain.com",
+		             "loginStatus": "Active"
+		           }
+		         }
+		       },
+			   {
+			     "testcaseName": "Admin creates a user with duplicate email id",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": [
+			       "already exists",
+			       "email"
+			     ],
+			     "userRequest": {
+			       "userFirstName": "TitanDupEmail",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877199991",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "Team02@gmail.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with duplicate phone number",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": [
+			       "already exists",
+			       "phone number"
+			     ],
+			     "userRequest": {
+			       "userFirstName": "TitanDupPhone",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+91 9877756610",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "dupphoneuser99@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userEduPg",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userEduPg", "invalid", "characters"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userEduPg": "12345!@#",
+			       "userEduUg": "BS",
+			       "userPhoneNumber": "+1 9877330001",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invpg101@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userEduUg",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userEduUg", "invalid", "characters"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userEduPg": "MS",
+			       "userEduUg": "12345!@#",
+			       "userPhoneNumber": "+1 9877330002",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invug102@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid first name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userFirstName must contain two or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "12345",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330003",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invfn103@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid last name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userLastName must contain one or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "12345",
+			       "userPhoneNumber": "+1 9877330004",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invln104@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid middle name",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userMiddleName must contain only alphabets", "middle name", "alphabets"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userMiddleName": "12345",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330005",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invmn105@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userLinkedinUrl",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["userLinkedinUrl", "invalid", "url"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userLinkedinUrl": "invalid-linkedin-url",
+			       "userPhoneNumber": "+1 9877330006",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invli106@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid userLocation",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["User Location must contain two or more alphabets only"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330007",
+			       "userLocation": "12",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invloc107@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid email format",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["User email Id is required and should be in proper email format"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330008",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invalidemailformat", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid phone number format",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["phoneNumber must be in this format (CountryCode)(PhoneNo) +91 1234567890"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "12345",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invph109@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid user Role Id",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["Role Id is mandatory", "Invalid Role", "Role"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330010",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R99", "userRoleStatus": "Active"}],
+			       "userLogin": {"userLoginEmail": "invrid110@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			     "testcaseName": "Admin creates a user with invalid user Role Status",
+			     "method": "POST",
+			     "endpoint": "/users/roleStatus",
+			     "contentType": "application/json",
+			     "expectedStatusCode": 400,
+			     "expectedMessages": ["Invalid Status: must be Active or Inactive"],
+			     "userRequest": {
+			       "userFirstName": "Titan",
+			       "userLastName": "Tester",
+			       "userPhoneNumber": "+1 9877330011",
+			       "userLocation": "USA",
+			       "userTimeZone": "EST",
+			       "userVisaStatus": "US-Citizen",
+			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "InvalidStatus"}],
+			       "userLogin": {"userLoginEmail": "invrs111@testdomain.com", "loginStatus": "Active"}
+			     }
+			   },
+			   {
+			   			     "testcaseName": "Admin creates a user with invalid user time zone",
+			   			     "method": "POST",
+			   			     "endpoint": "/users/roleStatus",
+			   			     "contentType": "application/json",
+			   			     "expectedStatusCode": 400,
+			   			     "expectedMessages": [
+			   			       "Failed to create user, as 'TimeZone' is invalid",
+			   			       "TimeZone",
+			   			       "time zone",
+			   			       "invalid",
+			   			       "userTimeZone is required"
+			   			     ],
+			   			     "userRequest": {
+			   			       "userFirstName": "Titan",
+			   			       "userLastName": "Tester",
+			   			       "userPhoneNumber": "+1 9877330012",
+			   			       "userLocation": "USA",
+			   			       "userTimeZone": "INVALID_TZ",
+			   			       "userVisaStatus": "US-Citizen",
+			   			       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			   			       "userLogin": {"userLoginEmail": "invtz112@gmail.com", "loginStatus": "Active"}
+			   			     }
+			   			   },
+			   		   {
+			   		     "testcaseName": "Admin creates a user with invalid user visa status",
+			   		     "method": "POST",
+			   		     "endpoint": "/users/roleStatus",
+			   		     "contentType": "application/json",
+			   		     "expectedStatusCode": 400,
+			   		     "expectedMessages": [
+			   		       "User email Id is required and should be in proper email format",
+			   		       "userVisaStatus is required",
+			   		       "Invalid Visa Status",
+			   		       "visa status"
+			   		     ],
+			   		     "userRequest": {
+			   		       "userFirstName": "Titan",
+			   		       "userLastName": "Tester",
+			   		       "userPhoneNumber": "+1 9877330013",
+			   		       "userLocation": "USA",
+			   		       "userTimeZone": "EST",
+			   		       "userVisaStatus": "INVALID_VISA",
+			   		       "userRoleMaps": [{"roleId": "R01", "userRoleStatus": "Active"}],
+			   		       "userLogin": {"userLoginEmail": "invvs113@gmail.com", "loginStatus": "Active"}
+			   		     }
+			   		   }
+		     ]
+		   }

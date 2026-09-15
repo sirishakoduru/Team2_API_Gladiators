@@ -51,7 +51,8 @@ public class GetUsers_Step extends BaseClass {
 		response = request
 		        .log().all()
 		        .request(method, endpoint);
-		Hooks.response = response;
+
+		response.then().log().all();
 	}
 
 	@Then("Admin validates GET response for {string} in User")
@@ -86,7 +87,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	}
 
@@ -182,7 +182,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	    
 	}
@@ -205,7 +204,7 @@ public class GetUsers_Step extends BaseClass {
 		response = request
 		        .log().all()
 		        .request(method, endpoint);
-		Hooks.response = response;
+
 		response.then().log().all();
 	    
 	}
@@ -235,7 +234,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	}
 
@@ -321,7 +319,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	}
 
@@ -331,7 +328,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	}
 
@@ -341,7 +337,6 @@ public class GetUsers_Step extends BaseClass {
 		response = request
                 .when()
                 .get(testData.getEndpoint());
-		Hooks.response = response;
 		response.then().log().all();
 	}
 	
