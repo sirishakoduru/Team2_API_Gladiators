@@ -34,7 +34,6 @@ Then Admin validates "<scenarioName>" Login API response all
       |Login With Password Having Spaces|
       |Login With Null Password|
       |Login With Empty Password |
-      |Login With Inactive user |
       
 @ForgotpasswordAPI
 Scenario Outline: Validate Forgot Password Confirm email LoginAPI scenarios

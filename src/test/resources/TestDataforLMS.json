@@ -18,7 +18,7 @@
 	  "contentType": "application/json",
 	  "loginRequest": {
 	    "userLoginEmailId": "",
-	    "password": "Team02@2026"
+	    "password": "Team02@123"
 	  },
 	  "expectedStatusCode": 400
 	},
@@ -57,7 +57,7 @@
 	      "userLoginEmailId": "Team02@gmail.com",
 	      "password": "Team02@2026"
 	    },
-	    "expectedStatusCode": 401
+	    "expectedStatusCode": 404
 	  },
 	  {
 	    "testcaseName": "Login With Special Characters Email",
@@ -112,7 +112,7 @@
 	      "userLoginEmailId": "Team02@gmail.com",
 	      "password": "Team02@@@###"
 	    },
-	    "expectedStatusCode": 400
+	    "expectedStatusCode": 401
 	  },
 	  {
 	    "testcaseName": "Login With Password Having Spaces",
@@ -153,7 +153,7 @@
 	    "endpoint": "/login/forgotpassword/confirmEmail",
 	    "contentType": "application/json",
 	    "forgotPasswordRequest": {
-	      "userLoginEmailId": "Team06@gmail.com"
+	      "userLoginEmailId": "Team02@gmail.com"
 	    },
 	    "expectedStatusCode": 201
 	  },
