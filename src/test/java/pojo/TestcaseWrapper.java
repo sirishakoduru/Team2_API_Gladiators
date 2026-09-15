@@ -18,8 +18,7 @@ public class TestcaseWrapper {
     public List<JsonTestData> getGetRequest() {
         return getRequest;
     }
-    
-
+   
     public void setGetRequest(List<JsonTestData> getRequest) {
         this.getRequest = getRequest;
     }
@@ -30,6 +29,45 @@ public class TestcaseWrapper {
     public void setPostRequest(List<JsonTestData> postRequest) {
         this.postRequest = postRequest;
     }
+
+    public List<JsonTestData> getTests() { return tests; }
+    public void setTests(List<JsonTestData> tests) { this.tests = tests; }
+  
+    public List<JsonTestData> getDeleteRequest() {
+        return deleteRequest;
+    }
+
+    public void setDeleteRequest(List<JsonTestData> deleteRequest) {
+        this.deleteRequest = deleteRequest;
+    }
+    public List<JsonTestData> getPutRequest() {
+        return putRequest;
+    }
+    public void setPutRequest(List<JsonTestData> putRequest) {
+        this.putRequest = putRequest;
+    }
+    public List<JsonTestData> getUpdateRoleIDRequest() {
+        return updateRoleIDRequest;
+    }
+    public void setUpdateRoleIDRequest(List<JsonTestData> UpdateRoleIDRequest) {
+        this.updateRoleIDRequest = UpdateRoleIDRequest;
+    }
+
+	public List<JsonTestData> getProgramBatchRequest() {
+		return programBatchRequest;
+	}
+	public void setProgramBatchRequest(List<JsonTestData> programBatchRequest) {
+        this.programBatchRequest = programBatchRequest;
+    }
+    
+    public List<JsonTestData> getResetPasswordRequest() {
+        return resetPasswordRequest;
+    }
+
+    public void setResetPasswordRequest(List<JsonTestData> resetPasswordRequest) {
+        this.resetPasswordRequest = resetPasswordRequest;
+    }
+
     
     public List<JsonTestData> getPutRequest() {
         return putRequest;
