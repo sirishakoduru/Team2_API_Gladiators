@@ -60,7 +60,9 @@ public class Hooks extends BaseClass {
     public void logApiResponse(Scenario scenario) {
         if (response != null) {
             apiLog.info("Scenario: {}", scenario.getName());
+            
             apiLog.info("Status Code: {}", response.getStatusCode());
+            
             apiLog.info("Response Body:\n{}", response.asPrettyString());
         }
     }

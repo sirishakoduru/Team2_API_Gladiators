@@ -3,6 +3,9 @@ package pojo;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
+
+
 
 //import pojoclass.Login;
 //import pojoclass.Login;
@@ -113,6 +116,8 @@ public class JsonTestData {
     @JsonProperty("userRequest")
     private UserRequest userRequest;
     
+    @JsonProperty("expectedMessages")
+    private java.util.List<String> expectedMessages;
     @JsonProperty("userId")
     private String userId;
     
@@ -381,6 +386,11 @@ public class JsonTestData {
         this.userRequest = userRequest;
     }
     
+    public java.util.List<String> getExpectedMessages() {
+        return expectedMessages;
+    }
+    public void setExpectedMessages(java.util.List<String> expectedMessages) {
+        this.expectedMessages = expectedMessages;
     public String getuserId() {
         return userId;
     }

@@ -12,6 +12,8 @@ public class TestcaseWrapper {
     @JsonProperty("PostRequest")
     private List<JsonTestData> postRequest;
     
+    @JsonProperty("DeleteRequest")
+    private List<JsonTestData> deleteRequest;
     @JsonProperty("PutRequest")
     private List<JsonTestData> putRequest;
     
@@ -82,6 +84,12 @@ public class TestcaseWrapper {
         this.programBatchRequest = programBatchRequest;
     }
     
+    public List<JsonTestData> getDeleteRequest() {
+        return deleteRequest;
+    }
+    public void setDeleteRequest(List<JsonTestData> deleteRequest) {
+        this.deleteRequest = deleteRequest;
+    }
     public List<JsonTestData> getPutRequest() {
         return putRequest;
     }

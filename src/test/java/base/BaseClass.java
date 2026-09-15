@@ -13,11 +13,6 @@ public class BaseClass {
 	
 	public static void init() throws IOException {
 		RestAssured.baseURI = ConfigReader.getProperty("BaseURL");
-		
-		RestAssured.filters(
-	            new io.restassured.filter.log.RequestLoggingFilter(),
-	            new io.restassured.filter.log.ResponseLoggingFilter()
-	    );
 	}
 	
 	public static RequestSpecification requestWithoutAuth() {
@@ -48,6 +43,6 @@ public class BaseClass {
 		
 		return  JsonReader.readAllModules("src/test/resources/TestDataforLMS.json");
 		 
-	}
+		}
 	
 }
